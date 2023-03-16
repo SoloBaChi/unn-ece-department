@@ -1,0 +1,19 @@
+
+.site-footer{
+background:#0f4625;
+color:var(--white-color);
+}
+.footer-col{
+text-align:center;
+margin:2rem 0rem;
+}
+/* the paragraph in column 1 */
+.footer-col.col-1 p{
+padding-top:0.5rem;
+}
+/* only the call to action button in the footer section */
+.footer-col .round-cta-btn{
+font-size:98%;
+margin-bottom:0.7rem;
+padding:0.5rem;
+}

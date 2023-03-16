@@ -1,0 +1,57 @@
+@import url("boilerplate.css");
+@import url("footer.css");
+@import url("theme.css");
+
+
+
+header,section,main,footer,article{
+padding:2.5rem;
+}
+/* p{
+margin-top:1rem;
+} */
+
+
+/* for all list styles */
+ul{
+list-style-type:none;
+padding:0;
+margin:0;
+}
+/* for all anchor elements */
+a{
+color:var(--white-color);
+display:block;
+padding:0.7rem;
+border:1px solid red;
+text-transform:capitalize;
+text-decoration:none;
+font-size:1.1em;
+}
+img{
+width:100%;
+display:block;/*liable toc change*/
+}
+.round-cta-btn{
+border:1px solid var(--white-color);
+border-radius:20px;
+
+}
+
+
+
+
+
+/* 
+=============================================
+==============GENERAL MEDIA QEURIES==========
+ */
+
+/* 
+=============================================
+==============GENERAL MEDIA QEURIES==========
+The following breakpoints were used to implement this
+mobile view: 0px - 480px;
+Tablet view 480px - 810px;
+Desktop view - 810px----
+ */
