@@ -9,6 +9,37 @@
 </head>
 <body>
 
+<!--Description: main site section -->
+<main>
+
+    
+<!--Description: Recent Award to our students -->
+    <section class="recent-awards">
+        <h3>recent awards to our students</h3>
+        <div class="display-best-student" id="display-best-student">
+        <figure class="display-card">
+            <div class="top-section">
+            <div class="top-container">
+            <span class="behind-circle shape-1"></span>
+            <div class="img-container">
+            <img src="./images/best-student.svg" alt="best final year student"/>
+            </div>
+            <span class="behind-circle shape-2"></span>
+            <span class="behind-circle shape-3"></span>
+            </div>
+            </div>
+            <div class="bottom-section">
+            <figcaption>
+            <div><h3>solomon joboson chiakonam</h3></div>
+             <div><p>Best final year student of electronic enginering department</p></div>
+             <div><small>CPGA:4.96</small></div>
+            </figcaption>
+            </div>
+        </figure>
+        </div>
+    </section>
+</main>
+
 
 
 <footer class="site-footer">
@@ -20,7 +51,7 @@
                         <img src="./images/unn-logo.svg" alt="unn logo"
                     </div>
                     <figcaption>
-                        <p>Electronics <br> Engineering</p>
+                        <p>Electronic Engineering</p>
                     </figcaption>
                 </figure>
             </div>
@@ -41,6 +72,14 @@
             </div>
         </div>
     </div>
+    <!-- current date -->
+    <small style="text-align:center;display:block;" class="copyright">&copy; <span id="updated-year"> </span> Department of Electronic Engineering</small>
 </footer>
+<script>
+    	const updateYear = document.getElementById("updated-year");
+    	const date = new Date();
+    	updateYear.innerText += date.getFullYear();
+
+    </script>
 </body>
 </html>
