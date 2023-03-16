@@ -1,1 +1,78 @@
 @import url("general-styles.css");
+
+
+/* index html styles */
+
+
+/* recent award section */
+.recent-awards{
+border:0px solid red;
+}
+.recent-awards h3{
+text-transform:uppercase;
+}
+.recent-awards 
+.display-card
+.top-container{
+border:0px solid yellow;
+max-height:240px;
+max-width:240px;
+padding:1rem;
+position: relative;
+}
+.recent-awards 
+.display-card
+.behind-circle{
+min-height:90px;
+min-width:90px;
+background-color:green;
+display:inline-block;
+border-radius:50%;
+position:absolute;
+z-index:1000;
+}
+.recent-awards 
+.display-card
+.behind-circle.shape-1{
+background: rgba(140, 187, 132, 0.38);
+bottom:0;
+left:0;
+min-height:120px;
+min-width:120px;
+}
+.recent-awards 
+.display-card
+.behind-circle.shape-2{
+background: rgba(140, 187, 132, 0.38);
+top:18px;
+right:20%;
+min-height:30px;
+min-width:30px;
+}
+.recent-awards 
+.display-card
+.behind-circle.shape-3{
+right:10px;
+bottom:10px;
+background: #28781C;
+}
+.recent-awards .display-card .img-container{
+height:100%;
+width:100%;
+border-radius:50%;
+z-index:1040;
+position: relative;
+}
+.recent-awards 
+.display-card > *{
+margin-bottom:1rem;
+border:0px solid purple;
+}
+
+.recent-awards 
+.display-card 
+.img-container img{
+border-radius:inherit;
+height:100%;
+object-fit:cover;
+}
