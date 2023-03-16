@@ -4,8 +4,25 @@
 
 
 
-header,section,main,footer,article{
+
+body{
+padding:0;
+margin:0;
+font-family:'Poppins',sans-serif;
+/* background-color:var(--white-bg); */
+}
+
+header,section,footer,article{
 padding:2.5rem;
+}
+
+/* headings */
+h1,h2,h3,h4{
+text-transform:capitalize;
+}
+h3{
+font-size:1.2rem;
+font-weight:600;
 }
 /* p{
 margin-top:1rem;
