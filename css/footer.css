@@ -18,3 +18,9 @@ font-size:98%;
 margin-bottom:0.7rem;
 padding:0.5rem;
 }
+.site-footer p,
+.site-footer span,
+.site-footer small
+{
+color:var(--white-color)
+}
