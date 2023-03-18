@@ -1,0 +1,86 @@
+
+
+/* Header styles goes here */
+header{
+border:0px solid orange;
+}
+.header-container
+.logo-container{
+display:flex;
+flex-flow:row wrap;
+align-items:flex-start;
+}
+.header-container
+.logo-container>*{
+border:0px solid orange;
+}
+.header-container
+.logo-container>*:first-child{
+flex-basis:60px;
+}
+.header-container
+.logo-container>*:last-child{
+flex-basis:120px;
+}
+.header-container
+.logo-container>*:last-child p,
+.header-container
+.logo-container>*:last-child small
+{
+font-size:62%;
+color:#0F4625;
+font-weight:500;
+}
+.header-container
+.header-row{
+border:0px solid red;
+}
+.header-container
+.header-row{
+display:flex;
+flex-flow:row wrap;
+justify-content:space-between;
+/* gap:1%; */
+position: relative;
+}
+.header-container
+.header-row>*:last-child{
+flex-basis:4%;
+}
+.header-container
+.header-row>*:first-child{
+flex-basis:180px;
+}
+.header-container
+.header-row>*{
+/* flex-basis:48%; */
+}
+.header-container
+.header-row
+.navbar-container{
+position:absolute;
+border:1px solid #000;
+background-color:#010216;
+color:var(--white-color);
+top:0;
+left:0;
+z-index:-1;
+display:none;
+}
+
+
+
+
+
+.toggle-btn{
+cursor: pointer;
+color: #696969;;
+display:inline-block;
+font-size:1.4em;
+padding:6px 12px;
+}
+.toggle-btn:focus-within,
+.toggle-btn:hover
+{
+color:#000;
+}

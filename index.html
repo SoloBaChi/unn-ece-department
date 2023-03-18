@@ -5,9 +5,78 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="./css/index.css" rel="stylesheet">
-    <title>Department of Electronic Engineering UNN</title>
+    <title>Home - Department of Electronic Engineering UNN</title>
 </head>
 <body>
+ <!-- Welcome to ECE Department(Center Of Excellence), Excellence is our model 
+        ========Few Code Notes========
+        Note that these were written for the essence of code maintainability
+    :::::Frequently Used classes
+    1. page-container: this class was used in this code as a general wrapper for each page
+
+    ::::Responsive Design Pattern
+    The principle applied in the development of this site is mobile first principle
+    -->
+<div class="page-container">
+<header>
+    <div class="header-container">
+        <div class="header-row">
+        <div class="logo-container">
+            <div class="unn-logo">
+                <img src="./images/unn-logo.svg">
+            </div>
+            <div class="logo-text">
+               <div>
+                <p>University of Nigeria</p>
+               </div>
+               <div>
+                <p>Department of Electronic Engineering</p>
+                <small class="department-motto">...Center of Excellence....</small>
+               </div> 
+            </div>
+        </div>
+        <div>
+            <div class="toggle-btn">&#9776;</div>
+            <nav class="navbar-container">
+                <ul class="list-menu">
+                    <li class="list-item"><a href="./index.html">home</a></li>
+                    <li class="list-item dropdown"><a href="./programmes.html">programmes</a>
+                        <ul class="dropdowm-menu">
+                        <li> <a href="./programs/under-grad.html" target="_blank">undergraduate degree programmes</a></li>
+                        <li class="dropdown"> <a href="./programs/post-grad.html" target="_blank">postgraduate degree programmes</a>
+                            <ul class="dropdowm-menu">
+                             <li> <a href="./programs/msc-grad.html" target="_blank">M.Sc and M.Eng Degree Programmes</a></li>
+                             <li> <a href="./programs/phd-grad.html" target="_blank">Phd Degree Programmes</a></li>
+                            </ul>
+                        </li>
+                        </ul>
+                    </li>
+                    <li class="list-item dropdown"><a href="./staff.html">staff</a>
+                        <ul class="dropdowm-menu">
+                            <li><a href="./staffs/academicstaff.html">academic staff</a></li>
+                            <li><a href="./staffs/academicstaff.html">technical staff</a></li>
+                            <li><a href="./staffs/academicstaff.html">administrative staff</a></li>
+                        </ul>
+                    </li>
+                    <li class="list-item"><a href="./e-learning.html">e-learning</a></li>
+                    <li class="list-item dropdown"><a href="./research.html">research</a>
+                        <ul class="dropdowm-menu">
+                            <li><a href="./research/digital-elect.html">digital elctronics</a></li>
+                            <li><a href="./research/communication.html">communications</a></li>
+                            <li><a href="./research/digital-elect.html">control engineering</a></li>
+                        </ul>
+                    </li>
+                    <li class="list-item"><a href="./news.html">news &amp; events</a></li>
+                    <li class="list-item"><a href="./contactus.html">contact us</a></li>
+                    <li class="list-item"><a href="./aboutus.html">about us</a></li>
+                    <!-- <li><a href="#"><input type="search"></a></li> -->
+                </ul>
+            </nav>
+        </div>
+        </div>
+    </div>
+</header>
+
 
 <!--Description: main site section -->
 <main>
@@ -283,5 +352,6 @@
     	updateYear.innerText += date.getFullYear();
 
     </script>
+</div>
 </body>
 </html>
