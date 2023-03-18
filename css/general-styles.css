@@ -21,11 +21,15 @@ padding:2.5rem;
 h1,h2,h3,h4{
 text-transform:capitalize;
 }
-h2,h3{
+h1,h2,h3{
 color: #696984;
 font-weight:600;
 text-transform:uppercase;
-text-align:center;
+/* text-align:center; */
+}
+h1{
+font-size:1.8rem;
+font-weight:700;
 }
 h2{
 font-size:1.4rem;
@@ -115,3 +119,13 @@ mobile view: 0px - 480px;
 Tablet view 480px - 980px;
 Desktop view - 980px----
  */
+
+
+
+ @media(min-width:980px){
+h1,h2,h3{
+color: #696984;
+font-weight:600;
+text-transform:uppercase;
+text-align:center;
+ }

@@ -2,7 +2,7 @@
 
 /* Header styles goes here */
 header{
-border:0px solid orange;
+border:1px solid orange;
 }
 .header-container
 .logo-container{
@@ -46,14 +46,20 @@ position: relative;
 .header-container
 .header-row>*:last-child{
 flex-basis:4%;
+border:0px solid red;
+display:flex;
+align-items:flex-start;
+justify-content:space-between;
 }
+
 .header-container
 .header-row>*:first-child{
-flex-basis:180px;
+flex-basis:100px;
 }
 .header-container
 .header-row>*{
 /* flex-basis:48%; */
+border:0px solid green;
 }
 .header-container
 .header-row
@@ -77,10 +83,50 @@ cursor: pointer;
 color: #696969;;
 display:inline-block;
 font-size:1.4em;
-padding:6px 12px;
+padding:0px 12px 6px;
 }
 .toggle-btn:focus-within,
 .toggle-btn:hover
 {
 color:#000;
+}
+
+
+
+
+
+
+/* =================================================
+===========================MEDIA QUERIES============ 
+Break points 0px - 480px -980px;
+*/
+
+/* 
+************not part standard of the standard break points*******
+for the header theme icon 
+*/
+/*===========================mini Tablet==================== */
+@media(min-width:320px){
+.header-container
+.header-row>*:first-child{
+flex-basis:140px;
+}
+}
+
+
+
+/* ======================Tablet Device =============== */
+@media(min-width:480px){
+.header-container
+.header-row>*:first-child{
+flex-basis:180px;
+}
+}
+
+
+
+
+/* =========================Deskktop Device================= */
+@media(min-width:980px){
+
 }

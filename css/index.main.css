@@ -169,20 +169,32 @@
     margin-bottom:2em;
     }
     .our-research
-    .place-right figure{
+    .section-row >*{
+    margin-bottom:2em;
+    }
+    .our-research
+    .section-row >*:last-child{
+    margin-bottom:6em;
+    }
+    .our-research
+    .place-right 
+    figure{
     position: relative;
     }
     .our-research
-    .place-right figure::after,
+    .place-right 
+    figure::after,
     .our-research
-    .place-right figure::before
+    .place-right 
+    figure::before
     {
     position:absolute;
     border-radius:14px;
     z-index:1000;
     }
     .our-research
-    .place-right figure::before{
+    .place-right 
+    figure::before{
     content:'';
     width:100px;
     height:100px;
@@ -193,7 +205,8 @@
     }
     
     .our-research
-    .place-right figure::after{
+    .place-right 
+    figure::after{
     content:'';
     width:150px;
     height:150px;
@@ -303,7 +316,9 @@
     bottom:10px;
     background: #28781C;
     }
-    .recent-awards .display-card .img-container{
+    .recent-awards 
+    .display-card 
+    .img-container{
     height:100%;
     width:100%;
     border-radius:50%;
