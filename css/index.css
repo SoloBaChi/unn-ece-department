@@ -103,6 +103,7 @@ position:absolute;
 top:-5%;
 left:50%;
 transform:translate(-50%,-50%);
+border:2px outset #f8f8f8;
 }
 .staff-members
 .card-row 
