@@ -1,6 +1,6 @@
 
 .site-footer{
-background:#0f4625;
+background:var(--green-background);
 color:var(--white-color);
 }
 .footer-col{

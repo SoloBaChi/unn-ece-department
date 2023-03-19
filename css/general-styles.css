@@ -10,7 +10,8 @@ body{
 padding:0;
 margin:0;
 font-family:'Poppins',sans-serif;
-/* background-color:var(--white-bg); */
+background:var(--background-color);
+transition:background 0.5s ease;
 }
 
 header,section,footer,article{
@@ -46,7 +47,7 @@ span{
 font-size:0.9rem;
 }
 p,span,small{
-color:#696984;
+color:var(--color)
 }
 /* p{
 margin-top:1rem;
