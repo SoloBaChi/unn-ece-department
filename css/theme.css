@@ -1,16 +1,40 @@
 :root{
 --white-color:#fff;
---black-color:#000;
---box-shadow:2px 2px 5px 1px rgba(0, 0, 0, 0.25)
+--black-color:#000000;
+--box-shadow:2px 2px 5px 1px rgba(0, 0, 0, 0.25);
+--green:#0f4625;
 }
+.dark-theme{
+--background-color:var(--black-color);
+--green-background:var(--green);
+--color:#696969;
+--hover-color:var(--white-color);
+--logo-text-color:#696984;
+--theme-icon-color:#ddd;
+}
+
+.light-theme{
+--background-color:var(--white-color);
+--green-background:var(--green);
+--color:#696969;
+--hover-color:var(--black-color);
+--logo-text-color:var(--green);
+--theme-icon-color:var(--green)
+}
+
+
 
 
 
 /* Theme icon */
 .light-theme-icon{
 cursor: pointer;
-color: #696969;;
+color: #696969;
 display:inline-block;
 font-size:1.4em;
 padding:2px 12px 6px;
+}
+.light-theme-icon
+.light-icon path{
+fill:var(--theme-icon-color);
 }
