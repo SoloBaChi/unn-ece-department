@@ -41,7 +41,7 @@ display:flex;
 flex-flow:row wrap;
 justify-content:space-between;
 /* gap:1%; */
-position: relative;
+/* position: relative; */
 }
 .header-container
 .header-row>*:last-child{
@@ -65,18 +65,29 @@ border:0px solid green;
 .header-row
 .navbar-container{
 position:absolute;
-border:1px solid #000;
 background-color:#010216;
 color:var(--white-color);
+width:100%;
+/* height:100vh; */
 top:0;
 left:0;
-z-index:-1;
-display:none;
+/* z-index:-1; */
+/* display:none; */
+z-index:1010;
+padding:0;
+transform-origin:top right;
+transform:scale(0,1);
+transition:transform 0.5s ease;
 }
 
 
 
 
+
+
+
+
+/* ======toggle button Mobile view styles======= */
 
 .toggle-btn{
 cursor: pointer;
@@ -84,12 +95,70 @@ color: #696969;;
 display:inline-block;
 font-size:1.4em;
 padding:0px 12px 6px;
+z-index:1000;
 }
 .toggle-btn:focus-within,
 .toggle-btn:hover
 {
 color:var(--hover-color)
 }
+.header-container
+.close-toggle-btn {
+text-align:right;
+}
+.header-container
+.close-toggle-btn 
+span{
+color:#fff;
+font-weight:600;
+font-size:1.1rem;
+cursor:pointer;
+padding:2px 12px;
+}
+.header-container
+.header-row
+.show-toggle-menu{
+transform:scale(1);
+}
+.header-container
+.header-row
+.close-toggle-menu{
+transform:scale(0,1)
+}
+.header-container
+.header-row
+.disable-scroll{
+overflow-y:hidden;
+border:1px solid hotpink;
+}
+
+
+
+/* ==========header menu links and nested links (navbar)====== */
+.header-container
+.header-row
+.navbar-container{
+background-color:var(--green);
+}
+.header-container
+.header-row
+.navbar-container
+a
+{
+color:var(--white-color);
+display:block;
+padding:1.2rem;
+font-size:0.85rem;
+font-weight:400;
+}
+
+
+
+
+
+
+
+
 
 
 
