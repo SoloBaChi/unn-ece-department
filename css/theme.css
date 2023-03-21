@@ -1,7 +1,6 @@
 :root{
 --white-color:#fff;
 --black-color:#000000;
---box-shadow:2px 2px 5px 1px rgba(0, 0, 0, 0.25);
 --green:#0f4625;
 }
 .dark-theme{
@@ -10,7 +9,9 @@
 --color:#696969;
 --hover-color:var(--white-color);
 --logo-text-color:#696984;
---theme-icon-color:#ddd;
+--dark-theme:none;
+--white-theme:inline-block;
+--box-shadow:2px 2px 5px 1px rgba(255, 255, 255, 0.75),-2px -2px 5px 1px rgba(255, 255, 255, 0.75);
 }
 
 .light-theme{
@@ -19,7 +20,9 @@
 --color:#696969;
 --hover-color:var(--black-color);
 --logo-text-color:var(--green);
---theme-icon-color:var(--green)
+--dark-theme:inlline-block;
+--white-theme:none;
+--box-shadow:2px 2px 5px 1px rgba(0, 0, 0, 0.25);
 }
 
 
@@ -34,7 +37,17 @@ display:inline-block;
 font-size:1.4em;
 padding:2px 12px 6px;
 }
-.light-theme-icon
+/* .light-theme-icon
 .light-icon path{
 fill:var(--theme-icon-color);
+} */
+
+/* ============when dark mode is enabled============*/
+.black-theme{
+display:var(--dark-theme);
+}
+
+/* =============when light mode is enabled=========== */
+.white-theme{
+display:var(--white-theme);
 }

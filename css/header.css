@@ -178,7 +178,7 @@ for the header theme icon
 @media(min-width:320px){
 .header-container
 .header-row>*:first-child{
-flex-basis:140px;
+flex-basis:130px;
 }
 }
 
@@ -189,6 +189,10 @@ flex-basis:140px;
 .header-container
 .header-row>*:first-child{
 flex-basis:180px;
+}
+.header-container
+.header-row>*:last-child{
+gap:1.8rem;
 }
 }
 
