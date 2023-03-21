@@ -1,7 +1,7 @@
 
 // Theme code sniippet
 
-const toggleThemeBtn = document.querySelector(".light-theme-icon .light-icon")
+const toggleThemeButtons = document.querySelectorAll(".light-theme-icon .light-icon")
 const currentTheme = localStorage.getItem("theme");
 
 //check if the currentTheme is white
@@ -10,6 +10,7 @@ if(currentTheme == 'light'){
 }
 
 // add a click event to the toggleThemeBtn
+for(let toggleThemeBtn of toggleThemeButtons ){
 toggleThemeBtn.addEventListener('click',()=>{
  document.body.classList.toggle("light-theme")
  let theme  = "dark";
@@ -20,3 +21,4 @@ toggleThemeBtn.addEventListener('click',()=>{
  //set theme to dark || return theme in dark mode
  localStorage.setItem("theme",theme)
 })
+}
