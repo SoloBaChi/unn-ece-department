@@ -3,10 +3,45 @@
 
 /* 
 =======================================================
+===================Carousel section================ 
+*/
+.carousel-section{
+border:1px solid red;
+padding:0;
+}
+.carousel-section
+.carousel-container{
+border:1px solid blue;
+height:240px;
+width:100%;
+}
+.carousel-section
+.carousel-container
+.carousel-card{
+height:inherit;
+}
+.carousel-section
+.carousel-container
+.img-container{
+height:inherit;
+}
+.carousel-section
+.carousel-container
+.img-container img{
+height:100%;
+}
+
+
+
+
+/* 
+=======================================================
 ===================Brief History section================ 
 */
-.brief-history{
+   .brief-history{
     border:0px solid red;
+    position: relative;
+    z-index:1000;
     }
     .brief-history h2{
     margin-bottom:2em;
@@ -20,7 +55,28 @@
     color:var(--white-color);
     padding:0.1rem;
     }
+    .brief-history
+    .circle-shape{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    z-index:-1;
+    }
+    .brief-history
+    .circle-shape
+    .circle {
+    height:245px;
+    width:245px;
+    display:inline-block;
     
+    }
+    .brief-history
+    .circle-shape
+    .circle circle{
+    height:100%;
+    width:100%;
+    }
     
     
     /* 
