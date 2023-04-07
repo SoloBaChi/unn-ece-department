@@ -1,35 +1,7 @@
 /* index html styles */
 
 
-/* 
-=======================================================
-===================Carousel section================ 
-*/
-.carousel-section{
-border:1px solid red;
-padding:0;
-}
-.carousel-section
-.carousel-container{
-border:1px solid blue;
-height:240px;
-width:100%;
-}
-.carousel-section
-.carousel-container
-.carousel-card{
-height:inherit;
-}
-.carousel-section
-.carousel-container
-.img-container{
-height:inherit;
-}
-.carousel-section
-.carousel-container
-.img-container img{
-height:100%;
-}
+
 
 
 

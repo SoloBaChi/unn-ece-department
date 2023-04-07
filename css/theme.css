@@ -7,17 +7,20 @@
 --background-color:var(--black-color);
 --green-background:var(--green);
 --color:#696969;
+--carousel-dot:#00ffff;
 --hover-color:var(--white-color);
 --logo-text-color:#696984;
 --dark-theme:none;
 --white-theme:inline-block;
 --box-shadow:2px 2px 5px 1px rgba(255, 255, 255, 0.75),-2px -2px 5px 1px rgba(255, 255, 255, 0.75);
+
 }
 
 .light-theme{
 --background-color:var(--white-color);
 --green-background:var(--green);
 --color:#696969;
+--carousel-dot:#32cd32;
 --hover-color:var(--black-color);
 --logo-text-color:var(--green);
 --dark-theme:inlline-block;
