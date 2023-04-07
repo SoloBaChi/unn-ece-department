@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"/>
     <link href="./css/index.css" rel="stylesheet">
     <title>Home - Department of Electronic Engineering UNN</title>
 </head>
@@ -30,7 +33,7 @@
                 <p>University of Nigeria</p>
                </div>
                <div>
-                <p>Department of Electronic Engineering</p>
+                <p>Department of Electronic and Computer Engineering</p>
                 <small class="department-motto">Center of Excellence...</small>
                </div> 
             </div>
@@ -92,16 +95,16 @@
 <!--Description: main site section -->
 <main>
 <section class="welcome-text">
-    <h1>welcome to electronic engineering</h1>
+    <h1>welcome to electronic and computer engineering</h1>
 </section>
 
 <!-- Description; Banner -->
-<section class="carousel-section sliding-banner-images">
+<section class="owl-carousel carousel-section " id="sliding-banner-images">
     <!-- cariusel-1 -->
     <div class="carousel-container">
         <div class="carousel-card">
             <div class="img-container">
-                <img src="./images/banner-img1.svg" alt="banner image">
+                <img src="./images/lecturer-2.jpg" alt="banner image">
             </div>
         </div>
     </div>
@@ -109,7 +112,7 @@
     <div class="carousel-container">
         <div class="carousel-card">
             <div class="img-container">
-                <img src="./images/banner-img1.svg" alt="banner image">
+                <img src="./images/carousel-img.jpg" alt="banner image">
             </div>
         </div>
     </div>
@@ -117,7 +120,7 @@
     <div class="carousel-container">
         <div class="carousel-card">
             <div class="img-container">
-                <img src="./images/banner-img1.svg" alt="banner image">
+                <img src="./images/carousel-img.jpg" alt="banner image">
             </div>
         </div>
     </div>
@@ -125,7 +128,7 @@
     <div class="carousel-container">
         <div class="carousel-card">
             <div class="img-container">
-                <img src="./images/banner-img1.svg" alt="banner image">
+                <img src="./images/carousel-img.jpg" alt="banner image">
             </div>
         </div>
     </div>
@@ -404,6 +407,7 @@
 </footer>
 <script src="./js/theme.js"></script>
 <script src="./js/index.js"></script>
+<script src="./js/owl.carousel.js"></script>
 
 <script>
     	const updateYear = document.getElementById("updated-year");

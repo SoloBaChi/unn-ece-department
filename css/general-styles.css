@@ -2,9 +2,12 @@
 @import url("header.css");
 @import url("footer.css");
 @import url("theme.css");
+@import url("owl-carousel.css");
 
 
-
+/* html{
+overflow-x:hidden;
+} */
 
 body{
 padding:0;
@@ -17,7 +20,12 @@ transition:background 0.5s ease;
 header,section,footer,article{
 padding:2.5rem;
 }
-
+main{
+padding:2rem;
+}
+main section{
+padding:0;
+}
 /* headings */
 h1,h2,h3,h4{
 text-transform:capitalize;
@@ -130,3 +138,7 @@ font-weight:600;
 text-transform:uppercase;
 text-align:center;
  }
+main section{
+padding:2.5rem;
+}
+}
