@@ -15,6 +15,7 @@ margin:0;
 font-family:'Poppins',sans-serif;
 background:var(--background-color);
 transition:background 0.5s ease;
+/* overflow-y:hidden; */
 }
 
 header,section,footer,article{
@@ -114,7 +115,6 @@ line-height:1.8;
 
 
 
-
 /* 
 =============================================
 ==============GENERAL MEDIA QEURIES==========
@@ -127,8 +127,8 @@ The following breakpoints were used to implement this
 mobile view: 0px - 480px;
 Tablet view 480px - 980px;
 Desktop view - 980px----
+large Desktop 1800px -----
  */
-
 
 
  @media(min-width:980px){
@@ -140,5 +140,30 @@ text-align:center;
  }
 main section{
 padding:2.5rem;
+}
+.flex-2,
+.flex-4
+{
+display:flex;
+flex-flow:row wrap;
+gap:4%;
+/* justify-content:center; */
+}
+ .flex-2>*{
+flex-basis:48%;
+}
+.flex-4{
+justify-content:space-evenly;
+}
+.flex-4>*{
+flex-basis:22%;
+}
+}
+
+
+@media(min-width:1800px){
+.flex-2>*{
+flex-basis:22%;
+
 }
 }
