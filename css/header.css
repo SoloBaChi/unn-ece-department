@@ -2,7 +2,7 @@
 
 /* Header styles goes here */
 header{
-border:0px solid orange;
+position: relative;
 }
 .header-container
 .logo-container{
