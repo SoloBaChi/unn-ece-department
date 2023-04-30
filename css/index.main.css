@@ -132,8 +132,8 @@
     }
     .staff-members
     .card-row 
-    .member-card>*{
-    margin-bottom:4em;
+    .member-card>*>*>*{
+    margin-bottom:0.9em;
     }
     .staff-members
     .card-row 
@@ -366,3 +366,36 @@
     height:100%;
     object-fit:cover;
     }
+
+
+
+
+
+
+
+
+
+
+    /* 
+=============================================
+==============MEDIA QEURIES==========
+The following breakpoints were used to implement this
+mobile view: 0px - 480px;
+Tablet view 480px - 980px;
+Desktop view - 980px----
+large Desktop 1800px -----
+ */
+
+
+ @media(min-width:980px){
+   .staff-members
+   .card-row .card-col{
+    height:280px;
+    }
+
+   }
+   
+   
+   @media(min-width:1800px){
+ 
+   }

@@ -6,15 +6,16 @@
         const navbarContainer = document.querySelector(".navbar-container");
 
 
-        console.log(toggleBtn)
-        console.log(closeToggleBtn)
-        console.log(navbarContainer)
+        // console.log(toggleBtn)
+        // console.log(closeToggleBtn)
+        // console.log(navbarContainer)
         toggleBtn.addEventListener("click",(e)=>{
         if(navbarContainer.classList.contains('close-toggle-menu')){
-        navbarContainer.classList.remove("close-toggle-menu")
+        navbarContainer.classList.remove("close-toggle-menu");
         }
-        navbarContainer.classList.add("show-toggle-menu")
-        console.log(e.target)
+        navbarContainer.classList.add("show-toggle-menu");
+        // console.log(e.target)
+        document.body.style.overflowY = 'hidden';
         })
 
         //disable scroll option
@@ -26,4 +27,6 @@
         // close the toggle menu
         closeToggleBtn.addEventListener("click",()=>{
         navbarContainer.classList.add("close-toggle-menu");
+        document.body.style.overflowY = 'auto';
         })
+        
