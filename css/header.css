@@ -90,7 +90,7 @@ transition:transform 0.5s ease;
 
 .toggle-btn{
 cursor: pointer;
-color: #696969;;
+color: #696969;
 display:inline-block;
 font-size:1.4em;
 padding:0px 12px 6px;
@@ -99,7 +99,7 @@ z-index:1000;
 .toggle-btn:focus-within,
 .toggle-btn:hover
 {
-color:var(--hover-color)
+color:var(--hover-color);
 }
 .header-container
 .close-toggle-btn {
@@ -122,14 +122,9 @@ transform:scale(1);
 .header-container
 .header-row
 .close-toggle-menu{
-transform:scale(0,1)
+transform:scale(0,1);
 }
-.header-container
-.header-row
-.disable-scroll{
-overflow-y:hidden;
-border:1px solid hotpink;
-}
+
 
 
 
@@ -149,6 +144,48 @@ display:block;
 padding:1.2rem;
 font-size:0.85rem;
 font-weight:400;
+}
+.navbar-container
+.list-menu
+.dropdown{
+position: relative;
+/* z-index:998; */
+}
+.list-menu
+.dropdown
+.dropdown-menu,
+.list-menu
+.dropdown
+.dropdown-menu .dropdown-menu{
+transform:scale(1,0);
+transform-origin:top center;
+transition:0.5s ease;
+visibility:hidden;
+position:absolute;
+top:40px;
+/* width:100%; */
+background-color:var(--green);
+z-index:1010;
+}
+.list-menu
+.dropdown
+.dropdown-menu .dropdown-menu{
+
+}
+.navbar-container
+.list-menu
+.dropdown:hover .dropdown-menu,
+.navbar-container
+.list-menu
+.dropdown .dropdown:hover .dropdown-menu{
+transform:scale(1);
+visibility: visible;
+}
+.list-menu
+.dropdown
+.dropdown-menu
+a{
+padding:0.4rem 2rem;
 }
 
 
