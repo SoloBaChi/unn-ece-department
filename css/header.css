@@ -157,7 +157,7 @@ z-index:998;
 .dropdown-menu{
 transform:scale(1,0);
 transform-origin:top center;
-transition:0.5s ease;
+transition:transform 0.5s ease;
 visibility:hidden;
 /* position:absolute; */
 height:0;
@@ -234,7 +234,7 @@ gap:1.8rem;
 /* =========================Deskktop Device================= */
 @media(min-width:980px){
 .header-container{
-border:1px solid red;
+border:0px solid yellow;
 padding:1rem;
 }
 .header{
@@ -270,6 +270,7 @@ visibility:visible;
 display:flex;
 /* justify-content:center; */
 /* padding:1rem; */
+
 }
 .header-container
 .header-row>*:first-child,
@@ -281,6 +282,7 @@ flex-basis:80%;
 .header-container
 .header-row>*:first-child{
 flex-basis:20%;
+margin-right:auto;
 }
 /* already done above */
 /* .header-container
@@ -294,7 +296,7 @@ padding:0px;
 .header-row>*:last-child{
 align-items:flex-start;
 justify-content:flex-start;
-border:3px solid teal;
+border:0px solid teal;
 /* flex-flow:row wrap; */
 }
 /* .header-container
@@ -308,7 +310,6 @@ order:1;
 .header-container
 .header-row>*:last-child>*:nth-child(2){
 order:3;
-border:1px solid red;
 }
 .header-container
 .header-row
@@ -316,16 +317,42 @@ border:1px solid red;
 display:flex;
 /* flex-flow:row wrap; */
 align-items:center;
-border:1px solid red;
+border:0px solid lime;
+background-color:var(--background-color);
 }
 .header-container
 .header-row
 .list-menu>*{
 /* flex-basis:12%; */
 }
+
 .navbar-container
 .list-menu
 .dropdown{
+border:0px solid red;
+}
+.navbar-container
+.list-menu
+.dropdown:hover .dropdown-menu{
+border:0px solid red;
+width:260px;
+background-color:#FDFDFD;
+padding:0.4rem;
+border-radius:5px;
+-o-box-shadow:1px 1px 0px rgba(0,0,0,0.1),-1px -1px 0px rgba(0,0,0,0.1);
+-moz-box-shadow:1px 1px 0px rgba(0,0,0,0.1),-1px -1px 0px rgba(0,0,0,0.1);
+-webkit-box-shadow:1px 1px 0px rgba(0,0,0,0.1),-1px -1px 0px rgba(0,0,0,0.1);
+box-shadow:1px 1px 0px rgba(0,0,0,0.1),-1px -1px 0px rgba(0,0,0,0.1);
+color:#A7A7A7;
+}
+.navbar-container
+.list-menu
+.dropdown:hover .dropdown-menu a,
+.navbar-container
+.list-menu
+.dropdown:hover .dropdown-menu .fa-caret-down
+{
+color:var(--color)
 }
 .list-menu
 .dropdown
@@ -349,5 +376,7 @@ color:var(--link-text-color);
 .dropdown-menu
 a{
 padding:initial;
+border:0px solid red;
+margin-bottom:0.5rem;
 }
 }
