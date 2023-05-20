@@ -46,7 +46,6 @@ justify-content:space-between;
 .header-container
 .header-row>*:last-child{
 flex-basis:4%;
-border:0px solid red;
 display:flex;
 align-items:flex-start;
 justify-content:space-between;
@@ -72,11 +71,13 @@ height:100vh;
 top:0;
 left:0;
 z-index:1010;
-padding:0;
+padding:1rem;
 transform-origin:top right;
 transform:scale(0,1);
+visibility:hidden;
 transition:transform 0.5s ease;
 /* height:100%; */
+border:0px solid red;
 }
 
 
@@ -118,6 +119,7 @@ padding:2px 12px;
 .header-row
 .show-toggle-menu{
 transform:scale(1);
+visibility:visible;
 }
 .header-container
 .header-row
@@ -156,7 +158,7 @@ z-index:998;
 .dropdown-menu{
 transform:scale(1,0);
 transform-origin:top center;
-transition:0.5s ease;
+transition:transform 0.5s ease;
 visibility:hidden;
 /* position:absolute; */
 height:0;
@@ -169,11 +171,16 @@ background-color:var(--green);
 }
 .navbar-container
 .list-menu
-.dropdown:hover .dropdown-menu{
+.dropdown:hover > .dropdown-menu{
 transform:scale(1);
 visibility: visible;
 background-color:var(--green);
 height:auto;
+}
+.navbar-container
+.list-menu
+.dropdown:hover > .dropdown-menu .dropdown > .dropdown-menu{
+border:0px solid red;
 }
 .list-menu
 .dropdown
@@ -224,6 +231,7 @@ flex-basis:180px;
 .header-row>*:last-child{
 gap:1.8rem;
 }
+
 }
 
 
@@ -231,5 +239,147 @@ gap:1.8rem;
 
 /* =========================Deskktop Device================= */
 @media(min-width:980px){
+.header-container{
+border:0px solid yellow;
+padding:1rem;
+}
+.header{
+padding: 0px;
+}
+/* 
+Turn off the toggle button 
+*/
+.toggle-btn{
+display:none;
+}
+.close-toggle-btn{
+display:none;
+}
+.header-container
+.header-row
+.navbar-container{
+position:static;
+background-color:#010216;
+color:var(--white-color);
+width:initial;
+height:auto;
+z-index:1010;
+padding:0;
+transform-origin:initial;
+transform:none;
+transition:initial;
+/* display:flex; */
+visibility:visible;
+}
+.header-container
+.header-row{
+display:flex;
+/* justify-content:center; */
+/* padding:1rem; */
 
+}
+.header-container
+.header-row>*:first-child,
+.header-container
+.header-row>*:last-child
+{
+flex-basis:85%;
+}
+.header-container
+.header-row>*:first-child{
+flex-basis:15%;
+margin-right:auto;
+}
+/* already done above */
+/* .header-container
+.header-row>*:last-child{
+border:2px solid cyan;
+display:flex;
+align-items:center;
+padding:0px;
+} */
+.header-container
+.header-row>*:last-child{
+align-items:flex-start;
+justify-content:flex-start;
+border:0px solid teal;
+/* flex-flow:row wrap; */
+}
+/* .header-container
+.header-row>*:last-child>*{
+flex-basis:48%;
+} */
+.header-container
+.header-row>*:last-child>*:last-child{
+order:1;
+}
+.header-container
+.header-row>*:last-child>*:nth-child(2){
+order:3;
+}
+.header-container
+.header-row
+.list-menu{
+display:flex;
+/* flex-flow:row wrap; */
+align-items:center;
+border:0px solid lime;
+background-color:var(--background-color);
+}
+
+
+.navbar-container
+.list-menu
+.dropdown{
+border:0px solid red;
+}
+.navbar-container
+.list-menu
+.dropdown:hover .dropdown-menu{
+border:0px solid red;
+min-width:270px;
+background-color:#FDFDFD;
+padding:0.4rem;
+border-radius:5px;
+-o-box-shadow:1px 1px 0px rgba(0,0,0,0.1),-1px -1px 0px rgba(0,0,0,0.1);
+-moz-box-shadow:1px 1px 0px rgba(0,0,0,0.1),-1px -1px 0px rgba(0,0,0,0.1);
+-webkit-box-shadow:1px 1px 0px rgba(0,0,0,0.1),-1px -1px 0px rgba(0,0,0,0.1);
+box-shadow:1px 1px 0px rgba(0,0,0,0.1),-1px -1px 0px rgba(0,0,0,0.1);
+color:#A7A7A7;
+}
+.navbar-container
+.list-menu
+.dropdown:hover .dropdown-menu a,
+.navbar-container
+.list-menu
+.dropdown:hover .dropdown-menu .fa-caret-down
+{
+color:var(--color);
+text-align:justify;
+}
+.list-menu
+.dropdown
+.dropdown-menu{
+position:absolute;
+}
+.header-container
+.header-row
+.navbar-container{
+background-color:var(--background-color);
+}
+.header-container
+.header-row
+.navbar-container
+a{
+padding:0.7rem;
+color:var(--link-text-color);
+}
+.list-menu
+.dropdown
+.dropdown-menu
+a{
+padding:initial;
+border:0px solid red;
+padding-bottom:0.7rem;
+}
 }
