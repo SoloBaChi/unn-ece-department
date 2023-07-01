@@ -1,0 +1,31 @@
+.admission-requirements 
+.know-more{
+/* border:1px solid red; */
+}
+.admission-requirements  h3{
+text-align:left;
+}
+.admission-requirements 
+.know-more a{
+display:block;
+padding:0.35rem 0.7rem;
+color:var(--color);
+font-style:italic;
+margin-bottom:1rem;
+}
+.admission-requirements 
+.know-more{
+position: relative;
+}
+.admission-requirements 
+.know-more::after{
+content:"";
+display:inline-block;
+position:absolute;
+width:5px;
+background:var(--green);
+height:95%;
+top:0;
+left:0;
+border-radius:8px;
+}

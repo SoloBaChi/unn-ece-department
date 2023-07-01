@@ -1,32 +1,33 @@
-//toggleBtn script
+    
+        /*
+        =========================================
+        Script written for ECE UNN WEBSITE
+        ===================================
+         */
+       
         //get open and close toggleBtns
-        
         const toggleBtn = document.getElementById("toggle-btn");
         const closeToggleBtn = document.querySelector(".close-toggle-btn");
         const navbarContainer = document.querySelector(".navbar-container");
 
 
-        // console.log(toggleBtn)
-        // console.log(closeToggleBtn)
-        // console.log(navbarContainer)
+        //open navabr container when the button is toggle
         toggleBtn.addEventListener("click",(e)=>{
         if(navbarContainer.classList.contains('close-toggle-menu')){
         navbarContainer.classList.remove("close-toggle-menu");
         }
         navbarContainer.classList.add("show-toggle-menu");
-        // console.log(e.target)
-        document.body.style.overflowY = 'hidden';
         })
 
-        //disable scroll option
-        /*toggleBtn.addEventListener("scroll",(e)=>{
-         navbarContainer.classList.add("disable-scroll");
-         e.preventDefault()
-        })*/
+        //remove the navbar menu on scroll
+        window.onscroll = () => {
+        if(window.scrollY > 600){
+        navbarContainer.classList.add("close-toggle-menu")
+        }
+        }
 
         // close the toggle menu
         closeToggleBtn.addEventListener("click",()=>{
         navbarContainer.classList.add("close-toggle-menu");
-        document.body.style.overflowY = 'auto';
         })
         
