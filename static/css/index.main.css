@@ -21,11 +21,12 @@
     
     .brief-history
     .history-contents >*::first-letter{
-    font-weight:600;
+    font-weight:700;
     /* background-color:#28781C; */
     background-color:#696969;
     color:var(--white-color);
     padding:0.1rem;
+    /* font-size:1.2rem; */
     }
     .brief-history
     .circle-shape{
