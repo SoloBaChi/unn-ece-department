@@ -1,8 +1,10 @@
 @import url("boilerplate.css");
 @import url("header.css");
-@import url("footer.css");
 @import url("theme.css");
 @import url("owl-carousel.css");
+@import url("footer.css");
+@import url("e-learning.css");
+@import url("aboutus.css");
 
 
 /* html{
@@ -17,7 +19,10 @@ background:var(--background-color);
 /* transition:background 0.5s ease; */
 /* overflow-y:hidden; */
 }
-
+*::selection{
+background:var(--green-background);
+color:var(--white-color);
+}
 header,section,footer,article{
 padding:2.5rem;
 }
@@ -29,13 +34,11 @@ padding:0;
 }
 /* headings */
 h1,h2,h3,h4{
-text-transform:capitalize;
-}
-h1,h2,h3{
 color: #696984;
 font-weight:600;
 text-transform:uppercase;
 /* text-align:center; */
+margin-bottom:1rem;
 }
 h1{
 font-size:1.8rem;
@@ -45,7 +48,7 @@ h2{
 font-size:1.4rem;
 }
 h3{
-font-size:1.2rem;
+font-size:1.1rem;
 font-weight:600;
 }
 h4{
