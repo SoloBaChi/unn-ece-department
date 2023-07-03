@@ -1,0 +1,24 @@
+{
+  "name": "unn-ece-department",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "format": "prettier --write \"templates/**/*.{html,js}\"",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SoloBaChi/unn-ece-department.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SoloBaChi/unn-ece-department/issues"
+  },
+  "homepage": "https://github.com/SoloBaChi/unn-ece-department#readme",
+  "dependencies": {
+    "prettier": "^2.8.8"
+  }
+}
