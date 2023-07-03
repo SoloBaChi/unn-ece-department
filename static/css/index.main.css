@@ -1,383 +1,288 @@
 /* index html styles */
 
-
-
-
-
-
-
 /* 
 =======================================================
 ===================Brief History section================ 
 */
-   .brief-history{
-    border:0px solid red;
-    position: relative;
-    z-index:1000;
-    }
-    .brief-history h2{
-    margin-bottom:2em;
-    }
-    
-    .brief-history
-    .history-contents >*::first-letter{
-    font-weight:700;
-    /* background-color:#28781C; */
-    background-color:#696969;
-    color:var(--white-color);
-    padding:0.1rem;
-    /* font-size:1.2rem; */
-    }
-    .brief-history
-    .circle-shape{
-    position:absolute;
-    top:50%;
-    left:50%;
-    transform:translate(-50%,-50%);
-    z-index:-1;
-    }
-    .brief-history
-    .circle-shape
-    .circle {
-    height:245px;
-    width:245px;
-    display:inline-block;
-    
-    }
-    .brief-history
-    .circle-shape
-    .circle circle{
-    height:100%;
-    width:100%;
-    }
-    
-    
-    /* 
+.brief-history {
+  border: 0px solid red;
+  position: relative;
+  z-index: 1000;
+}
+.brief-history h2 {
+  margin-bottom: 2em;
+}
+
+.brief-history .history-contents > *::first-letter {
+  font-weight: 700;
+  /* background-color:#28781C; */
+  background-color: #696969;
+  color: var(--white-color);
+  padding: 0.1rem;
+  /* font-size:1.2rem; */
+}
+.brief-history .circle-shape {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+}
+.brief-history .circle-shape .circle {
+  height: 245px;
+  width: 245px;
+  display: inline-block;
+}
+.brief-history .circle-shape .circle circle {
+  height: 100%;
+  width: 100%;
+}
+
+/* 
     =======================================================
     ===================Staff Members section================ 
     */
-    .staff-members{
-    border:0px solid red;
-    min-height:240px;
-    }
-    .staff-members 
-    .member{
-    height:100%;
-    /* max-width:240px; */
-    /* border:1px solid red; */
-    }
-    .staff-members 
-    .member h2{
-    text-align:center;
-    }
-    .staff-members 
-    .member h4{
-    text-align:center;
-    }
-    .staff-members 
-    .member>*:first-child{
-    margin-bottom:8em;
-    }
-    .staff-members 
-    .member>*{
-    margin-bottom:4em;
-    border:0px solid red;
-    }
-    .staff-members 
-    .member>*:last-child{
-    margin-bottom:0;
-    }
-    .staff-members
-    .card-row{
-    height:100%;
-    /* padding:4rem; */
-    }
-    .staff-members
-    .card-row>*{
-    margin-bottom:8em;
-    }
-    .staff-members
-    .card-row>*:last-child{
-    margin-bottom:4em;
-    }
-    .staff-members
-    .card-row .card-col{
-    /* height:440px; */
-    /* border:2px solid purple; */
-    height:100%;
-    }
-    .staff-members
-    .card-row 
-    .member-card{
-    border:0px solid orange;
-    padding:1rem;
-    background-color:var(--white-color);
-    -webkit-box-shadow:var(--box-shadow);
-    -moz-box-shadow:var(--box-shadow);
-    -o-box-shadow:var(--box-shadow);
-    box-shadow:var(--box-shadow);
-    position:relative;
-    height:100%;
-    }
-    .card-row
-    .img-container{
-    height:120px;
-    width:120px;
-    border-radius:50%;
-    overflow:hidden;
-    position:absolute;
-    top:-5%;
-    left:50%;
-    transform:translate(-50%,-50%);
-    border:2px outset #f8f8f8;
-    }
-    .staff-members
-    .card-row 
-    .member-card>*>*>*{
-    margin-bottom:0.9em;
-    }
-    .staff-members
-    .card-row 
-    .member-card>*:last-child{
-    padding:4em 0 0 0;
-    margin-bottom:0;
-    text-align:center;
-    }
-    .staff-members
-    .card-row 
-    .member-card>*:last-child >*{
-    border:0px solid green;
-    margin-bottom:0.5rem;
-    }
-    .staff-members
-    .card-row 
-    .img-container img{
-    height:100%;
-    object-fit:cover;
-    }
-    .staff-members
-    .card-row 
-    .bio-section{
-    text-align:center;
-    display:inline-block;
-    margin:1rem 0 0 0;
-    }
-    .staff-members
-    .card-row 
-    .cta-btn{
-    background: rgba(140, 187, 132, 0.38);
-    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25),0px -2px 1px rgba(0, 0, 0, 0.25);
-    width:80px;
-    padding:0.4em;
-    text-transform:uppercase;
-    font-weight:600;
-    cursor:pointer;
-    }
-    .staff-members
-    .card-row 
-    .cta-btn span{
-    font-size:75%;
-    border:0px solid green;
-    border-radius:inherit;
-    padding:inherit;
-    background: #28781C;
-    color:var(--white-color);
-    }
-    
-    
-    
-    /* 
+.staff-members {
+  border: 0px solid red;
+  min-height: 240px;
+}
+.staff-members .member {
+  height: 100%;
+  /* max-width:240px; */
+  /* border:1px solid red; */
+}
+.staff-members .member h2 {
+  text-align: center;
+}
+.staff-members .member h4 {
+  text-align: center;
+}
+.staff-members .member > *:first-child {
+  margin-bottom: 8em;
+}
+.staff-members .member > * {
+  margin-bottom: 4em;
+  border: 0px solid red;
+}
+.staff-members .member > *:last-child {
+  margin-bottom: 0;
+}
+.staff-members .card-row {
+  height: 100%;
+  /* padding:4rem; */
+}
+.staff-members .card-row > * {
+  margin-bottom: 8em;
+}
+.staff-members .card-row > *:last-child {
+  margin-bottom: 4em;
+}
+.staff-members .card-row .card-col {
+  /* height:440px; */
+  /* border:2px solid purple; */
+  height: 100%;
+}
+.staff-members .card-row .member-card {
+  border: 0px solid orange;
+  padding: 1rem;
+  background-color: var(--white-color);
+  -webkit-box-shadow: var(--box-shadow);
+  -moz-box-shadow: var(--box-shadow);
+  -o-box-shadow: var(--box-shadow);
+  box-shadow: var(--box-shadow);
+  position: relative;
+  height: 100%;
+}
+.card-row .img-container {
+  height: 120px;
+  width: 120px;
+  border-radius: 50%;
+  overflow: hidden;
+  position: absolute;
+  top: -5%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 2px outset #f8f8f8;
+}
+.staff-members .card-row .member-card > * > * > * {
+  margin-bottom: 0.9em;
+}
+.staff-members .card-row .member-card > *:last-child {
+  padding: 4em 0 0 0;
+  margin-bottom: 0;
+  text-align: center;
+}
+.staff-members .card-row .member-card > *:last-child > * {
+  border: 0px solid green;
+  margin-bottom: 0.5rem;
+}
+.staff-members .card-row .img-container img {
+  height: 100%;
+  object-fit: cover;
+}
+.staff-members .card-row .bio-section {
+  text-align: center;
+  display: inline-block;
+  margin: 1rem 0 0 0;
+}
+.staff-members .card-row .cta-btn {
+  background: rgba(140, 187, 132, 0.38);
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25), 0px -2px 1px rgba(0, 0, 0, 0.25);
+  width: 80px;
+  padding: 0.4em;
+  text-transform: uppercase;
+  font-weight: 600;
+  cursor: pointer;
+}
+.staff-members .card-row .cta-btn span {
+  font-size: 75%;
+  border: 0px solid green;
+  border-radius: inherit;
+  padding: inherit;
+  background: #28781c;
+  color: var(--white-color);
+}
+
+/* 
     =======================================================
     ===================research and study electronics section================ 
     */
-    .our-research{
-    border:0px solid red;
-    }
-    .our-research
-    h2{
-    margin-bottom:2em;
-    }
-    .our-research
-    .section-row >*{
-    margin-bottom:2em;
-    }
-    .our-research
-    .section-row >*:last-child{
-    margin-bottom:6em;
-    }
-    .our-research
-    .place-right 
-    figure{
-    position: relative;
-    }
-    .our-research
-    .place-right 
-    figure::after,
-    .our-research
-    .place-right 
-    figure::before
-    {
-    position:absolute;
-    border-radius:14px;
-    z-index:1000;
-    }
-    .our-research
-    .place-right 
-    figure::before{
-    content:'';
-    width:100px;
-    height:100px;
-    background: #8CBB84;
-    display:inline-block;
-    top:-15px;
-    left:-15px;
-    }
-    
-    .our-research
-    .place-right 
-    figure::after{
-    content:'';
-    width:150px;
-    height:150px;
-    background: #28781C;
-    display:inline-block;
-    bottom:-15px;
-    right:-15px;
-    }
-    .our-research
-    .place-right
-    .img-container{
-    border-radius:14px;
-    border:0px solid red;
-    /* height:320px; */
-    min-height:240px;
-    z-index:1010;
-    position: relative;
-    }
-    .our-research
-    .place-right
-    .img-container img{
-    height:100%;
-    }
-    
-    /* =======================study electronics================ */
-    .our-research.study-electronics
-    h2{
-    margin-bottom:4em;
-    }
-    .study-electronics
-    .section-row >*{
-    margin-bottom:4em;
-    }
-    .study-electronics
-    .section-row >*:last-child{
-    margin-bottom:0;
-    }
-    .study-electronics
-    .mini-section{
-    margin-bottom:1.4rem;
-    }
-    .study-electronics
-    .mini-section h3{
-    text-align:initial;
-    }
-    
-    
-    
-    
-    
-    
-    /* 
+.our-research {
+  border: 0px solid red;
+}
+.our-research h2 {
+  margin-bottom: 2em;
+}
+.our-research .section-row > * {
+  margin-bottom: 2em;
+}
+.our-research .section-row > *:last-child {
+  margin-bottom: 6em;
+}
+.our-research .place-right figure {
+  position: relative;
+}
+.our-research .place-right figure::after,
+.our-research .place-right figure::before {
+  position: absolute;
+  border-radius: 14px;
+  z-index: 1000;
+}
+.our-research .place-right figure::before {
+  content: "";
+  width: 100px;
+  height: 100px;
+  background: #8cbb84;
+  display: inline-block;
+  top: -15px;
+  left: -15px;
+}
+
+.our-research .place-right figure::after {
+  content: "";
+  width: 150px;
+  height: 150px;
+  background: #28781c;
+  display: inline-block;
+  bottom: -15px;
+  right: -15px;
+}
+.our-research .place-right .img-container {
+  border-radius: 14px;
+  border: 0px solid red;
+  /* height:320px; */
+  min-height: 240px;
+  z-index: 1010;
+  position: relative;
+}
+.our-research .place-right .img-container img {
+  height: 100%;
+}
+
+/* =======================study electronics================ */
+.our-research.study-electronics h2 {
+  margin-bottom: 4em;
+}
+.study-electronics .section-row > * {
+  margin-bottom: 4em;
+}
+.study-electronics .section-row > *:last-child {
+  margin-bottom: 0;
+}
+.study-electronics .mini-section {
+  margin-bottom: 1.4rem;
+}
+.study-electronics .mini-section h3 {
+  text-align: initial;
+}
+
+/* 
     =======================================================
     ===================recent award section================ 
     */
-    .recent-awards{
-    border:0px solid red;
-    }
-    .recent-awards>*:first-child{
-    margin-bottom:4em;
-    }
-    .recent-awards h4{
-    text-transform:uppercase;
-    }
-    .recent-awards 
-    .display-card
-    .top-container{
-    border:0px solid yellow;
-    max-height:240px;
-    max-width:240px;
-    padding:1rem;
-    position: relative;
-    }
-    .recent-awards 
-    .display-card
-    .behind-circle{
-    min-height:90px;
-    min-width:90px;
-    background-color:green;
-    display:inline-block;
-    border-radius:50%;
-    position:absolute;
-    z-index:1000;
-    }
-    .recent-awards 
-    .display-card
-    .behind-circle.shape-1{
-    background: rgba(140, 187, 132, 0.38);
-    bottom:0;
-    left:0;
-    min-height:120px;
-    min-width:120px;
-    }
-    .recent-awards 
-    .display-card
-    .behind-circle.shape-2{
-    background: rgba(140, 187, 132, 0.38);
-    top:18px;
-    right:20%;
-    min-height:30px;
-    min-width:30px;
-    }
-    .recent-awards 
-    .display-card
-    .behind-circle.shape-3{
-    right:10px;
-    bottom:10px;
-    background: #28781C;
-    }
-    .recent-awards 
-    .display-card 
-    .img-container{
-    height:100%;
-    width:100%;
-    border-radius:50%;
-    z-index:1040;
-    position: relative;
-    }
-    .recent-awards 
-    .display-card > *{
-    margin-bottom:1rem;
-    border:0px solid purple;
-    }
-    
-    .recent-awards 
-    .display-card 
-    .img-container img{
-    border-radius:inherit;
-    height:100%;
-    object-fit:cover;
-    }
+.recent-awards {
+  border: 0px solid red;
+}
+.recent-awards > *:first-child {
+  margin-bottom: 4em;
+}
+.recent-awards h4 {
+  text-transform: uppercase;
+}
+.recent-awards .display-card .top-container {
+  border: 0px solid yellow;
+  max-height: 240px;
+  max-width: 240px;
+  padding: 1rem;
+  position: relative;
+}
+.recent-awards .display-card .behind-circle {
+  min-height: 90px;
+  min-width: 90px;
+  background-color: green;
+  display: inline-block;
+  border-radius: 50%;
+  position: absolute;
+  z-index: 1000;
+}
+.recent-awards .display-card .behind-circle.shape-1 {
+  background: rgba(140, 187, 132, 0.38);
+  bottom: 0;
+  left: 0;
+  min-height: 120px;
+  min-width: 120px;
+}
+.recent-awards .display-card .behind-circle.shape-2 {
+  background: rgba(140, 187, 132, 0.38);
+  top: 18px;
+  right: 20%;
+  min-height: 30px;
+  min-width: 30px;
+}
+.recent-awards .display-card .behind-circle.shape-3 {
+  right: 10px;
+  bottom: 10px;
+  background: #28781c;
+}
+.recent-awards .display-card .img-container {
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+  z-index: 1040;
+  position: relative;
+}
+.recent-awards .display-card > * {
+  margin-bottom: 1rem;
+  border: 0px solid purple;
+}
 
+.recent-awards .display-card .img-container img {
+  border-radius: inherit;
+  height: 100%;
+  object-fit: cover;
+}
 
-
-
-
-
-
-
-
-
-    /* 
+/* 
 =============================================
 ==============MEDIA QEURIES==========
 The following breakpoints were used to implement this
@@ -387,16 +292,11 @@ Desktop view - 980px----
 large Desktop 1800px -----
  */
 
+@media (min-width: 980px) {
+  .staff-members .card-row .card-col {
+    height: 280px;
+  }
+}
 
- @media(min-width:980px){
-   .staff-members
-   .card-row .card-col{
-    height:280px;
-    }
-
-   }
-   
-   
-   @media(min-width:1800px){
- 
-   }
+@media (min-width: 1800px) {
+}
