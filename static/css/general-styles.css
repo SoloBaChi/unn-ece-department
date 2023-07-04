@@ -6,6 +6,7 @@
 @import url("e-learning.css");
 @import url("aboutus.css");
 @import url("alumni.css");
+@import url("newsandevents.css");
 
 /* html{
 overflow-x:hidden;
@@ -120,8 +121,13 @@ section {
 .paragraph {
   margin-bottom: 2em;
   border: 0px solid green;
-  font-size: 0.85rem;
+  font-size: 0.95rem;
   line-height: 1.8;
+}
+li p {
+  margin-bottom: 1em;
+  font-size: 0.92rem;
+  line-height: 0.9;
 }
 .fa-caret-down {
   color: #fff;
