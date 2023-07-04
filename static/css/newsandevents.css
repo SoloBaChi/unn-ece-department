@@ -1,0 +1,7 @@
+.newsandevent-page ul {
+  list-style: disc;
+}
+
+.newsandevent-page ul li::marker {
+  color: var(--color);
+}
