@@ -1,0 +1,16 @@
+.div-row {
+  border: 1px solid var(--color);
+  padding: 0.7rem;
+  margin-bottom: 1.4rem;
+  border-radius: 14px;
+}
+.div-row p {
+  text-transform: uppercase;
+  font-weight: 500;
+}
+.div-row a {
+  word-break: break-all;
+  font-weight: 400;
+  color: var(--color);
+  text-decoration: underline;
+}
