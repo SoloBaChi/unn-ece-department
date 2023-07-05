@@ -17,6 +17,9 @@ table {
 table,
 th,
 td {
+  -o-border: 1px solid var(--color);
+  -moz-border: 1px solid var(--color);
+  -webkit-border: 1px solid var(--color);
   border: 1px solid var(--color);
   border-collapse: collapse;
   padding: 0.7rem;
