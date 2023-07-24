@@ -189,7 +189,7 @@
 }
 .our-research .place-right .img-container {
   border-radius: 14px;
-  border: 0px solid red;
+  /* border: 1px solid red; */
   /* height:320px; */
   min-height: 240px;
   z-index: 1010;
@@ -221,7 +221,42 @@
     ===================recent award section================ 
     */
 .recent-awards {
-  border: 0px solid red;
+  /* border: 0px solid red; */
+}
+.recent-awards .flex-2 > *:first-child {
+  flex-basis: 80%;
+}
+.recent-awards .flex-2 > *:last-child {
+  /* border: 1px solid red; */
+}
+.recent-awards .flex-2 > *:last-child .best-students-column {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: flex-end;
+  justify-content: center;
+  gap: 4%;
+}
+.recent-awards .flex-2 > *:last-child .img-container {
+  /* border: 1px solid blue; */
+  height: 58px;
+  width: 58px;
+  border-radius: 50%;
+  overflow: auto;
+  cursor: pointer;
+}
+.recent-awards .flex-2 > *:last-child .img-container + .img-container {
+  /* border: 2px solid red; */
+  margin-top: 0.5rem;
+}
+.recent-awards .flex-2 > *:last-child .img-container img {
+  height: 100%;
+}
+.recent-awards .display-card {
+  /* border: 1px solid red; */
+}
+.recent-awards .display-card > * {
+  margin-bottom: 1rem;
+  /* border: 1px solid green; */
 }
 .recent-awards > *:first-child {
   margin-bottom: 4em;
@@ -230,11 +265,13 @@
   text-transform: uppercase;
 }
 .recent-awards .display-card .top-container {
-  border: 0px solid yellow;
-  max-height: 240px;
-  max-width: 240px;
+  /* border: 1px solid yellow; */
+  height: 240px;
+  width: 240px;
   padding: 1rem;
   position: relative;
+  /* border: 1px solid green; */
+  margin: 0 auto;
 }
 .recent-awards .display-card .behind-circle {
   min-height: 90px;
@@ -270,16 +307,15 @@
   border-radius: 50%;
   z-index: 1040;
   position: relative;
-}
-.recent-awards .display-card > * {
-  margin-bottom: 1rem;
-  border: 0px solid purple;
+  overflow: hidden;
+  /* border: 1px solid red; */
 }
 
 .recent-awards .display-card .img-container img {
   border-radius: inherit;
   height: 100%;
   object-fit: cover;
+  object-position: 50% 30%;
 }
 
 /* 
@@ -295,6 +331,23 @@ large Desktop 1800px -----
 @media (min-width: 980px) {
   .staff-members .card-row .card-col {
     height: 280px;
+  }
+  .recent-awards .flex-2 > *:first-child {
+    flex-basis: 80%;
+  }
+  .recent-awards .flex-2 > *:last-child {
+    flex-basis: 10%;
+  }
+  .recent-awards .flex-2 > *:last-child .img-container {
+    margin: 0 auto;
+  }
+  .recent-awards .display-card {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+  }
+  .recent-awards .display-card > * {
+    flex-basis: 48%;
   }
 }
 
