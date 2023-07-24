@@ -233,7 +233,33 @@
             </figure>
         </div>
 
-        <!-- col-3 -->
+        <!-- col -3 -->
+        <div class="card-col">
+            <figure class="member-card">
+                <div class="img-container">
+                    <img src="./static/images/prof-oparaku.png" alt="lecturer image">
+                </div>
+                <figcaption>
+                    <div class="card-header">
+                        <h4>Prof. Oparaku Ogbonna Ukachukwu (Ph.D)</h4>
+                    </div>
+                    <div class="card-body">
+                        <small class="area-of-specialization">Renewable Energy, Photovolatics</small>
+                    </div>
+                    <div class="card-bottom">
+                        <div>
+                        <span>Electronic Engineering</span>
+                        </div>
+                        <div class="bio-section">
+                        <button class="cta-btn"><span class="cta-text">read bio</span></button>
+                        <!-- <p class="bio-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deleniti repellat error praesentium, quidem similique tempora ipsam odit ipsa eligendi, fugit exercitationem tempore quibusdam accusamus repudiandae labore sit pariatur vero sapiente?</p> -->
+                        </div>
+                    </div>
+                </figcaption>
+            </figure>
+        </div>
+
+        <!-- col-4 -->
         <div class="card-col">
             <figure class="member-card">
                 <div class="img-container">
@@ -260,7 +286,7 @@
         </div>
 
         <!-- col-4 -->
-        <div class="card-col">
+        <!-- <div class="card-col">
             <figure class="member-card">
                 <div class="img-container">
                     <img src="./static/images/lecturer-1.jpg" alt="lecturer image">
@@ -278,12 +304,11 @@
                         </div>
                         <div class="bio-section">
                         <button class="cta-btn"><span class="cta-text">read bio</span></button>
-                        <!-- <p class="bio-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deleniti repellat error praesentium, quidem similique tempora ipsam odit ipsa eligendi, fugit exercitationem tempore quibusdam accusamus repudiandae labore sit pariatur vero sapiente?</p> -->
                         </div>
                     </div>
                 </figcaption>
             </figure>
-        </div>
+        </div> -->
     </div>
     </div>
     
@@ -306,7 +331,7 @@
         <div class="place-right">
             <figure>
                 <div class="img-container">
-                    <img src="../static/images/research-2.jpg" alt="student doing research">
+                    <img src="./static/images/research-2.jpg" alt="student doing research">
                 </div>
             </figure>
         </div>
@@ -322,7 +347,7 @@
         <div class="place-right">
             <figure>
                 <div class="img-container">
-                    <img src="../static/images/research.jpg" alt="student doing research">
+                    <img src="./static/images/research.jpg" alt="student doing research">
                 </div>
             </figure>
         </div>
@@ -354,13 +379,16 @@
 <!--Description: Recent Award to our students -->
     <section class="recent-awards">
         <h2>recent awards to our students</h2>
-        <div class="display-best-student" id="display-best-student">
+        <div class="flex-2">
+        <div class="display-best-student place-left" id="display-best-student">
         <figure class="display-card">
             <div class="top-section">
             <div class="top-container">
             <span class="behind-circle shape-1"></span>
             <div class="img-container">
-            <img src="../static/images/best-student.svg" alt="best final year student"/>
+            <!-- <img src="./static/images/asogwa-christian.jpg" alt="best final year student"/> -->
+            <img src="./static/images/angel-mba.jpeg" alt="best final year student"/>
+            <!-- <img src="./static/images/best-student.svg" alt="best final year student"/> -->
             </div>
             <span class="behind-circle shape-2"></span>
             <span class="behind-circle shape-3"></span>
@@ -368,12 +396,34 @@
             </div>
             <div class="bottom-section">
             <figcaption>
-            <div><h4>solomon joboson chiakonam</h4></div>
+            <!-- <div><h4>Asogwa Christian Onyemaechi</h4></div>
              <div><p>Best final year student of electronic enginering department</p></div>
-             <div><small>CPGA:4.96</small></div>
+             <div><small>CPGA:4.91</small></div> -->
+            <div><h4>Mba Angel Ifechukwu</h4></div>
+             <div><p>Best third year student of Electronic Enginering department</p></div>
+             <div><small>CPGA:5.00</small></div>
             </figcaption>
             </div>
         </figure>
+        </div>
+        <div class="place-right">
+            <figure>
+                <div class="best-students-column">
+                    <div class="img-container">
+                        <img src="./static/images/asogwa-christian.jpg" alt="best final year">
+                    </div>
+                    <div class="img-container">
+                        <img src="./static/images/lecturer-1.jpg" alt="best fourth year student">
+                    </div>
+                    <div class="img-container">
+                        <img src="./static/images/angel-mba.jpeg" alt="best third year student">
+                    </div>
+                    <div class="img-container">
+                        <img src="./static/images/angel-mba.jpeg" alt="best second year student">
+                    </div>
+                </div>
+            </figure>
+        </div>
         </div>
     </section>
 </main>
@@ -386,7 +436,7 @@
             <div class="footer-col col-1">
                 <figure class="unn-logo">
                     <div class="img-container">
-                        <img src="../static/images/unn-logo.svg" alt="unn logo"/>
+                        <img src="./static/images/unn-logo.svg" alt="unn logo"/>
                     </div>
                     <figcaption>
                         <p>Electronic Engineering</p>
@@ -422,7 +472,90 @@
     	const updateYear = document.getElementById("updated-year");
     	const date = new Date();
     	updateYear.innerText += date.getFullYear();
+
+
+        // Students Awards
+        const studentAwards = [
+        {
+        id:0,
+        "name":"Asogwa Christian Onyemachi",
+        "description":"Best final year student of Electronic Enginering department",
+        "cpga":"4.91",
+        "imgSrc":"./static/images/asogwa-christian.jpg", 
+        "alt":"best final year student"
+        },
+        {
+        id:1,
+        "name":"Solomon Joboson Chiakonam",
+        "description":"Best fourth year student of Electronic Enginering department",
+        "cpga":"5.00",
+        "imgSrc":"./static/images/lecturer-1.jpg", 
+        "alt":"best fourth year student"
+        },
+        {
+        id:2,
+        "name":"Mba Angel Ifechukwu",
+        "description":"Best  third Year Student of Electronic Engineering Department",
+        "cpga":"5.00",
+        "imgSrc":"./static/images/angel-mba.jpeg", 
+        "alt":"best third year student"
+        },
+        {
+        id:3,
+        "name":"Francis",
+        "description":"Best Second Year Student of Electronic Engineering Department",
+        "cpga":"5.00",
+        "imgSrc":"./static/images/angel-mba.jpeg", 
+        "alt":"best second year student"
+        }
+        ]
+        console.log(studentAwards)
+
+        const bestStudents = document.querySelectorAll(`.recent-awards .flex-2 > *:last-child .img-container`);
+        console.log(bestStudents)
+        const getBestStudentPlaceholder =  document.querySelector(`.display-best-student.place-left`);
+        console.log(getBestStudentPlaceholder)
+        const divEl = document.createElement("div");
+        for(let student = 0; student < bestStudents.length; student++){
+        bestStudents[student].addEventListener("click",(e)=>{
+        // console.log("yes")
+        studentAwards.map(details => {
+            
+        //check if the object's id matches with a student.
+        if(details.id === student){
+        // console.log(details)
+        const {name,description,cpga,imgSrc,alt} = details;
+        const figureContainer = `
+        <figure class="display-card">
+            <div class="top-section">
+            <div class="top-container">
+            <span class="behind-circle shape-1"></span>
+            <div class="img-container">
+            <img src=${imgSrc} alt=${alt}/>
+            </div>
+            <span class="behind-circle shape-2"></span>
+            <span class="behind-circle shape-3"></span>
+            </div>
+            </div>
+            <div class="bottom-section">
+            <figcaption>
+            <div><h4>${name}</h4></div>
+             <div><p>${description}</p></div>
+             <div><small>${cpga}</small></div>
+            </figcaption>
+            </div>
+        </figure>
+        `
+        divEl.innerHTML = figureContainer;
+        }
+        })
+        
+        getBestStudentPlaceholder.replaceChildren(divEl)
+        })
+        }
+
 </script>
+
 </div>
 </body>
 </html>

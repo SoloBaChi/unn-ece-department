@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"/>
+    <link rel="icon" href="../static/images/unn-logo-2.png" type="images/favicon">
+    <link href="../static/font-awesome/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <!-- <link href="../static/css/index.css" rel="stylesheet"> -->
+    <title>E-Learning - Department of Electronic Engineering UNN</title>
+</head>
+<body class="dark-theme">
+ <!-- Welcome to ECE Department(Center Of Excellence), Excellence is our model 
+        ========Few Code Notes========
+        Note that these were written for the essence of code maintainability
+    :::::Frequently Used classes
+    1. page-container: this class was used in this code as a general wrapper for each page
+
+    ::::Responsive Design Pattern
+    The principle applied in the development of this site is mobile first principle
+    -->
+<div class="page-container">
+<header class="header">
+    <div class="header-container">
+        <div class="header-row"> 
+        <div class="logo-container">
+            <div class="unn-logo">
+                <img src="../static/images/unn-logo.svg">
+            </div>
+            <div class="logo-text">
+               <div>
+                <p>University of Nigeria</p>
+               </div>
+               <div>
+                <p>Department of Electronic and Computer Engineering</p>
+                <small class="department-motto">Center of Excellence...</small>
+               </div> 
+            </div>
+        </div>
+        <div>
+            <div class="toggle-btn" id="toggle-btn">&#9776;</div>
+            <div class="light-theme-icon">
+             <svg class="light-icon black-theme" width="25" height="28" viewBox="0 0 25 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M13.9867 28C18.3008 28 22.2409 26.0354 24.8513 22.8161C25.2375 22.3398 24.8164 21.6441 24.2196 21.7579C17.4337 23.0514 11.2021 17.8435 11.2021 10.9869C11.2021 7.0373 13.3144 3.40534 16.7475 1.44977C17.2766 1.14833 17.1436 0.345242 16.5422 0.234063C15.6993 0.0784728 14.8439 0.000127768 13.9867 0C6.26619 0 0 6.26232 0 14C0 21.7278 6.25636 28 13.9867 28Z" fill="#0A3E09"/>
+             </svg>
+            <svg class="light-icon white-theme" width="28" height="28" viewBox="-3.6 -3.6 43.20 43.20" xmlns="http://www.w3.org/2000/svg" fill="#ffffff" stroke="#ffffff" stroke-width="0.00036" transform="matrix(-1, 0, 0, -1, 0, 0)rotate(45)"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round" stroke="#ffffffCCCCCC" stroke-width="1.7280000000000002"></g><g id="SVGRepo_iconCarrier"> <g id="Lager_93" data-name="Lager 93" transform="translate(2 2)"> <g id="Sun_3_Brightness_3" data-name="Sun 3, Brightness 3"> 
+             <path id="Path_68" data-name="Path 68" d="M32,14H27.033c-2,1.769-.779,4,.967,4h4.967C34.966,16.231,33.746,14,32,14Z" fill="#ffffff"></path> <g id="Path_69" data-name="Path 69" fill="none" stroke-miterlimit="10"> <path d="M17.172,10.111a6,6,0,1,0,4.715,4.715A6.01,6.01,0,0,0,17.172,10.111Z" stroke="none"></path> <path d="M 15.99852275848389 13.99979972839355 C 15.40029907226563 13.99979972839355 14.83786392211914 14.26465797424316 14.45541763305664 14.72645950317383 C 14.18128776550293 15.05748176574707 13.88667678833008 15.62165832519531 14.04035758972168 16.43178939819336 C 14.1787109375 17.16349411010742 14.83581733703613 17.82003402709961 15.56771087646484 17.958740234375 C 15.71307563781738 17.98624801635742 15.85765266418457 18.00020027160645 15.99740505218506 18.00020027160645 C 16.59555816650391 18.00020027160645 17.15798187255859 17.73542404174805 17.54046440124512 17.27376556396484 C 17.81481742858887 16.94261169433594 18.1097583770752 16.37818908691406 17.95689964294434 15.57052993774414 C 17.81802749633789 14.83748245239258 17.1605224609375 14.17996406555176 16.42829895019531 14.041259765625 C 16.28293609619141 14.01375389099121 16.13835906982422 13.99979972839355 15.99860572814941 13.99979972839355 L 15.99852275848389 13.99979972839355 M 15.99860000610352 9.999795913696289 C 16.38235282897949 9.999801635742188 16.77459716796875 10.03580474853516 17.17200469970703 10.11100006103516 C 19.52100563049316 10.55599975585938 21.44199371337891 12.47699928283691 21.88699340820313 14.82600021362305 C 22.61180877685547 18.65568542480469 19.69624137878418 22.00020408630371 15.99740028381348 22.00020408630371 C 15.61366271972656 22.00020408630371 15.22141265869141 21.96419525146484 14.82400512695313 21.88899993896484 C 12.47600555419922 21.44400024414063 10.55400466918945 19.52299880981445 10.11000442504883 17.17499923706055 C 9.383377075195313 13.34440803527832 12.29961967468262 9.999755859375 15.99860000610352 9.999795913696289 Z" stroke="none" fill="#ffffff"></path> </g> <rect id="Rectangle_26" data-name="Rectangle 26" width="8" height="4" rx="1.993" transform="translate(26 14)" fill="#ffffff"></rect> <rect id="Rectangle_27" data-name="Rectangle 27" width="8" height="4" rx="1.993" transform="translate(18 26) rotate(90)" fill="#ffffff"></rect> <rect id="Rectangle_28" data-name="Rectangle 28" width="8" height="4" rx="1.993" transform="translate(18 -2) rotate(90)" fill="#ffffff"></rect> <rect id="Rectangle_29" data-name="Rectangle 29" width="8" height="4" rx="1.993" transform="translate(-2 14)" fill="#ffffff"></rect> <g id="Group_22" data-name="Group 22"> <rect id="Rectangle_30" data-name="Rectangle 30" width="6.925" height="3.766" rx="1.883" transform="translate(23.22 6.117) rotate(-45)" fill="#ffffff"></rect> </g> <g id="Group_23" data-name="Group 23"> <rect id="Rectangle_31" data-name="Rectangle 31" width="3.766" height="6.925" rx="1.883" transform="matrix(0.707, -0.707, 0.707, 0.707, 23.22, 25.883)" fill="#ffffff"></rect> </g> <g id="Group_24" data-name="Group 24"> <rect id="Rectangle_32" data-name="Rectangle 32" width="3.766" height="6.925" rx="1.883" transform="translate(1.22 3.883) rotate(-45)" fill="#ffffff"></rect> </g> <g id="Group_25" data-name="Group 25"> <rect id="Rectangle_33" data-name="Rectangle 33" width="6.925" height="3.766" rx="1.883" transform="translate(1.22 28.117) rotate(-45)" fill="#ffffff"></rect> </g> </g> </g> </g>
+            </svg>
+            </div>
+            <nav class="navbar-container">
+                <div class="close-toggle-btn">
+                  <span>&#10005</span>
+                </div>
+                <ul class="list-menu">
+                    <li class="list-item"><a href="./index.html">home</a></li>
+                    <li class="list-item dropdown dropdown-1"><a href="#">programmes <span class="fa fa-caret-down"></span></a>
+                        <ul class="dropdown-menu">
+                        <li> <a href="https://ece.unn.edu.ng/undergraduate-programs/" target="_blank">undergraduate degree programmes</a></li>
+                        <li class="list-item dropdown dropdown-2"> <a href="https://ece.unn.edu.ng/post-graduate-programs/">postgraduate degree programmes <span class="fa fa-caret-down"></span></a>
+                            <ul class="dropdown-menu">
+                             <li> <a href="https://ece.unn.edu.ng/m-sc-and-m-eng-degree-programmes/" target="_blank">M.Sc and M.Eng Degree Programmes</a></li>
+                             <li> <a href="https://ece.unn.edu.ng/phd-degree-programmes/" target="_blank">Phd Degree Programmes</a></li>
+                            </ul>
+                        </li>
+                        </ul>
+                    </li>
+                    <li class="list-item dropdown dropdown-1"><a href="https://ece.unn.edu.ng/staff/">staff <span class="fa fa-caret-down"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="https://ece.unn.edu.ng/academic/">academic staff</a></li>
+                            <li><a href="https://ece.unn.edu.ng/technical/">technical staff</a></li>
+                            <li><a href="https://ece.unn.edu.ng/administrative/">administrative staff</a></li>
+                        </ul>
+                    </li>
+                    <li class="list-item"><a href="./e-learning.html">e-learning</a></li>
+                    <li class="list-item dropdown"><a href="https://ece.unn.edu.ng/research/">research <span class="fa fa-caret-down"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="https://ece.unn.edu.ng/digital-electronics/">digital elctronics</a></li>
+                            <li><a href="https://ece.unn.edu.ng/communication/">communications</a></li>
+                            <li><a href="https://ece.unn.edu.ng/control-systems/">control engineering</a></li>
+                        </ul>
+                    </li>
+                    <li class="list-item"><a href="https://ece.unn.edu.ng/alumni-intervention/">alumni</a></li>
+                    <li class="list-item"><a href="https://ece.unn.edu.ng/news-events/">news &amp; events</a></li>
+                    <li class="list-item"><a href="https://ece.unn.edu.ng/contact/">contact us</a></li>
+                    <li class="list-item"><a href="https://ece.unn.edu.ng/about/">about us</a></li>
+                    <!-- <li><a href="#"><input type="search"></a></li> -->
+                </ul>
+            </nav>
+        </div>
+        </div>
+    </div>
+</header>
+
+
+<!--Description: main site section -->
+<main>
+<section class="welcome-text">
+    <h1>welcome to electronic and computer engineering</h1>
+</section>
+
+<!-- Description; Banner -->
+<section class="owl-carousel carousel-section " id="sliding-banner-images">
+    <!-- cariusel-1 -->
+    <div class="carousel-container">
+        <div class="carousel-card">
+            <div class="img-container">
+                <img src="./images/lab_carousel1.jpg" alt="banner image">
+            </div>
+        </div>
+    </div>
+    <!-- carousel 2 -->
+    <div class="carousel-container">
+        <div class="carousel-card">
+            <div class="img-container">
+                <img src="./images/ai_lab_carousel1.jpg" alt="banner image">
+            </div>
+        </div>
+    </div>
+    <!-- carousel 3 -->
+    <div class="carousel-container">
+        <div class="carousel-card">
+            <div class="img-container">
+                <img src="./images/lab_carousel2.jpg" alt="banner image">
+            </div>
+        </div>
+    </div>
+    <!-- carousel 4 -->
+    <div class="carousel-container">
+        <div class="carousel-card">
+            <div class="img-container">
+                <img src="./images/ai_lab_carousel2.jpg" alt="banner image">
+            </div>
+        </div>
+    </div>
+</section>
+
+<!--Description: brief history  -->
+<section class="brief-history">
+    <div class="circle-shape">
+    <svg class="circle" width="100" height="100">
+     <circle  cy="120" cx="120" r="110" fill="none" stroke="rgba(15, 70, 37, 0.04)" stroke-width="24"></circle>
+    </svg>
+    </div>
+    <h2>brief history</h2>
+    <div class="history-contents">
+        <p class="paragraph">
+            The Department of Electronic Engineering was established in 1981 under the Faculty of Engineering after the previous department of Electrical and Electronic Engineering was split into two separate departments.
+            <br>
+            It was created to harness the explosion of knowledge in the field of electronics to satisfy deep national needs for skilled engineers in the vital areas of telecommunication, control, instrumentation, digital and computer engineering.
+        </p>
+        <p class="paragraph">
+            The department offers a Bachelor of Engineering degree in Electronic Engineering to undergraduates, as well as Msc and Doctoral degree programs in relevant specializations under Electronic Engineering. The department provides students with an education that balances theory and practical’s and, through dynamic programs with interdisciplinary opportunities, preparing students to meet the challenges of an ever-changing, complex world.
+        </p>
+        <p class="paragraph">
+            The department has recorded many significant milestones. Since its inception in 1981, the Department has produced the highest number of first-class graduates than any other departments in the university. It has also produced many overall best graduating students more than any department in the university; it has produced overall university bests for three consecutive academic sessions in 1995/1996, 1996/1997 and 1997/1998.
+        </p>
+        <p class="paragraph">
+            The 1996/1997 university best, Osita Onuma, in 1998/1999 produced best ever recorded result (aggregate of 98.85 on a 100-point scale) in the 124 year-history of taught postgraduate programme at Imperial College and the entire University of London. The department earned two national designations (honours) as a Centre of Excellence in Electronic and in Information and Communication Technology (ICT) in 1986 and 2001 an Education Trust Fund (ETF) Center Of Excellence in ICT and Telecommunication Networks.
+        </p>
+        <p class="paragraph">
+            Given the above potential, the department is optimistic it can build on its considerable success and experience of the past 41 years to play a significant role in assisting the nation achieve its long-term objective of technological self-reliance.
+        </p>
+    </div>
+</section>
+
+
+
+
+<!-- Description: meet our staff -->
+<section class="staff-members">
+    <div class="member">
+    <h2>meet our staff</h2>
+    <div class="card-row flex-2">
+        <div class="card-col">
+            <!-- col-1 -->
+            <figure class="member-card">
+                <div class="img-container">
+                    <img src="./images/iloanusi-pic.jpg" alt="lecturer image">
+                </div>
+                <figcaption>
+                    <div class="card-header">
+                        <h4>Prof. Ogechukwu N. Iloanusi (Ph.D)
+                            <br>
+                         Head of Department</h4>
+                    </div>
+                    <div class="card-body">
+                        <small class="area-of-specialization">Biometrics, Artificial Intelligence, Machine Learning, Pattern Analysis and Signal Processing</small>
+                    </div>
+                    <div class="card-bottom">
+                        <div>
+                        <span>Electronic Engineering</span>
+                        </div>
+                        <div class="bio-section">
+                        <button class="cta-btn"><span class="cta-text">read bio</span></button>
+                        <!-- <p class="bio-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deleniti repellat error praesentium, quidem similique tempora ipsam odit ipsa eligendi, fugit exercitationem tempore quibusdam accusamus repudiandae labore sit pariatur vero sapiente?</p> -->
+                        </div>
+                    </div>
+                </figcaption>
+            </figure>
+        </div>
+        
+        <!-- col-2 -->
+        <div class="card-col">
+            <figure class="member-card">
+                <div class="img-container">
+                    <img src="./images/prof-Ani.png" alt="lecturer image">
+                </div>
+                <figcaption>
+                    <div class="card-header">
+                        <h4>Prof. Ani Cosmas Ikechukwu (Ph.D)</h4>
+                    </div>
+                    <div class="card-body">
+                        <small class="area-of-specialization">Data Communication and Network Resource Management</small>
+                    </div>
+                    <div class="card-bottom">
+                        <div>
+                        <span>Electronic Engineering</span>
+                        </div>
+                        <div class="bio-section">
+                        <button class="cta-btn"><span class="cta-text">read bio</span></button>
+                        <!-- <p class="bio-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deleniti repellat error praesentium, quidem similique tempora ipsam odit ipsa eligendi, fugit exercitationem tempore quibusdam accusamus repudiandae labore sit pariatur vero sapiente?</p> -->
+                        </div>
+                    </div>
+                </figcaption>
+            </figure>
+        </div>
+
+        <!-- col-3 -->
+        <div class="card-col">
+            <figure class="member-card">
+                <div class="img-container">
+                    <img src="./images/Engr-Nathan.png" alt="lecturer image">
+                </div>
+                <figcaption>
+                    <div class="card-header">
+                        <h4>Engr. Nathan David</h4>
+                    </div>
+                    <div class="card-body">
+                        <small class="area-of-specialization">Digital Electronics, Microprocessor Technology</small>
+                    </div>
+                    <div class="card-bottom">
+                        <div>
+                        <span>Electronic Engineering</span>
+                        </div>
+                        <div class="bio-section">
+                        <button class="cta-btn"><span class="cta-text">read bio</span></button>
+                        <!-- <p class="bio-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deleniti repellat error praesentium, quidem similique tempora ipsam odit ipsa eligendi, fugit exercitationem tempore quibusdam accusamus repudiandae labore sit pariatur vero sapiente?</p> -->
+                        </div>
+                    </div>
+                </figcaption>
+            </figure>
+        </div>
+
+        <!-- col-4 -->
+        <div class="card-col">
+            <figure class="member-card">
+                <div class="img-container">
+                    <img src="./images/lecturer-1.jpg" alt="lecturer image">
+                </div>
+                <figcaption>
+                    <div class="card-header">
+                        <h4>amoke douglas amobi</h4>
+                    </div>
+                    <div class="card-body">
+                        <small class="area-of-specialization">intelligent sensing and computing</small>
+                    </div>
+                    <div class="card-bottom">
+                        <div>
+                        <span>Electronic Engineering</span>
+                        </div>
+                        <div class="bio-section">
+                        <button class="cta-btn"><span class="cta-text">read bio</span></button>
+                        <!-- <p class="bio-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deleniti repellat error praesentium, quidem similique tempora ipsam odit ipsa eligendi, fugit exercitationem tempore quibusdam accusamus repudiandae labore sit pariatur vero sapiente?</p> -->
+                        </div>
+                    </div>
+                </figcaption>
+            </figure>
+        </div>
+    </div>
+    </div>
+    
+</section>
+
+<!-- JUST in -->
+<section id="books">
+<p>here</p>
+    
+</section>
+
+<!-- Description: Our Research Section-->
+<section class="our-research">
+    <h2>our research</h2>
+    <div class="section-row flex-2">
+        <div class="place-left">
+            <p class="paragraph">
+                The department conducts research across a wide range of topics under the discipline of Electronic Engineering.
+            </p>
+            <p class="paragraph">
+                We target both the fundamental advances and the practical applications of Electronic Engineering to help address some of the greatest challenges of the future.
+            </p>
+
+        </div>
+        <div class="place-right">
+            <figure>
+                <div class="img-container">
+                    <img src="./images/research-2.jpg" alt="student doing research">
+                </div>
+            </figure>
+        </div>
+    </div>
+</section>
+
+
+
+<!-- Description: Our study Electronic-->
+<section class="our-research study-electronics">
+    <h2>study electronic engineering</h2>
+    <div class="section-row flex-2">
+        <div class="place-right">
+            <figure>
+                <div class="img-container">
+                    <img src="./images/research.jpg" alt="student doing research">
+                </div>
+            </figure>
+        </div>
+        <div class="place-left">
+         <div class="mini-section">
+            <h3>undergraduate | <span> BEng</span></h3>
+            <p>
+                Developing graduate engineers with the skills, knowledge and imagination that will help shape our world.
+            </p>
+         </div>
+         <div class="mini-section">
+            <h3>postgraduate | <span> Msc</span></h3>
+            <p>
+                Two year M.Sc and M.Eng programmes aims to prepare graduate students to be able to understand and analyze electronic components, materials and complete systems through modelling and simulation
+            </p>
+         </div>
+         <div class="mini-section">
+            <h3>postgraduate | <span> Phd</span></h3>
+            <p>
+                The doctoral programme is intended to produce doctoral candidates capable of initiating and leading Research and Development (R & D) works in their areas of specialization.
+            </p>
+         </div>
+        </div>
+    </div>
+</section>
+
+
+    
+<!--Description: Recent Award to our students -->
+    <section class="recent-awards">
+        <h2>recent awards to our students</h2>
+        <div class="display-best-student" id="display-best-student">
+        <figure class="display-card">
+            <div class="top-section">
+            <div class="top-container">
+            <span class="behind-circle shape-1"></span>
+            <div class="img-container">
+            <img src="./images/best-student.svg" alt="best final year student"/>
+            </div>
+            <span class="behind-circle shape-2"></span>
+            <span class="behind-circle shape-3"></span>
+            </div>
+            </div>
+            <div class="bottom-section">
+            <figcaption>
+            <div><h4>solomon joboson chiakonam</h4></div>
+             <div><p>Best final year student of electronic enginering department</p></div>
+             <div><small>CPGA:4.96</small></div>
+            </figcaption>
+            </div>
+        </figure>
+        </div>
+    </section>
+</main>
+
+
+
+<footer class="site-footer">
+    <!-- iframe section -->
+    <div class="iframe-wrapper">
+    <iframe src="./iframes/footer.html" frameborder="0">
+        
+    </iframe>
+    </div>
+    <!-- current date -->
+    <small style="text-align:center;display:block;" class="copyright">&copy; <span id="updated-year"> </span> Department of Electronic Engineering</small>
+</footer>
+<script src="../static/js/theme.js"></script>
+<script src="../static/js/index.js"></script>
+<script src="../static/js/owl.carousel.js"></script>
+
+<script type="module">
+        const updateYear = document.getElementById("updated-year");
+        const date = new Date();
+        updateYear.innerText += date.getFullYear();
+  
+ 
+ const searchValue = "electronics";
+ async function getBooks(){
+ const books = await fetch(`https://www.googleapis.com/books/v1/volumes?q=${searchValue}&maxResults=${34}`);
+ const res = await books.json();
+ // console.log(res)
+ return res.items;
+ }
+const savedBooks = await getBooks();
+console.log(savedBooks)
+// console.log(typeof savedBooks)
+
+
+//get an array of books with page count and return their volume info
+const booksWithPageCount = savedBooks.filter(item => item.volumeInfo.pageCount != undefined).map(item => item.volumeInfo);
+console.log(booksWithPageCount)
+
+
+//create a book
+function createBook(booksArr){
+let div = document.createElement("DIV");
+for(let i=0; i< booksArr.length;i++){
+ let {title,pageCount,imageLinks,authors,description,publisher,language,publishedDate} =  booksArr[i];
+if(!authors){
+ booksArr[i].authors = "N/A";
+}
+else{
+authors = authors.join(" & ");
+}
+// imageLinks = imageLinks.thumbnail;
+if(imageLinks){
+imageLinks = imageLinks.thumbnail;
+}
+else{
+imageLinks = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS42KZMRzAKk4O8lqb2leikbHW3xOWsdO6GVQ&usqp=CAU"
+}
+
+ console.log(title,pageCount,imageLinks,authors,publishedDate,language,publisher
+)
+ let figure = `
+ <div class="card">
+ <figure>
+  <h3>${title}</h3>
+  <img src="${imageLinks}"/>
+  <p>Authors: ${authors === undefined ? "N/A" : authors}</p>
+  <p>${pageCount} pages</p>
+ </figure>
+ </div>
+ `
+ // div.innerHTML += figure;
+ div.insertAdjacentHTML("beforeend",figure)
+}
+document.getElementById("books").appendChild(div)
+
+}
+createBook(booksWithPageCount)
+
+
+
+</script>
+</div>
+</body>
+</html>
