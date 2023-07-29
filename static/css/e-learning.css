@@ -3,3 +3,6 @@
 border:1px solid red !important;
 margin-bottom:2rem;
 }
+.card .main-section.flex-2{
+align-items: center;
+}
