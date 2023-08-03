@@ -1,5 +1,129 @@
+/* =======================
+Digital Library Styles
+==========================*/
+/* =======================
+Loading Animation
+==========================*/
+.loading-page {
+  background: #efefea;
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  z-index: 2010;
+  display: flex;
+}
+.loading-page .fa {
+  font-size: 4rem;
+  font-weight: 800;
+  color: var(--green);
+  display: block;
+}
+.loading-page .loading-body {
+  margin: auto;
+}
+.loading-page .loading-text {
+  text-transform: capitalize;
+  color: var(--color);
+}
 
-.card figure{
-border:1px solid red !important;
-margin-bottom:2rem;
+.stop-loading {
+  display: none;
+}
+
+/* ==================================
+ Virtual Librabry Styles
+=======================================*/
+.virtual-library h2 {
+  text-align: initial;
+}
+.virtual-library .search-bar {
+  position: relative;
+  border-radius: 28px;
+  /* width: 80%; */
+  margin: 2rem auto;
+}
+.virtual-library .search-bar input {
+  width: 100%;
+  padding: 1.2rem;
+  border-radius: inherit;
+  outline: none;
+  border: 1px solid var(--color);
+}
+.virtual-library .search-bar .search-icon {
+  position: absolute;
+  /* width: 100%; */
+  top: 15px;
+  right: 15px;
+  cursor: pointer;
+}
+.virtual-library .search-bar .search-icon svg {
+  width: 26px;
+}
+.card figure {
+  border: 1px solid red !important;
+  margin-bottom: 2rem;
+}
+figure.card {
+  box-shadow: var(--box-shadow);
+  border-radius: 14px;
+  padding: 1rem;
+}
+figure.card .card-container {
+  height: 100%;
+  /* padding: 0rem 1rem; */
+  border-radius: inherit;
+}
+.card .main-section.flex-2 {
+  align-items: flex-start;
+  /* gap: 2%; */
+}
+figure.card .card-container .fa-ellipsis {
+  cursor: pointer;
+  display: block;
+  font-size: 1.2rem;
+  font-weight: 800;
+  text-align: right;
+  padding: 0 1rem;
+  margin-bottom: 0.5rem;
+}
+.card .main-section.flex-2 > * {
+  /* border: 1px solid red; */
+  margin-bottom: 1.8rem;
+}
+.card .main-section .place-right {
+  /* border: 1px solid yellow; */
+}
+.card .main-section .place-right > * {
+  margin-bottom: 1.2rem;
+}
+.card .main-section .place-right h4 {
+  margin-bottom: 0;
+  text-transform: capitalize;
+}
+.card .main-section .place-right p {
+  text-transform: capitalize;
+}
+.card .main-section .place-left {
+  /* border: 1px solid red; */
+}
+.card .main-section .place-left {
+  /* flex-basis: 15%; */
+}
+.card .main-section .place-left .img-container {
+  /* border: 1px solid green; */
+  /* flex-basis: 20%; */
+  /* height: 100%; */
+}
+.card .main-section .place-left .img-container img {
+  height: 100%;
+  border-radius: 14px;
+}
+
+@media (min-width: 1460px) {
+  .card .main-section.flex-2 {
+    align-items: center;
+  }
+  .card .main-section.flex-2 > * {
+    flex-basis: 48%;
+  }
 }
