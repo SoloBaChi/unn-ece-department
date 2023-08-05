@@ -1,0 +1,12 @@
+.programs-page a {
+  /* border: 1px solid red; */
+  text-transform: uppercase;
+  text-decoration: underline;
+  color: var(--color);
+  text-align: initial;
+  display: block;
+}
+.programs-page h2,
+.programs-page h3 {
+  text-align: initial;
+}

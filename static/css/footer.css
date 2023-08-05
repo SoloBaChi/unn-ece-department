@@ -1,42 +1,39 @@
-
-.site-footer{
-background:var(--green-background);
-color:var(--white-color);
-/*height:500px;*/
-min-height:240px;
+.site-footer {
+  background: var(--green-background);
+  color: var(--white-color);
+  /*height:500px;*/
+  min-height: 240px;
 }
-.site-footer .iframe-wrapper{
-border:1px solid red;
-height:100%;
+.site-footer .iframe-wrapper {
+  border: 1px solid red;
+  height: 100%;
 }
-.site-footer iframe{
-width:100%;
-display:block;
-height:100%;
+.site-footer iframe {
+  width: 100%;
+  display: block;
+  height: 100%;
 }
-.footer-col{
-text-align:center;
-margin:2rem 0rem;
+.footer-col {
+  text-align: center;
+  margin: 2rem 0rem;
 }
-.site-footer
-.unn-logo .img-container{
-width:60%;
-margin:0 auto;
+.site-footer .unn-logo .img-container {
+  width: 60%;
+  margin: 0 auto;
 }
 /* the paragraph in column 1 */
-.footer-col.col-1 p{
-padding-top:0.5rem;
-font-size:1.2rem;
+.footer-col.col-1 p {
+  padding-top: 0.5rem;
+  font-size: 1.2rem;
 }
 /* only the call to action button in the footer section */
-.footer-col .round-cta-btn{
-font-size:98%;
-margin-bottom:0.7rem;
-padding:0.5rem;
+.footer-col .round-cta-btn {
+  font-size: 98%;
+  margin-bottom: 0.7rem;
+  padding: 0.5rem;
 }
 .site-footer p,
 .site-footer span,
-.site-footer small
-{
-color:var(--white-color)
+.site-footer small {
+  color: var(--white-color);
 }

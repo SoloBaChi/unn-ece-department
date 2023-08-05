@@ -25,63 +25,55 @@ left:-15px;
 #sliding-banner-images .owl-next{
 right:-15px;
 } */
-#sliding-banner-images.owl-carousel{
-background:var(--background-color) !important;
+#sliding-banner-images.owl-carousel {
+  background: var(--background-color) !important;
 }
-#sliding-banner-images .owl-dots{
-text-align:center;
-margin-top:10px;
-position:relative;
+#sliding-banner-images .owl-dots {
+  text-align: center;
+  margin-top: 10px;
+  position: relative;
 }
-#sliding-banner-images .owl-dot{
-height:13px;
-width:13px;
-outline:none !important;
-border-radius:50%;
-border:2px solid var(--carousel-dot) !important;
-margin:0 10px;
-transition:all 0.3s ease;
- }
- #sliding-banner-images .owl-dot.active{
-width:20px;
-height:20px;
+#sliding-banner-images .owl-dot {
+  height: 13px;
+  width: 13px;
+  outline: none !important;
+  border-radius: 50%;
+  border: 2px solid var(--carousel-dot) !important;
+  margin: 0 10px;
+  transition: all 0.3s ease;
+}
+#sliding-banner-images .owl-dot.active {
+  width: 20px;
+  height: 20px;
 }
 #sliding-banner-images .owl-dot.active,
-#sliding-banner-images .owl-dot:hover{
- background: var(--green-background) !important;
+#sliding-banner-images .owl-dot:hover {
+  background: var(--green-background) !important;
 }
 
 /* 
 =======================================================
 ===================Carousel section================ 
 */
-.carousel-section{
-border:0px solid red;
-padding:0;
-position: relative;
-margin-bottom:4rem;
+.carousel-section {
+  border: 0px solid red;
+  padding: 0;
+  position: relative;
+  margin-bottom: 4rem;
 }
-.carousel-section
-.carousel-container{
-width:100%;
+.carousel-section .carousel-container {
+  width: 100%;
 }
-.carousel-section
-.carousel-container
-.carousel-card{
-border:0px solid orange;
-height:220px;
-border-radius:14px;
+.carousel-section .carousel-container .carousel-card {
+  border: 0px solid orange;
+  height: 220px;
+  border-radius: 14px;
 }
-.carousel-section
-.carousel-container
-.img-container{
-height:100%;
-border-radius:inherit;
+.carousel-section .carousel-container .img-container {
+  height: 100%;
+  border-radius: inherit;
 }
-.carousel-section
-.carousel-container
-.img-container img{
-height:100%;
-border-radius:inherit;
+.carousel-section .carousel-container .img-container img {
+  height: 100%;
+  border-radius: inherit;
 }
-

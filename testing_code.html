@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <input type="search" id="search" name="search" />
+    <button type="submit">Search</button>
+    <p id="text"></p>
+
+    <!-- testing profile link -->
+    <img
+      src="data:image/png;base64,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"
+    />
+
+    <script>
+      const searchInput = document.getElementById("search");
+
+      searchInput.addEventListener("keyup", function (e) {
+        if (e.which === 13) {
+          console.log(e.target.value);
+          //   sayHi(e.target.value);
+          fetchBooks(e.target.value);
+          searchInput.value = "";
+        }
+      });
+
+      async function sayHi(name) {
+        let greet = await `Good day ${name}`;
+        document.getElementById("text").innerText = greet;
+      }
+      async function fetchBooks(val) {
+        let books = await fetch(
+          `https://openlibrary.org/search.json?title=${val}`
+        );
+        let res = await books.json();
+        console.log(res.docs);
+      }
+      //  search utility done
+      //next()
+    </script>
+  </body>
+</html>
