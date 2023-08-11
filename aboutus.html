@@ -22,15 +22,13 @@
     ::::Responsive Design Pattern
     The principle applied in the development of this site is mobile first principle
     -->
-<div class="page-container">
+<div class="page-container" id="page-container">
 <header class="header">
     <div class="header-container">
         <div class="header-row"> 
         <div class="logo-container">
             <div class="unn-logo">
-                <a href="./index.html">
-                    <img src="./static/images/unn-logo.svg">
-                </a>
+                <img src="./static/images/unn-logo.svg">
             </div>
             <div class="logo-text">
                <div>
@@ -60,20 +58,20 @@
                     <li class="list-item"><a href="./index.html">home</a></li>
                     <li class="list-item dropdown dropdown-1"><a href="#">programmes <span class="fa fa-caret-down"></span></a>
                         <ul class="dropdown-menu">
-                        <li> <a href="https://ece.unn.edu.ng/undergraduate-programs/" target="_blank">undergraduate degree programmes</a></li>
-                        <li class="list-item dropdown dropdown-2"> <a href="https://ece.unn.edu.ng/post-graduate-programs/">postgraduate degree programmes <span class="fa fa-caret-down"></span></a>
+                        <li> <a href="./programs/undergraduate.html" target="_self">undergraduate degree programmes</a></li>
+                        <li class="list-item dropdown dropdown-2"> <a href="./programs/postgraduate.html">postgraduate degree programmes <span class="fa fa-caret-down"></span></a>
                             <ul class="dropdown-menu">
-                             <li> <a href="https://ece.unn.edu.ng/m-sc-and-m-eng-degree-programmes/" target="_blank">M.Sc and M.Eng Degree Programmes</a></li>
-                             <li> <a href="https://ece.unn.edu.ng/phd-degree-programmes/" target="_blank">Phd Degree Programmes</a></li>
+                             <li> <a href="./programs/msc.html" target="_self">M.Sc and M.Eng Degree Programmes</a></li>
+                             <li> <a href="./programs/phd.html" target="_self">Phd Degree Programmes</a></li>
                             </ul>
                         </li>
                         </ul>
                     </li>
-                    <li class="list-item dropdown dropdown-1"><a href="https://ece.unn.edu.ng/staff/">staff <span class="fa fa-caret-down"></span></a>
+                    <li class="list-item dropdown dropdown-1"><a href="./staffs/staffs.html">staff <span class="fa fa-caret-down"></span></a>
                         <ul class="dropdown-menu">
-                            <li><a href="https://ece.unn.edu.ng/academic/">academic staff</a></li>
-                            <li><a href="https://ece.unn.edu.ng/technical/">technical staff</a></li>
-                            <li><a href="https://ece.unn.edu.ng/administrative/">administrative staff</a></li>
+                            <li><a href="./staffs/academic-staffs/academic.html">academic staff</a></li>
+                            <li><a href="./staffs/technical-staffs/technical.html">technical staff</a></li>
+                            <li><a href="./staffs/administrative-staffs/administrative.html">administrative staff</a></li>
                         </ul>
                     </li>
                     <li class="list-item dropdown"><a href="./digital-library/virtual-libary.html">digital-learning <span class="fa fa-caret-down"></span></a>
@@ -142,9 +140,6 @@ The minimum requirements are either of the following:
        <li> 
         <p class="paragraph">Passes at HSC or GCE A/L in at least two of the following subjects: Pure Mathematics, Applied Mathematics, Pure     and Applied Mathematics, Physics and Chemistry. The candidates are also required to have credit level passes which must include Mathematics, Physics and Chemistry in Senior Secondary School Examination or its equivalent.</p>
       </li>
-       <li class="paragraph">
-        <p>Passes at HSC or GCE A/L in at least two of the following subjects: Pure Mathematics, Applied Mathematics, Pure     and Applied Mathematics, Physics and Chemistry. The candidates are also required to have credit level passes which must include Mathematics, Physics and Chemistry in Senior Secondary School Examination or its equivalent.</p>
-       </li> 
        <li>
         <p class="paragraph">First degree holders in other relevant professions.</p>
        </li>
@@ -164,7 +159,7 @@ The minimum requirements are either of the following:
 <section class="brief-history admission-requirements">
 <h3>know more about our programs</h3>
 <div class="know-more">
-    <a href="./programmes/undergraduate/undergraduate.htm">undergraduate degree programs</a>
+    <a href="./programmes/undergraduate/undergraduate.html">undergraduate degree programs</a>
     <a href="./programmes/post-graduate/postgraduate.html">postgraduate degree programs</a>
 </div>
 </section>
@@ -173,6 +168,7 @@ The minimum requirements are either of the following:
 
 
 
+<!-- Footer starts -->
 <footer class="site-footer">
     <div class="footer-contianer">
         <div class="footer-row flex-4">
@@ -188,18 +184,18 @@ The minimum requirements are either of the following:
             </div>
             <div class="footer-col">
                 <ul>
-                    <li><a class="round-cta-btn" target="_blank" href="https://ece.unn.edu.ng/programs/">programmes</a></li>
-                    <li><a class="round-cta-btn" target="_blank" href="https://ece.unn.edu.ng/staff/">staff</a></li>
-                    <li><a class="round-cta-btn" target="_blank" href="./alumni.html">almuni</a></li>
-                    <li><a class="round-cta-btn" target="_blank" href="./e-learning.html">e-learning</a></li>
+                    <li><a class="round-cta-btn" target="_self" href="https://ece.unn.edu.ng/programs/">programmes</a></li>
+                    <li><a class="round-cta-btn" target="_self" href="https://ece.unn.edu.ng/staff/">staff</a></li>
+                    <li><a class="round-cta-btn" target="_self" href="./alumni.html">almuni</a></li>
+                    <li><a class="round-cta-btn" target="_self" href="./e-learning.html">e-learning</a></li>
                 </ul>
             </div>
             <div class="footer-col">
                     <ul>
-                        <li><a class="round-cta-btn" target="_blank" href="./research/research.html">research</a></li>
-                        <li><a class="round-cta-btn" target="_blank" href="./newsandevents.html">news</a></li>
-                        <li><a class="round-cta-btn" target="_blank" href="./aboutus.html">about us</a></li>
-                        <li><a class="round-cta-btn" target="_blank" href="./contactus.html">contact us</a></li>
+                        <li><a class="round-cta-btn" target="_self" href="./research/research.html">research</a></li>
+                        <li><a class="round-cta-btn" target="_self" href="./newsandevents.html">news</a></li>
+                        <li><a class="round-cta-btn" target="_self" href="./aboutus.html">about us</a></li>
+                        <li><a class="round-cta-btn" target="_self" href="./contactus.html">contact us</a></li>
                     </ul>
             </div>
         </div>
@@ -207,6 +203,16 @@ The minimum requirements are either of the following:
     <!-- current date -->
     <small style="text-align:center;display:block;" class="copyright">&copy; <span id="updated-year"> </span> Department of Electronic Engineering</small>
 </footer>
+<!-- footer ends -->
+
+
+<!-- ====================================
+    SCroll TOP Arrow Icon
+========================================= -->
+<a href="#page-container" class="scroll-top fa fa-angle-up"></a>
+
+
+<!-- Custom Script -->
 <script src="./static/js/theme.js"></script>
 <script src="./static/js/index.js"></script>
 <script src="./static/js/owl.carousel.js"></script>

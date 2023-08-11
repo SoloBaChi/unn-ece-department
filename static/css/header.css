@@ -7,9 +7,7 @@ header {
   flex-flow: row wrap;
   align-items: flex-start;
 }
-.header-container .logo-container > * {
-  /* border:0px solid orange; */
-}
+
 .header-container .logo-container > *:first-child {
   flex-basis: 60px;
 }
@@ -22,39 +20,29 @@ header {
   color: var(--logo-text-color);
   font-weight: 500;
 }
-.header-container .header-row {
-}
+
 .header-container .header-row {
   display: flex;
   flex-flow: row wrap;
   justify-content: space-between;
-  /* gap:1%; */
-  /* position: relative; */
-  /* border:1px solid red; */
+  /* border: 1px solid red; */
+  padding: 1.5rem 0rem;
 }
 .header-container .header-row > *:last-child {
   flex-basis: 4%;
   display: flex;
-  /* align-items:center; */
   justify-content: space-around;
-  /* border:1px solid red; */
+  /* border: 1px solid red; */
 }
 .header-container .header-row > *:last-child > *:last-child {
   /* border:1px solid red; */
   flex-basis: 100%;
 }
-/* .header-container
-.header-row>*:last-child>*{
-border:1px solid green;
-} */
 
 .header-container .header-row > *:first-child {
   flex-basis: 100px;
 }
-.header-container .header-row > * {
-  /* flex-basis:48%; */
-  /* border:0px solid green; */
-}
+
 .header-container .header-row .navbar-container {
   position: absolute;
   background-color: #010216;
@@ -70,7 +58,11 @@ border:1px solid green;
   transition: transform 0.5s ease;
 }
 
-/* ======toggle button Mobile view styles======= */
+/* ===========================
+===============================
+toggle button Mobile view styles
+=============================== 
+*/
 
 .toggle-btn {
   cursor: pointer;
@@ -79,6 +71,7 @@ border:1px solid green;
   font-size: 1.4em;
   padding: 0px 12px 6px;
   z-index: 1000;
+  /* border: 1px solid red; */
 }
 .toggle-btn:focus-within,
 .toggle-btn:hover {
@@ -149,13 +142,16 @@ width:100%; */
   padding: 0.4rem 2rem;
 }
 
-/* =================================================
-===========================MEDIA QUERIES============ 
+/* ==========================
+============MEDIA QUERIES===== 
 Break points 0px - 480px -980px;
 */
 
 /* 
-************not part standard of the standard break points*******
+*************************
+not part standard of
+ the standard breakpoints
+*************************
 for the header theme icon 
 */
 /*===========================mini Tablet==================== */
@@ -175,8 +171,12 @@ for the header theme icon
   }
 }
 
-/* =========================Deskktop Device================= */
+/*
+============================
+==========Deskktop Device=====
+============================== */
 @media (min-width: 980px) {
+  /* in check */
   .header-container {
     /* border:0px solid yellow; */
     padding: 1rem;
@@ -211,6 +211,7 @@ Turn off the toggle button
     display: flex;
     /* justify-content:center; */
     /* padding:1rem; */
+    /* border: 1px solid teal; */
   }
   .header-container .header-row > *:first-child,
   .header-container .header-row > *:last-child {
@@ -220,24 +221,12 @@ Turn off the toggle button
     flex-basis: 15%;
     margin-right: auto;
   }
-  /* already done above */
-  /* .header-container
-.header-row>*:last-child{
-border:2px solid cyan;
-display:flex;
-align-items:center;
-padding:0px;
-} */
+
   .header-container .header-row > *:last-child {
     align-items: flex-start;
-    /* justify-content:flex-start; */
     /* border:2px dotted teal; */
-    /* flex-flow:row wrap; */
   }
-  /* .header-container
-.header-row>*:last-child>*{
-flex-basis:48%;
-} */
+
   .header-container .header-row > *:last-child > *:last-child {
     order: 1;
     /* border:1px solid red; */
@@ -294,5 +283,3 @@ flex-basis:48%;
     text-align: center !important;
   }
 }
-
-/*large Desktop device*/

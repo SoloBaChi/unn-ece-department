@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"/>
+    <link rel="icon" href="../../static/images/unn-logo-2.png" type="images/favicon">
+    <link href="../../static/font-awesome/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href="../../static/css/index.css" rel="stylesheet">
+    <title>Engr Duru Chinedu - Department of Electronic Engineering UNN</title>
+   </head>
+<body class="dark-theme">
+ <!-- Welcome to ECE Department(Center Of Excellence), Excellence is our model 
+    ========Few Code Notes===============
+    Note that these were written for the essence of code maintainability
+    :::::Frequently Used classes
+    1. page-container: this class was used in this code as a general wrapper for each page
+
+    ::::Responsive Design Pattern
+    The principle applied in the development of this site is mobile first principle
+    -->
+<div class="page-container">
+<header class="header">
+    <div class="header-container">
+        <div class="header-row"> 
+        <div class="logo-container">
+            <div class="unn-logo">
+                <a href="../../index.html">
+                    <img src="../../static/images/unn-logo.svg">
+                </a>
+            </div>
+            <div class="logo-text">
+               <div>
+                <p>University of Nigeria</p>
+               </div>
+               <div>
+                <p>Department of Electronic and Computer Engineering</p>
+                <small class="department-motto">Center of Excellence...</small>
+               </div> 
+            </div>
+        </div>
+        <div>
+            <div class="toggle-btn" id="toggle-btn">&#9776;</div>
+            <div class="light-theme-icon">
+             <svg class="light-icon black-theme" width="18" height="18" viewBox="0 0 25 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M13.9867 28C18.3008 28 22.2409 26.0354 24.8513 22.8161C25.2375 22.3398 24.8164 21.6441 24.2196 21.7579C17.4337 23.0514 11.2021 17.8435 11.2021 10.9869C11.2021 7.0373 13.3144 3.40534 16.7475 1.44977C17.2766 1.14833 17.1436 0.345242 16.5422 0.234063C15.6993 0.0784728 14.8439 0.000127768 13.9867 0C6.26619 0 0 6.26232 0 14C0 21.7278 6.25636 28 13.9867 28Z" fill="#0A3E09"/>
+             </svg>
+            <svg class="light-icon white-theme" width="20" height="20" viewBox="-3.6 -3.6 43.20 43.20" xmlns="http://www.w3.org/2000/svg" fill="#ffffff" stroke="#ffffff" stroke-width="0.00036" transform="matrix(-1, 0, 0, -1, 0, 0)rotate(45)"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round" stroke="#ffffffCCCCCC" stroke-width="1.7280000000000002"></g><g id="SVGRepo_iconCarrier"> <g id="Lager_93" data-name="Lager 93" transform="translate(2 2)"> <g id="Sun_3_Brightness_3" data-name="Sun 3, Brightness 3"> 
+             <path id="Path_68" data-name="Path 68" d="M32,14H27.033c-2,1.769-.779,4,.967,4h4.967C34.966,16.231,33.746,14,32,14Z" fill="#ffffff"></path> <g id="Path_69" data-name="Path 69" fill="none" stroke-miterlimit="10"> <path d="M17.172,10.111a6,6,0,1,0,4.715,4.715A6.01,6.01,0,0,0,17.172,10.111Z" stroke="none"></path> <path d="M 15.99852275848389 13.99979972839355 C 15.40029907226563 13.99979972839355 14.83786392211914 14.26465797424316 14.45541763305664 14.72645950317383 C 14.18128776550293 15.05748176574707 13.88667678833008 15.62165832519531 14.04035758972168 16.43178939819336 C 14.1787109375 17.16349411010742 14.83581733703613 17.82003402709961 15.56771087646484 17.958740234375 C 15.71307563781738 17.98624801635742 15.85765266418457 18.00020027160645 15.99740505218506 18.00020027160645 C 16.59555816650391 18.00020027160645 17.15798187255859 17.73542404174805 17.54046440124512 17.27376556396484 C 17.81481742858887 16.94261169433594 18.1097583770752 16.37818908691406 17.95689964294434 15.57052993774414 C 17.81802749633789 14.83748245239258 17.1605224609375 14.17996406555176 16.42829895019531 14.041259765625 C 16.28293609619141 14.01375389099121 16.13835906982422 13.99979972839355 15.99860572814941 13.99979972839355 L 15.99852275848389 13.99979972839355 M 15.99860000610352 9.999795913696289 C 16.38235282897949 9.999801635742188 16.77459716796875 10.03580474853516 17.17200469970703 10.11100006103516 C 19.52100563049316 10.55599975585938 21.44199371337891 12.47699928283691 21.88699340820313 14.82600021362305 C 22.61180877685547 18.65568542480469 19.69624137878418 22.00020408630371 15.99740028381348 22.00020408630371 C 15.61366271972656 22.00020408630371 15.22141265869141 21.96419525146484 14.82400512695313 21.88899993896484 C 12.47600555419922 21.44400024414063 10.55400466918945 19.52299880981445 10.11000442504883 17.17499923706055 C 9.383377075195313 13.34440803527832 12.29961967468262 9.999755859375 15.99860000610352 9.999795913696289 Z" stroke="none" fill="#ffffff"></path> </g> <rect id="Rectangle_26" data-name="Rectangle 26" width="8" height="4" rx="1.993" transform="translate(26 14)" fill="#ffffff"></rect> <rect id="Rectangle_27" data-name="Rectangle 27" width="8" height="4" rx="1.993" transform="translate(18 26) rotate(90)" fill="#ffffff"></rect> <rect id="Rectangle_28" data-name="Rectangle 28" width="8" height="4" rx="1.993" transform="translate(18 -2) rotate(90)" fill="#ffffff"></rect> <rect id="Rectangle_29" data-name="Rectangle 29" width="8" height="4" rx="1.993" transform="translate(-2 14)" fill="#ffffff"></rect> <g id="Group_22" data-name="Group 22"> <rect id="Rectangle_30" data-name="Rectangle 30" width="6.925" height="3.766" rx="1.883" transform="translate(23.22 6.117) rotate(-45)" fill="#ffffff"></rect> </g> <g id="Group_23" data-name="Group 23"> <rect id="Rectangle_31" data-name="Rectangle 31" width="3.766" height="6.925" rx="1.883" transform="matrix(0.707, -0.707, 0.707, 0.707, 23.22, 25.883)" fill="#ffffff"></rect> </g> <g id="Group_24" data-name="Group 24"> <rect id="Rectangle_32" data-name="Rectangle 32" width="3.766" height="6.925" rx="1.883" transform="translate(1.22 3.883) rotate(-45)" fill="#ffffff"></rect> </g> <g id="Group_25" data-name="Group 25"> <rect id="Rectangle_33" data-name="Rectangle 33" width="6.925" height="3.766" rx="1.883" transform="translate(1.22 28.117) rotate(-45)" fill="#ffffff"></rect> </g> </g> </g> </g>
+            </svg>
+            </div>
+            <nav class="navbar-container">
+                <div class="close-toggle-btn">
+                  <span>&#10005</span>
+                </div>
+                <ul class="list-menu">
+                    <li class="list-item"><a href="../../index.html">home</a></li>
+                    <li class="list-item dropdown dropdown-1"><a href="../../programs/programs.html">programmes <span class="fa fa-caret-down"></span></a>
+                        <ul class="dropdown-menu">
+                        <li> <a href="../../programs/undergraduate.html" target="_blank">undergraduate degree programmes</a></li>
+                        <li class="list-item dropdown dropdown-2"> <a href=".">postgraduate degree programmes <span class="fa fa-caret-down"></span></a>
+                            <ul class="dropdown-menu">
+                             <li> <a href="../../programs/msc.html" target="_blank">M.Sc and M.Eng Degree Programmes</a></li>
+                             <li> <a href="../../programs/phd.html" target="_blank">Phd Degree Programmes</a></li>
+                            </ul>
+                        </li>
+                        </ul>
+                    </li>
+                    <li class="list-item dropdown dropdown-1"><a href="../../staffs/staffs.html">staff <span class="fa fa-caret-down"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="../academic-staffs/academic.html">academic staff</a></li>
+                            <li><a href="../technical-staffs/technical.html">technical staff</a></li>
+                            <li><a href="../administrative-staffs/administrative.html">administrative staff</a></li>
+                        </ul>
+                    </li>
+                    <li class="list-item dropdown"><a href="#">digital-learning <span class="fa fa-caret-down"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="../../digital-library/e-learning.html">e-learnig</a></li>
+                            <li><a href="../../digital-library/virtual-libary.html">virtual library</a></li>
+                        </ul>
+                    </li>
+                    <li class="list-item dropdown"><a href="../../research.html">research <span class="fa fa-caret-down"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="../../digitalelectronics.html">digital elctronics</a></li>
+                            <li><a href="../../research/telecommunication.html">communications</a></li>
+                            <li><a href="../../research/control.html">control engineering</a></li>
+                        </ul>
+                    </li>
+                    <li class="list-item"><a href="../../alumni.html">alumni</a></li>
+                    <li class="list-item"><a href="../../newsandevents.html">news &amp; events</a></li>
+                    <li class="list-item"><a href="../../contactus.html">contact us</a></li>
+                    <li class="list-item"><a href="../../aboutus.html">about us</a></li>
+                    <!-- <li><a href="#"><input type="search"></a></li> -->
+                </ul>
+            </nav>
+        </div>
+        </div>
+    </div>
+</header>
+
+
+<!--Description: main site section -->
+<main class="staff-page">
+<!-- contactus page -->
+<section class="academic-staff">
+<div class="profile-header">
+    <h3>Prof. Ogechukwu N. Iloanusi (Ph.D)</h3>
+    <img src="http://ece.unn.edu.ng/wp-content/uploads/sites/278/2020/08/research-gate-e1597437663821.jpg"/>
+    <p><small>Professor of Electronic Engineering</small></p>
+    <p>Department of Electronic Engineering</p>
+    <p>Faculty of Engineering</p>
+    <p>University of Nigeria Nsukka 410001, Enugu State. Nigeria.</p>
+    <p><a href="mailto:ogechukwu.iloanusi@unn.edu.ng">ogechukwu.iloanusi@unn.edu.ng</a></p> 
+    <a>Google Scholar</a>
+    <a>Linkedin</a>
+    <a>Orcid.org</a>
+    <a>Website</a>
+</div>
+</section>
+
+<section>   
+    <h3>ABOUT OGECHUKWU N. ILOANUSI</h3>
+    <div>
+        <p class="paragraph">   
+        Ogechukwu N. Iloanusi (Ph.D) is a Full Professor at the Department of Electronic Engineering, Faculty of Engineering, University of Nigeria, Nsukka Campus. She joined the Faculty in October 2005.
+        She holds a B.Eng (1999) and M.Eng (2003) in Electronic Engineering; Ph.D (2011) in Digital Electronics, Computer and Biometrics from the Department of Electronic Engineering, University of Nigeria.
+        Her research interests include biometrics signal processing, pattern recognition, artificial intelligence, computer vision and machine/deep learning, She is a member of the Council for the Regulation of Engineering in Nigeria (COREN), Institute of Electrical and Electronic Engineers (IEEE) and Women in Engineering (WIE). She is a Commonwealth Fellow.
+        </p>
+        <P class="paragraph">
+        Since 2006, She has completed supervision of 42 projects of at least 120 undergraduate students and 23 postgraduate students. She currently supervises 8 Ph.D. and 2 Masters students. She is also the Director of research in the Biometrics Vision and Computing Laboratory (BVCLab).
+        She is currently the Head of Department of Electronic Engineering and is serving as the first female Head of Department. She is the first female Professor in the Faculty of Engineering, University of Nigeria since its inception in 1961.
+        She also authored the book titled -fundamentals of Biometrics (2016) with tow other co-authors. She has over 50 journal and conference publications and has attended over 20 conferences and workshops internationally in countries in Africa, North America, Europe and the Middle East.
+        </p>
+        <p class="paragraph">
+        Prof. Ogechukwu Iloanusi was twice a Visiting Scholar at the Lane Department of Computer Science and Electrical Engineering, College of Engineering and Mineral Resources, West Virginia University, where she carried out pre-doctoral research for a total of ten months from August 2009 to November 2009 and April 2010 to November 2010.
+        She was also granted a Commonwealth Academic Fellowship Award by the Commonwealth Scholarship Commission in the UK where she was a Visiting Fellow at the University of Southampton, Highfield, Southampton, UK from September 2012 to December 2012.
+        She also participated in a Teaching Fellowship for Nigerian University Professors at the Massachusetts Institute of Technology where she collaborated with the Faculty at MIT in the development of new curriculum and teaching methods that were adapted to her home university from September to December 2013.
+        She has also served as an Assistant Guest Professor in a one-year contract with the University of Notre Dame du Lac, Notre Dame, IN, USA, from a period of August 2016 to August 2017.
+        </p>
+    </div>
+</section> 
+
+<section>
+    <h3>DESIGNATION</h3>
+    <dd><p>Department of Electronic Engineering, Faculty of Engineering, University of Nigeria Nsukka.</p></dd>
+    <dd><P>Current Appointment: Professor October 2019 – Present</P></dd>
+    <dd><P>Previous Appointments: Senior Lecturer October 2012 – September 2019</P></dd>
+    <dd><P>Lecturer I October 2008 – September 2012t</P></dd>
+    <dd><P>Lecturer II October 2005 – September 2008</P></dd>
+</section>
+
+<section>
+    <h3>CURRENT RESPONSIbilty</h3>
+    <ol>
+        <li><p class="paragraph">Lecturer to undergraduate and post graduate students of the department of electronic engineering.</p></li>
+        <li><p class="paragraph">Research</p></li>
+        <li><p class="paragraph">Head of Department (August 2020 – Date)</p></li>
+        <li><p class="paragraph">Supervisor of undergraduate projects for seventeen (17) years</p></li>
+        <li><p class="paragraph">Supervisor of post graduate research for eleven (11) years</p></li>
+    </ol>
+</section>
+
+<section>   
+    <h3>EDUCATIONAL INSTITUITIONS ATTENDED</h3>
+    <ul>
+        <li>
+           <p class="paragraph"> University of Nigeria Nsukka 2007 – 2011</p>
+        </li>
+    </ul>
+    <dd><P>Ph.D. Eng. Electronic Engineering (Obtained February 2011)</P></dd>
+    <dd><P>Field of study: Digital Electronics and Computer</P></dd>
+    <dd><P>Area of study: Biometrics and pattern recognition</P></dd>
+    <dd><P>Title of thesis: Fingerprint indexing using minutiae quadruplets</P></dd>
+    <dd><P>Area: Fingerprint biometrics</P></dd>
+    <ul>
+        <li>
+           <P class="paragraph"> University of Nigeria Nsukka 2001 – 2003</P>
+        </li>
+    </ul>
+    <dd><P>M. Eng. Electronic Engineering (Obtained October 2003)</P></dd>
+    <dd><P>Graduated Distinction</P></dd>
+    <dd><P>Field of study: Digital Electronics and computer</P></dd>
+    <dd><P>Title of dissertation: A dynamic website for the university of Nigeria</P></dd>
+    <ul>
+        <li>
+           <p class="paragraph"> University of Nigeria Nsukka 1994 – 1999</p>
+
+        </li>
+    </ul>
+    <dd><P>B. Eng. Electronic Engineering (Obtained December 1999)</P></dd>
+    <dd><P>Graduated Second Class Honors (Upper division)</P></dd>
+    <dd><P>Area of Study: Artificial Intelligence (AI) and robotics</P></dd>
+    <dd><P>Title of project: A review of techniques for teaching robots to learn</P></dd>
+</section> 
+
+<section>
+    <h3>CURRENT RESEARCH INTEREST</h3>
+    <dt><p>
+        <dd><p>
+        <ul>
+            <li><p class="paragraph">Face, fingerprint, Iris, voice and soft and multi-modal Biometrics</p></li>
+            <li><p class="paragraph">Machine and Deep Learning</p></li>
+            <li><p class="paragraph">Estimation and Classification algorithms from hard and soft biometrics</p></li>
+            <li><p class="paragraph">Image analysis and segmentation</p></li>
+            <li><p class="paragraph">COIVD-19 prediction and Medical Image processing, segmentation and classification</p></li>
+        </ul>
+        </p></dd>
+    </p></dt>
+</section>
+
+
+<section>
+    <h3>INTERNATIONAL AFFILIATION</h3>
+
+    <dt><p>Visiting Guest Assistant Professor</p></dt>
+    <dd><p>Institution: Computer Science and Engineering Department, College of Engineering, University of Notre Dame, Notre Dame, IN 46556</p></dd>
+    <dd><p>Position: Guest Assistant Professor</p></dd>
+    <dd><p>Purpose: Collaboration in Research in Computer Vision and Machine Learning.</p></dd>
+    <dd><p>Date: August 26, 2016 – August 28, 2017</p></dd>
+
+    <dt><p>Teaching Fellowship</p></dt>
+    <dd><p>Institution: Massachusetts Institute of Technology (MIT)</p></dd>
+    <dd><p>Position: Visiting Fellow (Teaching Fellowship for Nigerian University Professors)</p></dd>
+    <dd><p>Purpose: Collaboration with the Faculty at the MIT in the development of new curriculum and teaching methods that were adapted to my home university.</p></dd>
+    <dd><p>Sponsors: MIT International Science and Technology Initiatives / TOTAL Nigeria</p></dd>
+    <dd><p>Date: September 3, 2013 – December 16, 2013</p></dd>
+
+    <dt><p>Post-doctoral Fellowship</p></dt>
+    <dd><p>Institution: University of Southampton, Highfield, Southampton, SO17 1BJ, U.K.</p></dd>
+    <dd><p>Position: Visiting Fellow</p></dd>
+    <dd><p>Purpose: Commonwealth Academic Fellowship</p></dd>
+    <dd><p>Field of study: Biometrics</p></dd>
+    <dd><p>Sponsors: Commonwealth Scholarship Commission in the UK</p></dd>
+    <dd><p>Date: September 3, 2012 – December 2, 2012</p></dd>
+
+    <dt><p>Pre-doctoral Fellowship (two terms)</p></dt>
+    <dd><p>Institution: Lane Department of Computer Science and Electrical Engineering College of Engineering and Mineral Resources West Virginia University, Morgantown, WV 26506-6109, USA</p></dd>
+    <dd><p>Position: Visiting Scholar</p></dd>
+    <dd><p>Purpose: Pre-doctoral Fellowship</p></dd>
+    <dd><p>Field of study: Fingerprint Biometrics</p></dd>
+    <dd><p>Dates: April 19, 2010 – October 19, 2010,August 27, 2009 – November 20, 2009</p></dd>
+</section>
+
+<section>   
+    <h3>COURSES CURRENTLY TEACHING</h3>
+    <dt><p>First Semester</p></dt>
+    <dd><p>Advanced Security Systems – ECE715 [Graduate course]</p></dd>
+    <dd><p>Technical Writing – ECE492 [Undergraduate course]</p></dd>
+    <dd><p>Control Theory – ECE451 [Undergraduate course]</p></dd>
+
+    <dt><p>Second Semester</p></dt>
+    <dd><p>Advanced Signal Processing – ECE716 (2015 – date) [Graduate course]</p></dd>
+    <dd><p>Digital Signal Processing – ECE626 (2011 – date) [Graduate course]</p></dd>
+    <dd><p>Biometrics and Image Processing – ECE628 (2015 – date) [Graduate course]</p></dd>
+    <dd><p>Digital Signal Processing – ECE574 (2011 – date) [Undergraduate course]</p></dd>
+</section> 
+
+<section>
+<h3>COURSES TAUGHT PREVIOUSLY</h3>
+<dt><p>First Semester</p></dt>
+<dd><p>Digital Systems Design – ECE620 (2011- date) [Graduate course]</p></dd>
+<dd><p>Advanced Circuit Techniques – ECE521 (2011– 2014)</p></dd>
+<dd><p>Digital Logic Theory – ECE472 (2005 – 2012)</p></dd>
+<dt><p>Second Semester</p></dt>
+<dd><p>Industrial Electronics – ECE523 (2007 – 2008, 2011)</p></dd>
+<dd><p>Solid State Electronics – ECE522 (2006 – 2009, 2011, 2015 – 2016) [Undergraduate course]</p></dd>
+<dd><p>Applied Electronics I – ECE322 (2006 – 2008, 2011 – 2016) [Undergraduate course]</p></dd>
+<dd><p>Engineering Computer Programming – ECE271 (2005 – 2009)</p></dd>
+</section>
+<section>
+<h3>CONFERENCES AND WORKSHOPS ATTENDED</h3>
+    <ol>
+        <li><p class="paragraph">8th IEEE International Conference on Adaptive Science and Technology (ICAST), Accra, Ghana, November 25-26, 2021</p></li>
+        <li><p class="paragraph">2020 Int. E-Health and Bioengineering Conference (EHB), Iasi, Romania, October 29 – 30, 2020.</p></li>
+        <li><p class="paragraph">18th IEEE International Conference on Machine Learning and Applications (ICMLA), 2019, Boca Raton, Florida, USA, December 16 – 19, 2019</p></li>
+        <li><p class="paragraph">6th IEEE International Conference on Soft Computing & Machine Intelligence (ISCMI), Johannesburg, South Africa, November 19-20, 2019</p></li>
+        <li><p class="paragraph">1st IEEE International Conference on Mechatronics, Automation and Cyber-Physical Computer System (MAC-2019), FUTO, Owerri, March 7-8, 2019.</p></li>
+        <li><p class="paragraph">The 3rd African International Conference/Workshop on Applications of Nanotechnology to Energy, Health and Environment, University of Nigeria, July 15 – 21, 2018</p></li>
+        <li><p class="paragraph">The 1st International Conference of the Faculty of Engineering, University of Nigeria, Nsukka, Enugu State. Nigeria. April 25-28th, 2018</p></li>
+        <li><p class="paragraph">2nd Int. Conf. on Information & Communication Technology & its Applications, Federal University of Technology, Minna, Nigeria (2018)</p></li>
+        <li><p class="paragraph">The 3rd IEEE International Conference on Electro-Technology for National Development (NIGERCON), November 7 – 10, 2017</p></li>
+        <li><p class="paragraph">7th IEEE International Conference on Biometrics: Theory, Applications and Systems (BTAS), Arlington, Virginia, USA, September 8 – 11, 2015.</p></li>
+        <li><p class="paragraph">5th Workshop on Entrepreneurship for Physicists and Engineers from Developing Countries. The Abdus Salam International Center for Theoretical Physics, Strada Costiera 11, 34014 Trieste – Italy. 31 March – 4 April 2014</p></li>
+        <li><p class="paragraph">Three (3) months course on Teaching and Learning Laboratory (Teaching College – Level Science and Engineering) at the Massachusetts Institute of Technology, USA. Sept 10 to Dec 2, 2013</p></li>
+        <li><p class="paragraph">Teaching Workshop for International Faculty Fellows at the Sloan School of Management, in Massachusetts Institute of Technology, USA. Friday, Oct 4 – Oct 6, 2013</p></li>
+        <li><p class="paragraph">Empowering the Teachers (ETT) Seminars at the MIT International Science and Technology Initiative building E40, at the Massachusetts Institute of Technology. Fridays in the Fall Semester, Sept 6 to Dec 13, 2013</p></li>
+        <li><p class="paragraph">The 4th National Engineering Conference “Energy Sources for Power Generation” held at the Department of Electrical Engineering, University of Nigeria, Nsukka, Enugu State, Nigeria (ES4PG-2013), July 21 – 23, 2013.</p></li>
+        <li><p class="paragraph">The 2nd Workshop on Open Source and the Internet for Building Scientific Global Communities, The Abdus Salam International Center for Theoretical Physics, Strada Costiera 11, 34014 Trieste – Italy. November 28 to December 16, 2011.</p></li>
+        <li><p class="paragraph">The IEEE Computer Society Workshop on Biometrics at the Computer Vision and Pattern Recognition (CVPR) Conference, (Colorado Springs, USA), June 20-25, 2011.</p></li>
+        <li><p class="paragraph">The V International Conference of MIT LINC (Learning International Networks Consortium) 2010 on Technology Enabled Education, in MIT Cambridge, MA, USA, May 23rd to 26th 2010.</p></li>
+        <li><p class="paragraph">The 6th International Summer School on Biometrics for Secure Authentication: Multimodal Systems and Identity Management. Hotel Capo Caccia, 07041, Alghero, Sardinia, Italy. 8 – 12 June 2009.</p></li>
+        <li><p class="paragraph">The V International Conference on Multimedia and ICT in Education. Lisbon, Portugal. 22nd to 24th April 2009.</p></li>
+        <li><p class="paragraph">The Fourth Annual Conference of Learning International Networks consortium (MIT LINC 2007) in Dead Sea, Jordan. October 27th to 31st, 2007.</p></li>
+        <li><p class="paragraph">Biometric Consortium Conference 2007 in Baltimore Convention Center, Baltimore, MD, USA. September 11th to 13th, 2007.</p></li>
+        <li><p class="paragraph">Train-the-Trainer Workshop on E-Learning. Computer Communications Center, University of Nigeria, Nsukka. July 31 – August 4, 2006.</p></li>
+    </ol>
+</section>
+<section>
+    <h3>PREVIOUS WORK EXPERIENCE</h3>
+<dt><p>A. Establishment: Computer Science and Engineering Department, College of Engineering, University of Notre Dame, Notre Dame, IN 46556, USA</p></dt>
+    <ol>
+        <li><p class="paragraph">Post: Guest Assistant Professor</p></li>
+        <li><p class="paragraph">Date: August 26, 2016 – August 28, 2017</p></li>
+    </ol>
+<dt><p>Responsibilities</p></dt>
+    <ol>
+        <li><p class="paragraph">Collaboration in Research in Computer Vision and Machine Learning.</p></li>
+    </ol>
+
+<dt><p>B. Establishment: General Data Engineering Services Nig. Ltd (SKANNET) Ibadan, Oyo State. Nigeria</p></dt>
+    <ol><li><p class="paragraph">Post: Web Designer/Manager</p></li>
+        <li><p class="paragraph">Date: February 2005 – October 2005</p></li>
+    </ol>
+<dt><p>Responsibilities</p></dt>
+    <ol>
+        <li><p class="paragraph">Designed and updated websites and databases for clients.</p></li>
+        <li><p class="paragraph">Registered and set up domain names in the servers</p></li>
+        <li><p class="paragraph">Conducted trainings in web design and other applications</p></li>
+    </ol>
+<dt><p>C. Establishment: Educational Cooperative Society (ECS)/Women’s Board. Ibadan, Oyo State</p></dt>
+<ol>
+    <li><p class="paragraph">Post: Computer Engineer</p></li>
+    <li><p class="paragraph">Date: October 2003 to February 2005</p></li>
+</ol>
+<dt><p>Responsibilities:</p></dt>
+    <ol>
+        <li><p class="paragraph">Implemented training course for second year Engineering students</p></li>
+        <li><p class="paragraph">Maintained the computers in the laboratory</p></li>
+    </ol>
+<dt><p>D. Establishment: Computer Communication Center, University of Nigeria Nsukka Enugu State.</p></dt>
+    <ol>
+        <li><p class="paragraph">Post: Computer Course facilitator</p></li>
+        <li><p class="paragraph">Date: October 2000 – May 2003</p></li>
+    </ol>
+<dt><p>Responsibilities:</p></dt>
+    <ol>
+        <li><p class="paragraph">Implemented training course for second year Engineering students</p></li>
+        <li><p class="paragraph">Maintained the computers in the laboratory</p></li>
+    </ol>
+</section>
+
+<section>
+    <h3>PUBLICATIONS</h3>
+    <dt>Link to all publication</dt>
+    <a href="http://scholar.google.com/citations?user=9q7IHY8AAAAJ&hl=en" target="_blank"></a>
+</section>
+
+<section>    
+    <h3>REVIEWER IN JOURNALS</h3>
+    <ol type="A">
+        <li><p class="paragraph">Nigerian Journal of Technology (2012 – date)</p></li>
+        <li><p class="paragraph">International Journal of Electronics (2012 – date)</p></li>
+        <li><p class="paragraph">IEEE Transactions on Information Forensics & Security (2015 – date)</p></li>
+        <li><p class="paragraph">IEEE Transactions on Systems, Man and Cybernetics: Systems (2017 – date)</p></li>
+        <li><p class="paragraph">IEEE Transactions on Biometrics, Behaviour and Identity Science (2019 – date)</p></li>
+        <li><p class="paragraph">IEEE Transactions on Image Processing (2019 – date)</p></li>
+        <li><p class="paragraph">IEEE Access (2017 – date)</p></li>
+        <li><p class="paragraph">IET Biometrics (2016 – date)</p></li>
+        <li><p class="paragraph">Elsevier Pattern Recognition (2017 – date)</p></li>
+        <li><p class="paragraph">Machine Vision and Applications (2019 – date)</p></li>
+        <li><p class="paragraph">The Imaging Science Journal (2019 – date)</p></li>
+    </ol>
+</section>
+
+<section>
+<div class="profile-footer">
+    <a href="https://www.researchgate.net/profile/Edward-Anoliefo" target="_blank">
+        <img src="http://ece.unn.edu.ng/wp-content/uploads/sites/278/2020/08/research-gate-e1597437663821.jpg"/>
+    </a>
+    <a href="https://scholar.google.com/citations?user=ptGOJrgAAAAJ&hl=en&oi=sra" target="_blank">
+        <img src="http://ece.unn.edu.ng/wp-content/uploads/sites/278/2020/08/gscholar-e1597439147191.jpg"/>
+    </a>
+</div>
+</section>
+</main>
+
+
+
+<footer class="site-footer">
+    <div class="footer-contianer">
+        <div class="footer-row flex-4">
+            <div class="footer-col col-1">
+                <figure class="unn-logo">
+                    <div class="img-container">
+                        <img src="../../static/images/unn-logo.svg" alt="unn logo"/>
+                    </div>
+                    <figcaption>
+                        <p>Electronic Engineering</p>
+                    </figcaption>
+                </figure>
+            </div>
+            <div class="footer-col">
+                <ul>
+                    <li><a class="round-cta-btn" target="_blank" href="../programs/programs.html">programmes</a></li>
+                    <li><a class="round-cta-btn" target="_blank" href="../../staffs/staffs.html">staff</a></li>
+                    <li><a class="round-cta-btn" target="_blank" href="../../alumni.html">almuni</a></li>
+                    <li><a class="round-cta-btn" target="_blank" href="../../digital-library/e-learning.html">e-learning</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                    <ul>
+                        <li><a class="round-cta-btn" target="_blank" href="../../research/research.html">research</a></li>
+                        <li><a class="round-cta-btn" target="_blank" href="../../newsandevents.html">news</a></li>
+                        <li><a class="round-cta-btn" target="_blank" href="../../aboutus.html">about us</a></li>
+                        <li><a class="round-cta-btn" target="_blank" href="../../contactus.html">contact us</a></li>
+                    </ul>
+            </div>
+        </div>
+    </div>
+    <!-- current date -->
+    <small style="text-align:center;display:block;" class="copyright">&copy; <span id="updated-year"> </span> Department of Electronic Engineering</small>
+</footer>
+<script src="../../static/js/theme.js"></script>
+<script src="../../static/js/index.js"></script>
+<script src="../../static/js/owl.carousel.js"></script>
+
+<script>
+    	const updateYear = document.getElementById("updated-year");
+    	const date = new Date();
+    	updateYear.innerText += date.getFullYear();
+</script>
+</div>
+</body>
+</html>

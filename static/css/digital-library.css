@@ -33,6 +33,7 @@ Loading Animation
 /* ==================================
  Virtual Librabry Styles
 =======================================*/
+.virtual-library h1,
 .virtual-library h2 {
   text-align: initial;
 }
@@ -48,17 +49,45 @@ Loading Animation
   border-radius: inherit;
   outline: none;
   border: 1px solid var(--color);
+  text-align: center;
 }
 .virtual-library .search-bar .search-icon {
   position: absolute;
   /* width: 100%; */
   top: 15px;
-  right: 15px;
+  left: 15px;
   cursor: pointer;
 }
 .virtual-library .search-bar .search-icon svg {
   width: 26px;
 }
+
+.virtual-library .cta-btn {
+  width: 100%;
+  padding: 0.8rem;
+  background-color: var(--color);
+  color: #fff;
+  border-radius: 25px;
+}
+
+.virtual-library .flex-2 .banner-image {
+  height: 350px;
+  margin-top: 4rem;
+}
+.virtual-library .flex-2 .banner-image img {
+  height: 100%;
+  object-fit: cover;
+  object-position: 100% 50%;
+  border-radius: 14px;
+}
+
+/* 
+==============================
+==============================
+for the generated card figure 
+(library landing page)
+===============================
+*/
 .card figure {
   border: 1px solid red !important;
   margin-bottom: 2rem;
@@ -68,6 +97,7 @@ figure.card {
   border-radius: 14px;
   padding: 1rem;
 }
+
 figure.card .card-container {
   height: 100%;
   /* padding: 0rem 1rem; */
@@ -119,6 +149,52 @@ figure.card .card-container .fa-ellipsis {
   border-radius: 14px;
 }
 
+/* 
+==============================
+==============================
+for the generated card figure 
+(book catalogue section)
+===============================
+*/
+figure.card .cta-btn {
+  width: 60%;
+}
+figure.book-catalogue-card {
+  position: relative;
+}
+figure.book-catalogue-card:hover {
+  background-color: rgb(0, 0, 0, 0.5);
+}
+figure.book-catalogue-card:hover .readmore a {
+  background-color: var(--green);
+  color: #fff;
+  display: block;
+}
+figure.book-catalogue-card .readmore {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  /* border: 1px solid green; */
+}
+figure.book-catalogue-card .readmore a {
+  margin: auto;
+  display: none;
+}
+
+/* 
+===========================
+large desktop
+===========================
+*/
+@media (min-width: 980px) {
+  .virtual-library .cta-btn {
+    width: 40%;
+  }
+  .virtual-library .flex-2 .banner-image {
+    margin-top: 0;
+  }
+}
 @media (min-width: 1460px) {
   .card .main-section.flex-2 {
     align-items: center;

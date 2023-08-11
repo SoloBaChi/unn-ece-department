@@ -56,8 +56,7 @@ right:-15px;
 ===================Carousel section================ 
 */
 .carousel-section {
-  border: 0px solid red;
-  padding: 0;
+  /* border: 0px solid red; */
   position: relative;
   margin-bottom: 4rem;
 }
@@ -65,7 +64,7 @@ right:-15px;
   width: 100%;
 }
 .carousel-section .carousel-container .carousel-card {
-  border: 0px solid orange;
+  /* border: 1px solid orange; */
   height: 220px;
   border-radius: 14px;
 }

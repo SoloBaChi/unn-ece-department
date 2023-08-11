@@ -1,0 +1,19 @@
+.scroll-top {
+  position: fixed;
+  bottom: 7.5rem;
+  right: 1rem;
+  z-index: 4000;
+  font-size: 2rem;
+  background: var(--green);
+  /* background: rgba(0, 255, 0, 0.1); */
+  color: #fff;
+  border-radius: 0.5rem;
+  padding: 0.4rem 0.8rem;
+  border: 1px solid var(--white-color);
+  display: none;
+}
+
+.scroll-top:hover {
+  background: var(--color);
+  color: #fff;
+}

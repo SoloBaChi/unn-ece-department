@@ -4,20 +4,16 @@
   /*height:500px;*/
   min-height: 240px;
 }
-.site-footer .iframe-wrapper {
-  border: 1px solid red;
-  height: 100%;
-}
-.site-footer iframe {
-  width: 100%;
-  display: block;
-  height: 100%;
-}
+
 .footer-col {
   text-align: center;
   margin: 2rem 0rem;
 }
-.site-footer .unn-logo .img-container {
+/* .site-footer .unn-logo .img-container {
+  width: 60%;
+  margin: 0 auto;
+} */
+.site-footer .footer-col.col-1 {
   width: 60%;
   margin: 0 auto;
 }
@@ -36,4 +32,10 @@
 .site-footer span,
 .site-footer small {
   color: var(--white-color);
+}
+
+@media (min-width: 980px) {
+  .site-footer .footer-col.col-1 {
+    margin: initial;
+  }
 }

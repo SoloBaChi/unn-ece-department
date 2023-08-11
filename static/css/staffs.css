@@ -23,3 +23,17 @@
 .staff-page .administrative-staff .staff-container a {
   text-decoration: none;
 }
+.academic-staff .more-info dt {
+  margin-bottom: 0.5rem;
+  text-transform: capitalize;
+}
+.academic-staff .more-info dd {
+  padding-left: 0.82rem;
+}
+section .profile-footer {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: baseline;
+  gap: 1.2rem;
+  margin-top: 2rem;
+}

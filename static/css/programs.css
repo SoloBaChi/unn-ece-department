@@ -10,3 +10,35 @@
 .programs-page h3 {
   text-align: initial;
 }
+.programs-page .table-container td,
+.programs-page .table-container th {
+  text-align: initial;
+  text-transform: capitalize;
+}
+.programs-page .table-container strong {
+  font-weight: 500;
+}
+.programs-page .table-container td {
+  font-weight: 400;
+}
+.programs-page .know-more a {
+  padding: 0.35rem 0.7rem;
+  font-style: italic;
+  margin-bottom: 0.5rem;
+  text-decoration: none;
+  text-transform: capitalize;
+}
+.programs-page .know-more {
+  position: relative;
+}
+.programs-page .know-more::after {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  width: 5px;
+  background: var(--green);
+  height: 95%;
+  top: 0;
+  left: 0;
+  border-radius: 8px;
+}

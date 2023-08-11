@@ -34,11 +34,11 @@
 .light-theme-icon {
   cursor: pointer;
   color: #696969;
-  /* display:inline-block; */
-  font-size: 1em;
-  padding: 0px 12px;
+  display: inline-block;
+  font-size: 1.4em;
+  padding: 2px 12px 6px;
   cursor: pointer;
-  /* border:1px solid red; */
+  /* border: 1px solid red; */
 }
 /* .light-theme-icon
 .light-icon path{
@@ -60,6 +60,6 @@ Media Query
  */
 @media (min-width: 980px) {
   .light-theme-icon {
-    /* padding:0px; */
+    padding-top: 0;
   }
 }
