@@ -12,7 +12,7 @@
     <link href="./static/css/index.css" rel="stylesheet">
     <title>News & Events - Department of Electronic Engineering UNN</title>
 </head>
-<body class="dark-theme">
+<body class="dark-theme" id="page-container">
  <!-- Welcome to ECE Department(Center Of Excellence), Excellence is our model 
         ========Few Code Notes========
         Note that these were written for the essence of code maintainability
@@ -28,9 +28,7 @@
         <div class="header-row"> 
         <div class="logo-container">
             <div class="unn-logo">
-                <a href="./index.html">
-                    <img src="./static/images/unn-logo.svg">
-                </a>
+                <img src="./static/images/unn-logo.svg">
             </div>
             <div class="logo-text">
                <div>
@@ -60,20 +58,20 @@
                     <li class="list-item"><a href="./index.html">home</a></li>
                     <li class="list-item dropdown dropdown-1"><a href="#">programmes <span class="fa fa-caret-down"></span></a>
                         <ul class="dropdown-menu">
-                        <li> <a href="https://ece.unn.edu.ng/undergraduate-programs/" target="_blank">undergraduate degree programmes</a></li>
-                        <li class="list-item dropdown dropdown-2"> <a href="https://ece.unn.edu.ng/post-graduate-programs/">postgraduate degree programmes <span class="fa fa-caret-down"></span></a>
+                        <li> <a href="./programs/undergraduate.html" target="_self">undergraduate degree programmes</a></li>
+                        <li class="list-item dropdown dropdown-2"> <a href="./programs/postgraduate.html">postgraduate degree programmes <span class="fa fa-caret-down"></span></a>
                             <ul class="dropdown-menu">
-                             <li> <a href="https://ece.unn.edu.ng/m-sc-and-m-eng-degree-programmes/" target="_blank">M.Sc and M.Eng Degree Programmes</a></li>
-                             <li> <a href="https://ece.unn.edu.ng/phd-degree-programmes/" target="_blank">Phd Degree Programmes</a></li>
+                             <li> <a href="./programs/msc.html" target="_self">M.Sc and M.Eng Degree Programmes</a></li>
+                             <li> <a href="./programs/phd.html" target="_self">Phd Degree Programmes</a></li>
                             </ul>
                         </li>
                         </ul>
                     </li>
-                    <li class="list-item dropdown dropdown-1"><a href="https://ece.unn.edu.ng/staff/">staff <span class="fa fa-caret-down"></span></a>
+                    <li class="list-item dropdown dropdown-1"><a href="./staffs/staffs.html">staff <span class="fa fa-caret-down"></span></a>
                         <ul class="dropdown-menu">
-                            <li><a href="https://ece.unn.edu.ng/academic/">academic staff</a></li>
-                            <li><a href="https://ece.unn.edu.ng/technical/">technical staff</a></li>
-                            <li><a href="https://ece.unn.edu.ng/administrative/">administrative staff</a></li>
+                            <li><a href="./staffs/academic-staffs/academic.html">academic staff</a></li>
+                            <li><a href="./staffs/technical-staffs/technical.html">technical staff</a></li>
+                            <li><a href="./staffs/administrative-staffs/administrative.html">administrative staff</a></li>
                         </ul>
                     </li>
                     <li class="list-item dropdown"><a href="./digital-library/virtual-libary.html">digital-learning <span class="fa fa-caret-down"></span></a>
@@ -190,18 +188,18 @@ Full paper to be submitted from December 1st to 21st, 2020
             </div>
             <div class="footer-col">
                 <ul>
-                    <li><a class="round-cta-btn" target="_blank" href="https://ece.unn.edu.ng/programs/">programmes</a></li>
-                    <li><a class="round-cta-btn" target="_blank" href="https://ece.unn.edu.ng/staff/">staff</a></li>
-                    <li><a class="round-cta-btn" target="_blank" href="https://ece.unn.edu.ng/alumni-intervention/">almuni</a></li>
-                    <li><a class="round-cta-btn" target="_blank" href="./e-learning.html">e-learning</a></li>
+                    <li><a class="round-cta-btn" target="_self" href="https://ece.unn.edu.ng/programs/">programmes</a></li>
+                    <li><a class="round-cta-btn" target="_self" href="https://ece.unn.edu.ng/staff/">staff</a></li>
+                    <li><a class="round-cta-btn" target="_self" href="https://ece.unn.edu.ng/alumni-intervention/">almuni</a></li>
+                    <li><a class="round-cta-btn" target="_self" href="./e-learning.html">e-learning</a></li>
                 </ul>
             </div>
             <div class="footer-col">
                     <ul>
-                        <li><a class="round-cta-btn" target="_blank" href="https://ece.unn.edu.ng/research/">research</a></li>
-                        <li><a class="round-cta-btn" target="_blank" href="./newsandevents.html">news</a></li>
-                        <li><a class="round-cta-btn" target="_blank" href="./aboutus.html">about us</a></li>
-                        <li><a class="round-cta-btn" target="_blank" href="./contactus.html">contact us</a></li>
+                        <li><a class="round-cta-btn" target="_self" href="https://ece.unn.edu.ng/research/">research</a></li>
+                        <li><a class="round-cta-btn" target="_self" href="./newsandevents.html">news</a></li>
+                        <li><a class="round-cta-btn" target="_self" href="./aboutus.html">about us</a></li>
+                        <li><a class="round-cta-btn" target="_self" href="./contactus.html">contact us</a></li>
                     </ul>
             </div>
         </div>
@@ -209,6 +207,15 @@ Full paper to be submitted from December 1st to 21st, 2020
     <!-- current date -->
     <small style="text-align:center;display:block;" class="copyright">&copy; <span id="updated-year"> </span> Department of Electronic Engineering</small>
 </footer>
+
+
+<!-- ====================================
+    SCroll TOP Arrow Icon
+========================================= -->
+<a href="#page-container" class="scroll-top fa fa-angle-up"></a>
+
+
+<!-- Custom Scripts -->
 <script src="./static/js/theme.js"></script>
 <script src="./static/js/index.js"></script>
 <script src="./static/js/owl.carousel.js"></script>

@@ -14,15 +14,21 @@
 </head>
 <body class="dark-theme">
  <!-- Welcome to ECE Department(Center Of Excellence), Excellence is our model 
-        ========Few Code Notes========
+   ==============
+   Few Code Notes
+   ==============
         Note that these were written for the essence of code maintainability
     :::::Frequently Used classes
-    1. page-container: this class was used in this code as a general wrapper for each page
+    1. .page-container: this class was used in this code as a general wrapper for each page
+    2 .paragraph: this class was specifically used for formatting of the text  and also to add 
+    some stylistic features to p element
+    3. .flex-2 :for display of flex with flex-basis:48% for desktop view
+    4. .flex-4: for display of flex with flex-basis:22% for desktop view
 
     ::::Responsive Design Pattern
     The principle applied in the development of this site is mobile first principle
     -->
-<div class="page-container">
+<div class="page-container" id="page-container">
 <header class="header">
     <div class="header-container">
         <div class="header-row"> 
@@ -58,20 +64,20 @@
                     <li class="list-item"><a href="./index.html">home</a></li>
                     <li class="list-item dropdown dropdown-1"><a href="#">programmes <span class="fa fa-caret-down"></span></a>
                         <ul class="dropdown-menu">
-                        <li> <a href="https://ece.unn.edu.ng/undergraduate-programs/" target="_blank">undergraduate degree programmes</a></li>
-                        <li class="list-item dropdown dropdown-2"> <a href="https://ece.unn.edu.ng/post-graduate-programs/">postgraduate degree programmes <span class="fa fa-caret-down"></span></a>
+                        <li> <a href="./programs/undergraduate.html" target="_self">undergraduate degree programmes</a></li>
+                        <li class="list-item dropdown dropdown-2"> <a href="./programs/postgraduate.html">postgraduate degree programmes <span class="fa fa-caret-down"></span></a>
                             <ul class="dropdown-menu">
-                             <li> <a href="https://ece.unn.edu.ng/m-sc-and-m-eng-degree-programmes/" target="_blank">M.Sc and M.Eng Degree Programmes</a></li>
-                             <li> <a href="https://ece.unn.edu.ng/phd-degree-programmes/" target="_blank">Phd Degree Programmes</a></li>
+                             <li> <a href="./programs/msc.html" target="_self">M.Sc and M.Eng Degree Programmes</a></li>
+                             <li> <a href="./programs/phd.html" target="_self">Phd Degree Programmes</a></li>
                             </ul>
                         </li>
                         </ul>
                     </li>
-                    <li class="list-item dropdown dropdown-1"><a href="https://ece.unn.edu.ng/staff/">staff <span class="fa fa-caret-down"></span></a>
+                    <li class="list-item dropdown dropdown-1"><a href="./staffs/staffs.html">staff <span class="fa fa-caret-down"></span></a>
                         <ul class="dropdown-menu">
-                            <li><a href="https://ece.unn.edu.ng/academic/">academic staff</a></li>
-                            <li><a href="https://ece.unn.edu.ng/technical/">technical staff</a></li>
-                            <li><a href="https://ece.unn.edu.ng/administrative/">administrative staff</a></li>
+                            <li><a href="./staffs/academic-staffs/academic.html">academic staff</a></li>
+                            <li><a href="./staffs/technical-staffs/technical.html">technical staff</a></li>
+                            <li><a href="./staffs/administrative-staffs/administrative.html">administrative staff</a></li>
                         </ul>
                     </li>
                     <li class="list-item dropdown"><a href="./digital-library/virtual-libary.html">digital-learning <span class="fa fa-caret-down"></span></a>
@@ -199,7 +205,7 @@
                         <span>Electronic Engineering</span>
                         </div>
                         <div class="bio-section">
-                        <button class="cta-btn"><span class="cta-text">read bio</span></button>
+                        <a class="cta-btn" href="./staffs/academic-staffs/prof-iloanusi.html" target="_blank" class="cta-text">read bio</a>
                         <!-- <p class="bio-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deleniti repellat error praesentium, quidem similique tempora ipsam odit ipsa eligendi, fugit exercitationem tempore quibusdam accusamus repudiandae labore sit pariatur vero sapiente?</p> -->
                         </div>
                     </div>
@@ -225,7 +231,7 @@
                         <span>Electronic Engineering</span>
                         </div>
                         <div class="bio-section">
-                        <button class="cta-btn"><span class="cta-text">read bio</span></button>
+                        <a class="cta-btn" href="./staffs/academic-staffs/ani-cosmas.html" class="cta-text" target="_blank">read bio</a>
                         <!-- <p class="bio-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deleniti repellat error praesentium, quidem similique tempora ipsam odit ipsa eligendi, fugit exercitationem tempore quibusdam accusamus repudiandae labore sit pariatur vero sapiente?</p> -->
                         </div>
                     </div>
@@ -251,7 +257,7 @@
                         <span>Electronic Engineering</span>
                         </div>
                         <div class="bio-section">
-                        <button class="cta-btn"><span class="cta-text">read bio</span></button>
+                        <a class="cta-btn" href="./staffs/academic-staffs/prof-oparaku.html" class="cta-text" target="_blank">read bio</a>
                         <!-- <p class="bio-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deleniti repellat error praesentium, quidem similique tempora ipsam odit ipsa eligendi, fugit exercitationem tempore quibusdam accusamus repudiandae labore sit pariatur vero sapiente?</p> -->
                         </div>
                     </div>
@@ -277,7 +283,7 @@
                         <span>Electronic Engineering</span>
                         </div>
                         <div class="bio-section">
-                        <button class="cta-btn"><span class="cta-text">read bio</span></button>
+                        <a class="cta-btn" href="./staffs/academic-staffs/engr-nathan-david.html" class="cta-text" target="_blank">read bio</a>
                         <!-- <p class="bio-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deleniti repellat error praesentium, quidem similique tempora ipsam odit ipsa eligendi, fugit exercitationem tempore quibusdam accusamus repudiandae labore sit pariatur vero sapiente?</p> -->
                         </div>
                     </div>
@@ -377,55 +383,56 @@
 
     
 <!--Description: Recent Award to our students -->
-    <section class="recent-awards">
-        <h2>recent awards to our students</h2>
-        <div class="flex-2">
-        <div class="display-best-student place-left" id="display-best-student">
-        <figure class="display-card">
-            <div class="top-section">
-            <div class="top-container">
-            <span class="behind-circle shape-1"></span>
-            <div class="img-container">
-            <!-- <img src="./static/images/asogwa-christian.jpg" alt="best final year student"/> -->
-            <img src="./static/images/angel-mba.jpeg" alt="best final year student"/>
-            <!-- <img src="./static/images/best-student.svg" alt="best final year student"/> -->
-            </div>
-            <span class="behind-circle shape-2"></span>
-            <span class="behind-circle shape-3"></span>
-            </div>
-            </div>
-            <div class="bottom-section">
-            <figcaption>
-            <!-- <div><h4>Asogwa Christian Onyemaechi</h4></div>
-             <div><p>Best final year student of electronic enginering department</p></div>
-             <div><small>CPGA:4.91</small></div> -->
-            <div><h4>Mba Angel Ifechukwu</h4></div>
-             <div><p>Best third year student of Electronic Enginering department</p></div>
-             <div><small>CPGA:5.00</small></div>
-            </figcaption>
+<section class="recent-awards">
+    <h2>recent awards to our students</h2>
+    <div class="flex-2">
+    <div class="display-best-student place-left" id="display-best-student">
+    <figure class="display-card">
+        <div class="top-section">
+        <div class="top-container">
+        <span class="behind-circle shape-1"></span>
+        <div class="img-container">
+        <!-- <img src="./static/images/asogwa-christian.jpg" alt="best final year student"/> -->
+        <img src="./static/images/angel-mba.jpeg" alt="best final year student"/>
+        <!-- <img src="./static/images/best-student.svg" alt="best final year student"/> -->
+        </div>
+        <span class="behind-circle shape-2"></span>
+        <span class="behind-circle shape-3"></span>
+        </div>
+        </div>
+        <div class="bottom-section">
+        <figcaption>
+        <!-- <div><h4>Asogwa Christian Onyemaechi</h4></div>
+         <div><p>Best final year student of electronic enginering department</p></div>
+         <div><small>CPGA:4.91</small></div> -->
+        <div><h4>Mba Angel Ifechukwu</h4></div>
+         <div><p>Best third year student of Electronic Enginering department</p></div>
+         <div><small>CPGA:5.00</small></div>
+        </figcaption>
+        </div>
+    </figure>
+    </div>
+    <div class="place-right">
+        <figure>
+            <div class="best-students-column">
+                <div class="img-container">
+                    <img src="./static/images/asogwa-christian.jpg" alt="best final year">
+                </div>
+                <div class="img-container">
+                    <img src="./static/images/freedom.jpg" alt="best fourth year student">
+                </div>
+                <div class="img-container">
+                    <img src="./static/images/angel-mba.jpeg" alt="best third year student">
+                </div>
+                <div class="img-container">
+                    <img src="./static/images/francis-bright.jpeg" alt="best second year student">
+                </div>
             </div>
         </figure>
-        </div>
-        <div class="place-right">
-            <figure>
-                <div class="best-students-column">
-                    <div class="img-container">
-                        <img src="./static/images/asogwa-christian.jpg" alt="best final year">
-                    </div>
-                    <div class="img-container">
-                        <img src="./static/images/lecturer-1.jpg" alt="best fourth year student">
-                    </div>
-                    <div class="img-container">
-                        <img src="./static/images/angel-mba.jpeg" alt="best third year student">
-                    </div>
-                    <div class="img-container">
-                        <img src="./static/images/angel-mba.jpeg" alt="best second year student">
-                    </div>
-                </div>
-            </figure>
-        </div>
-        </div>
-    </section>
+    </div>
+    </div>
+</section>
+   
 </main>
 
 
@@ -443,20 +450,20 @@
                     </figcaption>
                 </figure>
             </div>
-            <div class="footer-col">
+            <div class="footer-col col-2">
                 <ul>
-                    <li><a class="round-cta-btn" target="_blank" href="https://ece.unn.edu.ng/programs/">programmes</a></li>
-                    <li><a class="round-cta-btn" target="_blank" href="https://ece.unn.edu.ng/staff/">staff</a></li>
-                    <li><a class="round-cta-btn" target="_blank" href="./alumni.html">almuni</a></li>
-                    <li><a class="round-cta-btn" target="_blank" href="./e-learning.html">e-learning</a></li>
+                    <li><a class="round-cta-btn" target="_self" href="./programs/programs.html">programmes</a></li>
+                    <li><a class="round-cta-btn" target="_self" href="./staffs/staffs.html">staff</a></li>
+                    <li><a class="round-cta-btn" target="_self" href="./alumni.html">almuni</a></li>
+                    <li><a class="round-cta-btn" target="_self" href="./digital-library/e-learning.html">e-learning</a></li>
                 </ul>
             </div>
-            <div class="footer-col">
+            <div class="footer-col col-3">
                     <ul>
-                        <li><a class="round-cta-btn" target="_blank" href="./research/research.html">research</a></li>
-                        <li><a class="round-cta-btn" target="_blank" href="./newsandevents.html">news</a></li>
-                        <li><a class="round-cta-btn" target="_blank" href="./aboutus.html">about us</a></li>
-                        <li><a class="round-cta-btn" target="_blank" href="./contactus.html">contact us</a></li>
+                        <li><a class="round-cta-btn" target="_self" href="./research/research.html">research</a></li>
+                        <li><a class="round-cta-btn" target="_self" href="./newsandevents.html">news</a></li>
+                        <li><a class="round-cta-btn" target="_self" href="./aboutus.html">about us</a></li>
+                        <li><a class="round-cta-btn" target="_self" href="./contactus.html">contact us</a></li>
                     </ul>
             </div>
         </div>
@@ -464,6 +471,15 @@
     <!-- current date -->
     <small style="text-align:center;display:block;" class="copyright">&copy; <span id="updated-year"> </span> Department of Electronic Engineering</small>
 </footer>
+
+<!-- ====================================
+    SCroll TOP Arrow Icon
+========================================= -->
+<a href="#page-container" class="scroll-top fa fa-angle-up"></a>
+
+
+
+<!-- Custom Scripts -->
 <script src="./static/js/theme.js"></script>
 <script src="./static/js/index.js"></script>
 <script src="./static/js/owl.carousel.js"></script>
@@ -486,10 +502,10 @@
         },
         {
         id:1,
-        "name":"Solomon Joboson Chiakonam",
+        "name":"Ugwu Freedom Nnamdi",
         "description":"Best fourth year student of Electronic Enginering department",
-        "cpga":"5.00",
-        "imgSrc":"./static/images/lecturer-1.jpg", 
+        "cpga":"4.77",
+        "imgSrc":"./static/images/freedom.jpg", 
         "alt":"best fourth year student"
         },
         {
@@ -502,10 +518,10 @@
         },
         {
         id:3,
-        "name":"Francis",
+        "name":"Francis Bright Chimdindu",
         "description":"Best Second Year Student of Electronic Engineering Department",
-        "cpga":"5.00",
-        "imgSrc":"./static/images/angel-mba.jpeg", 
+        "cpga":"4.91",
+        "imgSrc":"./static/images/francis-bright.jpeg", 
         "alt":"best second year student"
         }
         ]

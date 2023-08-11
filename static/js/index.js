@@ -5,9 +5,10 @@
          */
 
 //get open and close toggleBtns
-const toggleBtn = document.getElementById("toggle-btn");
-const closeToggleBtn = document.querySelector(".close-toggle-btn");
-const navbarContainer = document.querySelector(".navbar-container");
+const toggleBtn = document.getElementById("toggle-btn"),
+  closeToggleBtn = document.querySelector(".close-toggle-btn"),
+  navbarContainer = document.querySelector(".navbar-container"),
+  scrollTop = document.querySelector(".scroll-top");
 
 //open navabr container when the button is toggle
 toggleBtn.addEventListener("click", (e) => {
@@ -21,6 +22,11 @@ toggleBtn.addEventListener("click", (e) => {
 window.onscroll = () => {
   if (window.scrollY > 600) {
     navbarContainer.classList.add("close-toggle-menu");
+  }
+  if (window.scrollY > 500) {
+    scrollTop.style.display = "initial";
+  } else {
+    scrollTop.style.display = "none";
   }
 };
 
