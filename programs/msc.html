@@ -22,7 +22,7 @@
     ::::Responsive Design Pattern
     The principle applied in the development of this site is mobile first principle
     -->
-<div class="page-container">
+<div class="page-container" id="page-container">
 <header class="header">
     <div class="header-container">
         <div class="header-row"> 
@@ -60,11 +60,11 @@
                     <li class="list-item"><a href="../index.html">home</a></li>
                     <li class="list-item dropdown dropdown-1"><a href="./programs.html">programmes <span class="fa fa-caret-down"></span></a>
                         <ul class="dropdown-menu">
-                        <li> <a href="./undergraduate.html" target="_blank">undergraduate degree programmes</a></li>
+                        <li> <a href="./undergraduate.html" target="_self">undergraduate degree programmes</a></li>
                         <li class="list-item dropdown dropdown-2"> <a href="./postgraduate.html">postgraduate degree programmes <span class="fa fa-caret-down"></span></a>
                             <ul class="dropdown-menu">
-                             <li> <a href="./msc.html" target="_blank">M.Sc and M.Eng Degree Programmes</a></li>
-                             <li> <a href="./phd.html" target="_blank">Phd Degree Programmes</a></li>
+                             <li> <a href="./msc.html" target="_self">M.Sc and M.Eng Degree Programmes</a></li>
+                             <li> <a href="./phd.html" target="_self">Phd Degree Programmes</a></li>
                             </ul>
                         </li>
                         </ul>
@@ -76,17 +76,17 @@
                             <li><a href="../staffs/administrative.html">administrative staff</a></li>
                         </ul>
                     </li>
-                    <li class="list-item dropdown"><a href="#">digital-learning <span class="fa fa-caret-down"></span></a>
+                    <li class="list-item dropdown"><a href="../digital-library/virtual-libary.html">digital-learning <span class="fa fa-caret-down"></span></a>
                         <ul class="dropdown-menu">
                             <li><a href="../digital-library/e-learning.html">e-learnig</a></li>
                             <li><a href="../digital-library/virtual-libary.html">virtual library</a></li>
                         </ul>
                     </li>
-                    <li class="list-item dropdown"><a href="../research.html">research <span class="fa fa-caret-down"></span></a>
+                    <li class="list-item dropdown"><a href="../research/research.html">research <span class="fa fa-caret-down"></span></a>
                         <ul class="dropdown-menu">
-                            <li><a href="../digitalelectronics.html">digital elctronics</a></li>
-                            <li><a href="../telecommunication.html">communications</a></li>
-                            <li><a href="../control.html">control engineering</a></li>
+                            <li><a href="../research/digitalelectronics.html">digital elctronics</a></li>
+                            <li><a href="../research/telecommunication.html">communications</a></li>
+                            <li><a href="../research/control.html">control engineering</a></li>
                         </ul>
                     </li>
                     <li class="list-item"><a href="../alumni.html">alumni</a></li>
@@ -949,8 +949,6 @@ Logic; MPC and GLC</p>
 
 </main>
 
-
-
 <footer class="site-footer">
     <div class="footer-contianer">
         <div class="footer-row flex-4">
@@ -985,6 +983,14 @@ Logic; MPC and GLC</p>
     <!-- current date -->
     <small style="text-align:center;display:block;" class="copyright">&copy; <span id="updated-year"> </span> Department of Electronic Engineering</small>
 </footer>
+
+
+<!-- ====================================
+    SCroll TOP Arrow Icon
+========================================= -->
+<a href="#page-container" class="scroll-top fa fa-angle-up"></a>
+
+
 <script src="../static/js/theme.js"></script>
 <script src="../static/js/index.js"></script>
 <script src="../static/js/owl.carousel.js"></script>
