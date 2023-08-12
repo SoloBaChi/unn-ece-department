@@ -1,0 +1,999 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"/>
+    <link rel="icon" href="../static/images/unn-logo-2.png" type="images/favicon">
+    <link href="../static/font-awesome/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href="../static/css/index.css" rel="stylesheet">
+    <title>M.SC and M.Eng Degree - Department of Electronic Engineering UNN</title>
+   </head>
+<body class="dark-theme">
+ <!-- Welcome to ECE Department(Center Of Excellence), Excellence is our model 
+    ========Few Code Notes===============
+    Note that these were written for the essence of code maintainability
+    :::::Frequently Used classes
+    1. page-container: this class was used in this code as a general wrapper for each page
+
+    ::::Responsive Design Pattern
+    The principle applied in the development of this site is mobile first principle
+    -->
+<div class="page-container">
+<header class="header">
+    <div class="header-container">
+        <div class="header-row"> 
+        <div class="logo-container">
+            <div class="unn-logo">
+                <a href="../index.html">
+                    <img src="../static/images/unn-logo.svg">
+                </a>
+            </div>
+            <div class="logo-text">
+               <div>
+                <p>University of Nigeria</p>
+               </div>
+               <div>
+                <p>Department of Electronic and Computer Engineering</p>
+                <small class="department-motto">Center of Excellence...</small>
+               </div> 
+            </div>
+        </div>
+        <div>
+            <div class="toggle-btn" id="toggle-btn">&#9776;</div>
+            <div class="light-theme-icon">
+             <svg class="light-icon black-theme" width="18" height="18" viewBox="0 0 25 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M13.9867 28C18.3008 28 22.2409 26.0354 24.8513 22.8161C25.2375 22.3398 24.8164 21.6441 24.2196 21.7579C17.4337 23.0514 11.2021 17.8435 11.2021 10.9869C11.2021 7.0373 13.3144 3.40534 16.7475 1.44977C17.2766 1.14833 17.1436 0.345242 16.5422 0.234063C15.6993 0.0784728 14.8439 0.000127768 13.9867 0C6.26619 0 0 6.26232 0 14C0 21.7278 6.25636 28 13.9867 28Z" fill="#0A3E09"/>
+             </svg>
+            <svg class="light-icon white-theme" width="20" height="20" viewBox="-3.6 -3.6 43.20 43.20" xmlns="http://www.w3.org/2000/svg" fill="#ffffff" stroke="#ffffff" stroke-width="0.00036" transform="matrix(-1, 0, 0, -1, 0, 0)rotate(45)"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round" stroke="#ffffffCCCCCC" stroke-width="1.7280000000000002"></g><g id="SVGRepo_iconCarrier"> <g id="Lager_93" data-name="Lager 93" transform="translate(2 2)"> <g id="Sun_3_Brightness_3" data-name="Sun 3, Brightness 3"> 
+             <path id="Path_68" data-name="Path 68" d="M32,14H27.033c-2,1.769-.779,4,.967,4h4.967C34.966,16.231,33.746,14,32,14Z" fill="#ffffff"></path> <g id="Path_69" data-name="Path 69" fill="none" stroke-miterlimit="10"> <path d="M17.172,10.111a6,6,0,1,0,4.715,4.715A6.01,6.01,0,0,0,17.172,10.111Z" stroke="none"></path> <path d="M 15.99852275848389 13.99979972839355 C 15.40029907226563 13.99979972839355 14.83786392211914 14.26465797424316 14.45541763305664 14.72645950317383 C 14.18128776550293 15.05748176574707 13.88667678833008 15.62165832519531 14.04035758972168 16.43178939819336 C 14.1787109375 17.16349411010742 14.83581733703613 17.82003402709961 15.56771087646484 17.958740234375 C 15.71307563781738 17.98624801635742 15.85765266418457 18.00020027160645 15.99740505218506 18.00020027160645 C 16.59555816650391 18.00020027160645 17.15798187255859 17.73542404174805 17.54046440124512 17.27376556396484 C 17.81481742858887 16.94261169433594 18.1097583770752 16.37818908691406 17.95689964294434 15.57052993774414 C 17.81802749633789 14.83748245239258 17.1605224609375 14.17996406555176 16.42829895019531 14.041259765625 C 16.28293609619141 14.01375389099121 16.13835906982422 13.99979972839355 15.99860572814941 13.99979972839355 L 15.99852275848389 13.99979972839355 M 15.99860000610352 9.999795913696289 C 16.38235282897949 9.999801635742188 16.77459716796875 10.03580474853516 17.17200469970703 10.11100006103516 C 19.52100563049316 10.55599975585938 21.44199371337891 12.47699928283691 21.88699340820313 14.82600021362305 C 22.61180877685547 18.65568542480469 19.69624137878418 22.00020408630371 15.99740028381348 22.00020408630371 C 15.61366271972656 22.00020408630371 15.22141265869141 21.96419525146484 14.82400512695313 21.88899993896484 C 12.47600555419922 21.44400024414063 10.55400466918945 19.52299880981445 10.11000442504883 17.17499923706055 C 9.383377075195313 13.34440803527832 12.29961967468262 9.999755859375 15.99860000610352 9.999795913696289 Z" stroke="none" fill="#ffffff"></path> </g> <rect id="Rectangle_26" data-name="Rectangle 26" width="8" height="4" rx="1.993" transform="translate(26 14)" fill="#ffffff"></rect> <rect id="Rectangle_27" data-name="Rectangle 27" width="8" height="4" rx="1.993" transform="translate(18 26) rotate(90)" fill="#ffffff"></rect> <rect id="Rectangle_28" data-name="Rectangle 28" width="8" height="4" rx="1.993" transform="translate(18 -2) rotate(90)" fill="#ffffff"></rect> <rect id="Rectangle_29" data-name="Rectangle 29" width="8" height="4" rx="1.993" transform="translate(-2 14)" fill="#ffffff"></rect> <g id="Group_22" data-name="Group 22"> <rect id="Rectangle_30" data-name="Rectangle 30" width="6.925" height="3.766" rx="1.883" transform="translate(23.22 6.117) rotate(-45)" fill="#ffffff"></rect> </g> <g id="Group_23" data-name="Group 23"> <rect id="Rectangle_31" data-name="Rectangle 31" width="3.766" height="6.925" rx="1.883" transform="matrix(0.707, -0.707, 0.707, 0.707, 23.22, 25.883)" fill="#ffffff"></rect> </g> <g id="Group_24" data-name="Group 24"> <rect id="Rectangle_32" data-name="Rectangle 32" width="3.766" height="6.925" rx="1.883" transform="translate(1.22 3.883) rotate(-45)" fill="#ffffff"></rect> </g> <g id="Group_25" data-name="Group 25"> <rect id="Rectangle_33" data-name="Rectangle 33" width="6.925" height="3.766" rx="1.883" transform="translate(1.22 28.117) rotate(-45)" fill="#ffffff"></rect> </g> </g> </g> </g>
+            </svg>
+            </div>
+            <nav class="navbar-container">
+                <div class="close-toggle-btn">
+                  <span>&#10005</span>
+                </div>
+                <ul class="list-menu">
+                    <li class="list-item"><a href="../index.html">home</a></li>
+                    <li class="list-item dropdown dropdown-1"><a href="./programs.html">programmes <span class="fa fa-caret-down"></span></a>
+                        <ul class="dropdown-menu">
+                        <li> <a href="./undergraduate.html" target="_blank">undergraduate degree programmes</a></li>
+                        <li class="list-item dropdown dropdown-2"> <a href="./postgraduate.html">postgraduate degree programmes <span class="fa fa-caret-down"></span></a>
+                            <ul class="dropdown-menu">
+                             <li> <a href="./msc.html" target="_blank">M.Sc and M.Eng Degree Programmes</a></li>
+                             <li> <a href="./phd.html" target="_blank">Phd Degree Programmes</a></li>
+                            </ul>
+                        </li>
+                        </ul>
+                    </li>
+                    <li class="list-item dropdown dropdown-1"><a href="../staffs/staffs.html">staff <span class="fa fa-caret-down"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="../staffs/academic.html">academic staff</a></li>
+                            <li><a href="../staffs/technical.html">technical staff</a></li>
+                            <li><a href="../staffs/administrative.html">administrative staff</a></li>
+                        </ul>
+                    </li>
+                    <li class="list-item dropdown"><a href="#">digital-learning <span class="fa fa-caret-down"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="../digital-library/e-learning.html">e-learnig</a></li>
+                            <li><a href="../digital-library/virtual-libary.html">virtual library</a></li>
+                        </ul>
+                    </li>
+                    <li class="list-item dropdown"><a href="../research.html">research <span class="fa fa-caret-down"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="../digitalelectronics.html">digital elctronics</a></li>
+                            <li><a href="../telecommunication.html">communications</a></li>
+                            <li><a href="../control.html">control engineering</a></li>
+                        </ul>
+                    </li>
+                    <li class="list-item"><a href="../alumni.html">alumni</a></li>
+                    <li class="list-item"><a href="../newsandevents.html">news &amp; events</a></li>
+                    <li class="list-item"><a href="../contactus.html">contact us</a></li>
+                    <li class="list-item"><a href="../aboutus.html">about us</a></li>
+                    <!-- <li><a href="#"><input type="search"></a></li> -->
+                </ul>
+            </nav>
+        </div>
+        </div>
+    </div>
+</header>
+
+
+<!--Description: main site section -->
+<main class="programs-page">
+<!-- contactus page -->
+
+<section class="msc-program">
+   <h2>objectives</h2>  
+   <p>
+    The Department of Electronic Engineering masters programme is intended to achieve the following objectives:
+   </p>
+   <ul>
+    <li>
+    <p class="paragraph">
+    Prepare graduate students to be able to understand and analyze electronic materials,
+    components and complete systems through modeling and simulation.  
+    </p>
+    
+    </li>
+    <li>
+    <p class="paragraph">
+   Train postgraduate students to be able to design, develop, install and maintain
+    hardware and instruments of varying degrees of complexity in their special area.
+    </p>
+     
+    </li>
+    <li>
+    <p class="paragraph">
+   Obtain high levels of graduate student achievement in Electronic Engineering through
+    reliance on laboratory hands-on activities thereby producing graduates with the
+    requisite expertise for satisfying career with Educational Institution, Industry,
+    Business and Government.
+    </p>
+     
+    </li>
+    <li><p class="paragraph">Promote technology transfer, continuing engineering education training and retraining in the specialized areas in Electronic Engineering.</p></li>
+   </ul>
+
+</section>
+
+<section>
+    <div>
+        <h3>entry equipments</h3>
+        <p class="paragraph">
+        The applicant must possess B.Sc or B.Eng. Degree certificate with 2.50 GPA and above. The applicants must have Electronic Engineering background or other related discipline. The applicants are, in addition, expected to satisfy the current postgraduate programme admission requirements in the department/faculty.
+        </p>
+    </div>
+    <div>
+        <h3>programme duration</h3>
+        <p class="paragraph">
+        The B.Sc and B.Eng. Degree programmes have defined duration based on the mode of the programme i.e. whether part-time or full-time mode.
+        </p>
+    </div>
+    <div class="table-container">
+        <table>
+            <tbody>
+            <tr>
+            <td><strong>Full-time</strong><br>
+            <strong>Part-time</strong></td>
+            <td><strong>4 semesters minimum</strong><br>
+            <strong>6 semesters minimum</strong></td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+</section>
+
+<section>
+<h3>certification</h3>
+<p class="paragraph">At the end of the programme the graduates are awarded the M.Eng or M.Sc. degree certificates.<br>
+M.Eng – If student has first degree in Engineering.<br>
+M.Sc. – If student has non Engineering first degree.</p>
+</section>
+
+<section>
+<h3>list of approved supervisors</h3>
+<p class="paragraph">1 Engr. Prof. C. I. Ani<br>
+M.Sc. (Moscow), M.Phil (Suzzex), Ph.D. (Wales), MNSE<br>
+Data Communication and Network Resource Management</p>
+<p class="paragraph">2.Engr. Prof. O. U. Oparaku<br>
+B.Eng (UNN), Ph.D. (Newcastle), MNSE</p>
+<p class="paragraph">3 Engr. Prof. O. N. Iloanusi<br>
+B.Eng (UNN), M.Eng (UNN), Ph.D. (UNN), MNSE<br>
+Biometrics, Artificial Intelligence, Computer Vision, Machine / Deep Learning, Pattern analysis and Signal Processing.</p>
+<p class="paragraph">4.Engr. Dr. M. A. Ahaneku<br>
+B.Eng (FUTO), M.Eng (FUTO), Ph.D. (UNN), MNSE</p>
+<p class="paragraph">5.Engr. Dr. U. A. Nnolim</p>
+<p class="paragraph">6.Engr. Dr. (Mrs) J. N. Eneh</p>
+<p class="paragraph">7.Engr. Dr. V. C. Chijindu</p>
+<p class="paragraph">8.Engr. Dr. D. O. Oyeka</p>
+<p class="paragraph">9. Engr. Dr. M.O. Ezeja <br>
+B.Eng (UNN), M.Eng (UNN), Ph.D. (UNN), MNSE</p>
+<p class="paragraph">10. Engr. Rev. Fr. Dr. E.C. Anoliefo <br>
+B.Eng (UNN), M.Eng (UNN), Ph.D. (UNN), MNSE</p>
+<p class="paragraph">11. Engr. Dr. I.J.F Ezika <br>
+B.Eng (UNN), Ph.D. (University College London), MNSE<br>
+Machine / Deep Learning</p>
+<p class="paragraph">12. Engr. Dr. Chidera L. Anioke <br>
+B.Eng (UniZik), M.Eng (UNN), Ph.D. (UNN), MNSE</p>
+<p class="paragraph">13. Engr. Dr. U. Nwawelu <br>
+B.Eng (UNN), M.Eng (UNN), Ph.D. (UNN), MNSE</p>
+</section>
+
+<section>
+<h3>M.Sc AND M.Eng DEGREE PROGRAMMES STRUCTURE</h3>
+<h4>A.  COMMUNICATION SPECIALIZATION</h4>
+<h5>Compulsory Courses</h5>
+<div class="table-container">
+<table>
+<tbody>
+<tr>
+<td><strong>Course Code</strong></td>
+<td><strong>Course Title</strong></td>
+<td><strong>Units</strong></td>
+</tr>
+<tr>
+<td><strong>ECE 610</strong></td>
+<td><strong>Communication Theory</strong></td>
+<td><strong>3</strong></td>
+</tr>
+<tr>
+<td><strong>ECE 611</strong></td>
+<td><strong>Communication Networks &amp; Protocols</strong></td>
+<td><strong>3</strong></td>
+</tr>
+<tr>
+<td><strong>ECE 612</strong></td>
+<td><strong>Communication Modeling &amp; Simulation</strong></td>
+<td><strong>3</strong></td>
+</tr>
+<tr>
+<td><strong>ECE 613</strong></td>
+<td><strong>Network Traffic Control</strong></td>
+<td><strong>3</strong></td>
+</tr>
+<tr>
+<td><strong>ECE [ ]</strong></td>
+<td><strong>(Two Optional Courses)</strong></td>
+<td><strong>6</strong></td>
+</tr>
+<tr>
+<td colspan="2"><strong>Total</strong></td>
+<td><strong>18 Units</strong></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+
+<!-- research  -->
+<section>
+<h5>Research</h5>
+<div class="table-container">
+<table>
+<tbody>
+<tr>
+<td><strong>Course Code</strong></td>
+<td><strong>Course Title</strong></td>
+<td><strong>Units</strong></td>
+</tr>
+<tr>
+<td><strong>ECE 602</strong></td>
+<td><strong>Seminars</strong></td>
+<td><strong>3</strong></td>
+</tr>
+<tr>
+<td><strong>ENG 601</strong></td>
+<td><strong>Analytical Tools and ICT for Research in Engineering</strong></td>
+<td><strong>3</strong></td>
+</tr>
+<tr>
+<td><strong>ENG 603</strong></td>
+<td><strong>Research Methodology in Engineering</strong></td>
+<td><strong>3</strong></td>
+</tr>
+<tr>
+<td><strong>PGC 601</strong></td>
+<td><strong>School of Postgraduate Studies Course</strong></td>
+<td><strong>3</strong></td>
+</tr>
+<tr>
+<td><strong>ECE 600</strong></td>
+<td><strong>Project</strong></td>
+<td><strong>6</strong></td>
+</tr>
+<tr>
+<td colspan="2"><strong>Total</strong></td>
+<td><strong>18 Units</strong></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+
+
+<section>
+<h5>Optional Courses</h5>
+<div class="table-container">
+<table>
+<tbody>
+<tr>
+<td><strong>Course Code</strong></td>
+<td><strong>Course Title</strong></td>
+<td><strong>Units</strong></td>
+</tr>
+<tr>
+<td><strong>ECE 614</strong></td>
+<td><strong>Microwave &amp; Satellite Communication</strong></td>
+<td><strong>3</strong></td>
+</tr>
+<tr>
+<td><strong>ECE 615</strong></td>
+<td><strong>Mobile Communication</strong></td>
+<td><strong>3</strong></td>
+</tr>
+<tr>
+<td><strong>ECE 616</strong></td>
+<td><strong>Networks Design &amp; Implementation</strong></td>
+<td><strong>3</strong></td>
+</tr>
+<tr>
+<td><strong>ECE 617</strong></td>
+<td><strong>Optical Systems</strong></td>
+<td><strong>3</strong></td>
+</tr>
+<tr>
+<td><strong>ECE 618</strong></td>
+<td><strong>Microwave Communication System Design</strong></td>
+<td><strong>3</strong></td>
+</tr>
+<tr>
+<td><strong>ECE 619&nbsp;</strong></td>
+<td><strong>&nbsp;Radar And Navigation Systems</strong></td>
+<td><strong>3</strong></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p class="paragraph">(Two courses only are required to be chosen.)</p>
+</section>
+
+
+<section>
+<h4>B. DIGITAL ELECTRONICS AND COMPUTERS SPECIALIZATION</h4>
+<div class="table-container">
+<table>
+<tbody>
+<tr>
+<td><strong>Course Code</strong></td>
+<td><strong>Course Title</strong></td>
+<td><strong>Units</strong></td>
+</tr>
+<tr>
+<td><strong>ECE 620</strong></td>
+<td><strong>Digital System Design</strong></td>
+<td><strong>3</strong></td>
+</tr>
+<tr>
+<td><strong>ECE 621</strong></td>
+<td><strong>Computer Systems Architecture I</strong></td>
+<td><strong>3</strong></td>
+</tr>
+<tr>
+<td><strong>ECE 622</strong></td>
+<td><strong>Software Engineering Development</strong></td>
+<td><strong>3</strong></td>
+</tr>
+<tr>
+<td><strong>ECE 625</strong></td>
+<td><strong>Digital Integrated Electronics</strong></td>
+<td><strong>3</strong></td>
+</tr>
+<tr>
+<td><strong>ECE 623</strong></td>
+<td><strong>Computer Systems Architecture II&nbsp;</strong></td>
+<td><strong>3</strong></td>
+</tr>
+<tr>
+<td><strong>ECE 626</strong></td>
+<td><strong>Digital Signal Processing</strong></td>
+<td><strong>3</strong></td>
+</tr>
+<tr>
+<td><strong>ECE [ ]</strong></td>
+<td><strong>(Two Elective Courses)</strong></td>
+<td><strong>6</strong></td>
+</tr>
+<tr>
+<td><strong>&nbsp;</strong></td>
+<td><strong>&nbsp;</strong></td>
+<td><strong>24 Units</strong></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+
+<section>
+<h5>Research</h5>
+<div class="table-container">
+<table>
+<tbody>
+<tr>
+<td><strong>Course Code</strong></td>
+<td><strong>Course Title</strong></td>
+<td><strong>Unita</strong></td>
+</tr>
+<tr>
+<td><strong>ECE 602</strong></td>
+<td><strong>Seminars</strong></td>
+<td><strong>3</strong></td>
+</tr>
+<tr>
+<td><strong>ENG 601</strong></td>
+<td><strong>Analytical Tools and ICT for Research in Engineering</strong></td>
+<td><strong>3</strong></td>
+</tr>
+<tr>
+<td><strong>ENG 603</strong></td>
+<td><strong>Research Methodology in Engineering</strong></td>
+<td><strong>3</strong></td>
+</tr>
+<tr>
+<td><strong>PGC 601</strong></td>
+<td><strong>School of Postgraduate Studies Course</strong></td>
+<td><strong>3</strong></td>
+</tr>
+<tr>
+<td><strong>ECE 600</strong></td>
+<td><strong>Project</strong></td>
+<td><strong>6</strong></td>
+</tr>
+<tr>
+<td colspan="2"><strong>Total Units</strong></td>
+<td><strong>18 Units</strong></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+
+<section>
+<h5>Optional Courses</h5>
+<div class="table-container">
+<table>
+<tbody>
+<tr>
+<td><strong>Course Code</strong></td>
+<td><strong>Course Title</strong></td>
+<td><strong>Units</strong></td>
+</tr>
+<tr>
+<td><strong>ECE 624</strong></td>
+<td><strong>Software Engineering Project Management</strong></td>
+<td><strong>3</strong></td>
+</tr>
+<tr>
+<td><strong>ECE 627</strong></td>
+<td><strong>Web Engineering and Cyber Security</strong></td>
+<td><strong>3</strong></td>
+</tr>
+<tr>
+<td><strong>ECE 628</strong></td>
+<td><strong>Biometrics and Image Processing</strong></td>
+<td><strong>3</strong></td>
+</tr>
+<tr>
+<td><strong>ECE 629</strong></td>
+<td><strong>Nanoelectronics and Optoelectronics</strong></td>
+<td><strong>3</strong></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p class="paragraph">(Two courses only are required to be chosen.)</p>
+</section>
+
+<section>
+<h4>C.  CONTROL SPECIALIZATION</h4>
+<div class="table-container">
+<table>
+<tbody>
+<tr>
+<td colspan="3">
+<h6><strong>&nbsp; Compulsory Courses</strong></h6>
+</td>
+</tr>
+<tr>
+<td><strong>Course Code</strong></td>
+<td><strong>Course Title</strong></td>
+<td><strong>Units</strong></td>
+</tr>
+<tr>
+<td><strong>ECE 630</strong></td>
+<td><strong>Stochastic Control</strong></td>
+<td><strong>3</strong></td>
+</tr>
+<tr>
+<td><strong>ECE 631</strong></td>
+<td><strong>Optimal Control</strong></td>
+<td><strong>3</strong></td>
+</tr>
+<tr>
+<td><strong>ECE 632</strong></td>
+<td><strong>Multivariable Control</strong></td>
+<td><strong>3</strong></td>
+</tr>
+<tr>
+<td><strong>ECE 635</strong></td>
+<td><strong>System Modeling and Simulation</strong></td>
+<td><strong>3</strong></td>
+</tr>
+<tr>
+<td><strong>ECE [ ]</strong></td>
+<td><strong>(Two Elective Courses)</strong></td>
+<td><strong>6</strong></td>
+</tr>
+<tr>
+<td colspan="2"><strong>Total Units</strong></td>
+<td><strong>18 Units</strong></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+
+<section>
+<h5>Research</h5>
+<div class="table-container">
+<table>
+<tbody>
+<tr>
+<td><strong>Course Code</strong></td>
+<td><strong>Course Title</strong></td>
+<td><strong>Units</strong></td>
+</tr>
+<tr>
+<td><strong>ECE 602</strong></td>
+<td><strong>Seminars</strong></td>
+<td><strong>3</strong></td>
+</tr>
+<tr>
+<td><strong>ECE 601</strong></td>
+<td><strong>Analytical Tools and ICT for Research in Engineering</strong></td>
+<td><strong>3</strong></td>
+</tr>
+<tr>
+<td><strong>ECE 603</strong></td>
+<td><strong>Research Methodology in Engineering</strong></td>
+<td><strong>3</strong></td>
+</tr>
+<tr>
+<td><strong>PGC 601</strong></td>
+<td><strong>School of Postgraduate Studies Course</strong></td>
+<td><strong>3</strong></td>
+</tr>
+<tr>
+<td><strong>ECE 600</strong></td>
+<td><strong>Project</strong></td>
+<td><strong>6</strong></td>
+</tr>
+<tr>
+<td><strong>&nbsp;</strong></td>
+<td><strong>&nbsp;</strong></td>
+<td><strong>18 Units</strong></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+
+
+<section>
+<h5>Optional Courses</h5>
+<table>
+<tbody>
+<tr>
+<td><strong>Course Code</strong></td>
+<td><strong>Course Title</strong></td>
+<td><strong>Units</strong></td>
+</tr>
+<tr>
+<td><strong>ECE 633</strong></td>
+<td><strong>Linear Systems</strong></td>
+<td><strong>3</strong></td>
+</tr>
+<tr>
+<td><strong>ECE 634</strong></td>
+<td><strong>Large Scale Systems</strong></td>
+<td><strong>3</strong></td>
+</tr>
+<tr>
+<td><strong>ECE 636</strong></td>
+<td><strong>Control Strategies</strong></td>
+<td><strong>3</strong></td>
+</tr>
+<tr>
+<td><strong>ECE 638</strong></td>
+<td><strong>System Control</strong></td>
+<td><strong>3</strong></td>
+</tr>
+</tbody>
+</table>
+<p class="paragraph">(Two courses only are required to be chosen.)</p>
+</section>
+
+
+<section>
+<h4>COURSE DESCRIPTIONS</h4>
+<h5>ECE 600 Dissertation (6 Units)</h5>
+<p class="paragraph">Each candidate for a Masters degree shall be assigned a suitable research project approved by the<br>
+Departmental Postgraduate Studies Committee. The results of the research shall be embodied in<br>
+a dissertation.</p>
+</section>
+
+
+<section>
+<h4>ENG 601: Analytical Tools and ICT for Research in Engineering (3 Units)</h4>
+<p class="paragraph">Use of advanced analytical tools like MATLAB/SIMULINK, SCILAB/XCOS, etc for solution<br>
+of engineering problems and their applications (Application of these softwares depends on the<br>
+various problems formulated in different departments and in the specific specializations).<br>
+Information literacy, information sources (media, publishers, agreggators); validity of<br>
+information, plagiarism and legal aspects.<br>
+Information search – search engines, journal repositories, academic (social) networks, search<br>
+strategies, personal contacts, tools for managing references.<br>
+Integrating information literacy in research, cloud computing, audiovisual tools, e.g powerpoint<br>
+presentations.</p>
+</section>
+
+
+<section>
+<h4>ENG 603: Research Methodology in Engineering (3 Units)</h4>
+<p class="paragraph">Literature review: Reading and summarizing relevant articles, critical analysis and evaluation of<br>
+research, identification of themes and comparators, writing review documents and identification<br>
+of research (or knowledge) gaps.<br>
+Scientific method and nature of evidence: Experimental methods and design methods&nbsp;<em>(as may be<br>
+applicable to individual departments and research areas)</em>, data collection and management of<br>
+quantitative data. Human participants – expert reviews, focus groups, questionnaires and<br>
+interviews.<br>
+Project management and report writing: project planning, report structure and style, general<br>
+report writing techniques.</p>
+</section>
+
+<section>
+<h4>ECE 617 Optical Systems&nbsp;(3 Units)</h4>
+<p class="paragraph">The wave nature of light. Polarization, the principle of superposition, interference, diffraction.<br>
+Black body radiation. Photoluminescence, cathocoluminescence. The cathode ray tube. Light&nbsp;emitting Diodes.&nbsp;Plasma displays, liquid crystal Displays, Numeric displays.</p>
+<p>LASERS.&nbsp;Radiation emission principles. Classes of lasers. Laser Applications, Photo-detectors. Fibre&nbsp;optical&nbsp;waveguides.&nbsp;Optical&nbsp;waveguides.&nbsp;Optical&nbsp;communication&nbsp;systems.&nbsp;Reflection,&nbsp;refraction, and diffraction properties of light. Polarization properties of light. Diffractive Optics,&nbsp;Coherence and Interference. Introduction to Holography Route and site selection; influence of terrain, weather, rain and obstructions. Calculation of path&nbsp;profiles. Use of aerial maps. System Noise Objectives. ITU-T/R international circuits. Choice of<br>
+equipment; radio equipment, RF combiners; guides, antenna systems, randomes, repeaters and links and the estimates. System reliability estimates. Calculation of the probability of outages<br>
+due to propagation.</p>
+</section>
+
+
+<section>
+<h4>ECE 619 Radar And Navigation Systems (3 Units)</h4>
+<p class="paragraph">Operation, history, applications. Radar Equation, Radar range, minimum detectable signal, noise,<br>
+cross section of a target, transmitter power, antenna parameters. CW, Doppler, moving-target<br>
+indication, tracking radar, laser radar. Radar transmitters, receivers and antennas. Propagation of<br>
+radar waves. Airbone direction finders, air traffic control radar beacon, instrument low approach<br>
+system, loran, microwave landing systems. Omega. Inmarsat.</p>
+
+</section>
+
+<section>
+<h4>ECE 620 Digital Systems Design (3 Units)</h4>
+<p class="paragraph">Revision of key SSI and MSI combinational circuits: adders, subtractors, decoders, encoders,<br>
+multiplexers and demultiplexers. Design with SSI and MSI combinational circuits. Revision of<br>
+LSI combinational circuits: ROMs, PLA, PAL. Design with LSI combinational circuits. Revision<br>
+of sequential circuits: RS, JK, D and T flip-flops. Design with sequential circuits. Design of<br>
+counters, Registers, RAM. Register Transfer. Hardware Description Languages: VHDL,<br>
+SystemVerilog. Sequential digital systems description and design in VHDL. Basic building<br>
+blocks and language constructs. Register Transfer-Level Design. Controller/datapath<br>
+partitioning. Simulation and synthesis principles. Built in Test: Principles, structures, signature<br>
+analysis. Multiple Clock Domains: Transferring data between clock domains.</p>
+</section>
+
+
+<section>
+<h4>ECE 621 Computer Systems Architecture I (3 Units)</h4>
+<p class="paragraph">
+Computer Fundamentals and Classification, Computer Design by layers: from Applications to<br>
+Transistors; Design goals (speed, cost, size, power consumption, etc.).<br>
+Quantitative Principles of Computer Design: Make the Common Case Fast; Amdahl’s Law and<br>
+application; CPU Performance Equation.
+</p>
+</section>
+
+<section>
+<h4>BASIC ARCHITECTURE OF A STORED PROGRAM COMPUTER</h4>
+<p class="paragraph">Scope of architecture: Instruction Set Architecture, Micro-Architecture of Organization and<br>
+Hardware. Requirements to be considered in designing a new machine. Elements of a generic<br>
+micro-architecture: CPU, Bus, Memory, Input-Output, Peripherals. Microarchitecture of Intel 80<br>
+x 86 microprocessor as illustrative examples. Von–Newman versus Harvard Architecture. Von–<br>
+Newman Bottleneck.<br>
+Seven Key Elements of Instruction Set Architecture (ISA). Assembly Language Programming.<br>
+MEMORY<br>
+Characteristics of Memory; Memory Hierarchy Performance Parameters; Types of<br>
+Semiconductor Memories and applications; Memory design; Memory Interleaving. Virtual<br>
+Memory – Hard disk.</p>
+</section>
+
+<section>
+<h4>ECE 622 Software Engineering Development (3 Units)</h4>
+<h5>Overview of Software Engineering</h5>
+<p class="paragraph">Software; Nature of Software; Importance of Software; Differences between Software and<br>
+hardware; characteristics of software that distinguishes it from other products people build.</p>
+<p>Types of software: Component – off – the – shelf (COTS), Bespoke, Differences between COTS<br>
+and Bespoke. Application software. Middleware, Operating Systems, Utilities.<br>
+Software Engineering as a Profession<br>
+Profession as a body of knowledge, Code of Ethics and Professional Body regulating the<br>
+profession; Software Engineering Code of Ethics and Professional Practice developed by<br>
+ACM/IEEE – CS; Whistle-Blowing and Ethical Dilemma.</p>
+</section>
+
+
+<section>
+<h4>The Engineering of Software</h4>
+<p>Software Development Layers; Software Development process and Case for processes in<br>
+Software Engineering; Generic Activities during Software Engineering: Definition, Development<br>
+and Support. Subdivision of Generic activity into actions, tasks and tasks sets. Software<br>
+Engineering Generic Process Framework or Common Process Framework; The five Generic<br>
+Process Framework Activities – Communication, Planning, Construction and Deployment;<br>
+Umbrella Activities and Typical Umbrella Activities.<br>
+Software Engineering Life Cycles<br>
+Steps in Software Engineering Life Cycle – Requirements Elicitation; Systems Analysis and<br>
+Specification; Systems Design, Implementation (Coding and Integration); Commissioning and<br>
+Maintenance. Methods for Requirement Elicitation and Requirement Challenges. Waterfall<br>
+model; Iterative and Incremental Development; Spiral Development; Rational Unified Process<br>
+Development; Agile Development techniques; Extreme Programing Development techniques;<br>
+Scrum; Test-driven development; Manual versus Automated Testing, Refactoring; Advantages<br>
+and disadvantages of different software development method for an application.<br>
+Software Engineering development using Object Orientation<br>
+Concepts of Object, class, attributes and methods in Object Oriented Analysis and Design;<br>
+Object Oriented Design Principles: Abstraction. Modularization, Information Hiding.<br>
+Unified Modeling Language (UML); Different types of diagrams used in UML and their uses;<br>
+Use Case diagram as interaction between actors and the system itself; Class Diagrams and their<br>
+representation; Class Associations: Generalization, Aggregation, Composition and Inheritance;<br>
+State Diagrams and examples of Activity Diagrams; Component Diagrams; Deployment<br>
+Diagrams.<br>
+Object Oriented Programming.</p>
+</section>
+
+
+<section>
+<h4>ECE 623 Computer Systems Architecture II (3 Units)</h4>
+<p class="paragraph">Acceleration Mechanisms: Cache and Pipelining. Cache Memory Systems. Overview of Memory<br>
+Hierarchy. Cache Mapping Function; How cache operates; Cache effectiveness: Hit, Miss, Hit<br>
+ratio, miss ratio. Cache components: SRAM, TRAM, Cache Controller. Cache Classification.<br>
+Locality of Reference; Types of Locality – Temporary and Spatial. Implications of Locality.<br>
+Cache Placement Policy or Cache Organization – Direct, Set Associative, Fully Associative;<br>
+Comparison of Cache Organization; Cache Design examples.<br>
+Read and Write Policies: Write through, Write back, Replacement Policy. Cache misses:<br>
+Compulsory, Capacity, Conflict. Illustrative examples: Pentium and i7 cache structures.<br>
+PIPELINING (Instruction Level Parallelism)</p>
+</section>
+
+
+<section>
+<p class="paragraph">Pipelining Techniques; Pipeline Unites (Stages), Pipeline with staging Latches; Space Time<br>
+Graphs.<br>
+Instruction –time diagram. Operation of the Pipeline. Instruction Overlap and Pipelining.<br>
+Pipeline for RISC Processor; Pipeline equations, Pipeline efficiency. Instruction Pipeline<br>
+Hazards; Detecting Hazards, Data Dependencies, Output dependencies, Forwarding.<br>
+Superscalar Processors; Superscalar design with Specialized execution units; Out-of-Order<br>
+instruction Issue; Centralized, Distributed Instruction Windows. Differences between nonpipelined and pipelined processors, Register Renaming; Reorder buffer. Arithmetic Pipelines:<br>
+Illustrative examples – How Pentium and i7 processors implement pipelining.<br>
+Multiprocessors and multithreading</p>
+</section>
+
+<section>
+<h4>ECE 624 Software Engineering Project Management (3 Units)</h4>
+<p>Why Software Engineering Project Management. Project Management Concepts: People;<br>
+Products; Process and Projects. The Scope Triangle: Quality, Time and Cost; Tradeoffs inherent<br>
+in Software Project Management. Managing most important resource – People; Project Staffing;<br>
+Team Work.<br>
+Managing the Software Development Process<br>
+Estimating Software Projects; Contracts; Project planning and monitoring; Project Scheduling;<br>
+Costing and Budgeting; Models of Software projects.<br>
+Quality Management<br>
+Software Quality; Why software fails; Concepts in Quality Assurance; Software Standards;<br>
+Reviews and Inspections; Capability Maturity Modeling; ISO 9000 Standards; Metrics.<br>
+Risk Management<br>
+Software Risks: Characteristics of High Risk Projects; Risk Analysis and Management;<br>
+Relationship between Software Risks and Software Failures: Likelihood of Failure, Impact of<br>
+Failure; Checklist for Software Risks.</p>
+</section>
+
+
+<section>
+<h4>ECE 625 Digital Integrated Electronics (3 Units)</h4>
+<p class="paragraph">PURIFICATION OF SEMICONDUCTORS MATERIALS:<br>
+Zone refining, Crystal growth technique – Czochralkiprocess, Float Zone technique, Bridgemann<br>
+– Stockbarger Method, Epitaxial Growth. Vacuum deposition techniques – physical vapour<br>
+deposition, Metallurgic chemical vapour deposition, Molecular beam Epitaxy, Cathode<br>
+sputtering, ion-implantation. Integrated Circuits Device Fabrication. The Planer technology –<br>
+wafer preparation, oxidation, photolithography, ion-implantation, testing, bonding and<br>
+packaging. Digital integrated circuit logic families and their operational characteristics – TTL,<br>
+CMOS. Analysis of digital integrated circuits. Applications of digital integrated circuits.<br>
+Creation of Vacuum. Vacuum Pumps:<br>
+Types of vacuum pumps – Positive displacement pumps, Diffusion pumps, Cryogenic pumps,<br>
+Turbomolecular pumps. Pressure ranges of vacuum pumps.</p>
+</section>
+
+
+<section>
+<h4>ECE 626 Digital Signal Processing (3 credits)</h4>
+<p class="paragraph">Introduction to Digital Signal Processing . Time and Frequency Characterization of Signals and<br>
+Systems. Discrete-Time Systems. Basic System Properties. Discrete-Linear Time-Invariant<br>
+Systems. Short-time Fourier Analysis. The Discrete-Time Fourier Transform. Sampling,<br>
+Quantization and Aliasing. Nyquist Frequency / Discrete-time processing of continuous-time<br>
+signals. Sampling Rate Conversion. Quantization and Oversampled Noise Shaping. Fast Fourier<br>
+transforms Algorithms. The Z-Transform. Inverse Z-Transform. Analysis and characterization<br>
+of LTI systems using the Z-Transform. Digital Filtering. Discrete-Time Filters described by<br>
+Difference Equations: First-Order Recursive Discrete-Time Filters / Non-recursive DiscreteTime Filters. IIR, FIR Filter Structures. Computer Techniques in Filter Synthesis. Realization of<br>
+Filters in Hardware and Software. Filter Design: IIR Filters. Filter Design: FIR Filters.</p>
+</section>
+
+
+<section>
+<h4>ECE 627 Web Engineering and Cyber Security (3 Units)</h4>
+<p class="paragraph">WEB ENGINEERING<br>
+Computing Technologies: The Internet and the Web; Impact. Attributes of Web-based<br>
+Applications (WebApps); Framework for Web Engineering (WebE)<br>
+Web Development<br>
+Requirements for High Quality WebApps: Design Goals; Design Pyramid for WebApps:<br>
+Interface Design; Aesthetic Design; Content Design; Architectural Design; WebApp<br>
+Architecture: Model-View-Controller (MVC) Architecture; Navigational Design, WebE Team.<br>
+Website Design; Web Portal Design; Web Project Management.<br>
+CYBER SECURITY<br>
+The Security Landscape. Threats, Attacks, Attackers or Adversaries; Types of attacks and<br>
+attackers. Vulnerabilities. Data Protection: Confidentiality, Integrity and Availability. Access<br>
+Control – Identification, Authentication Techniques, Authorization; Password. Biometric<br>
+Security. Privacy and Anonymity. Basic Cryptography; Certificates. Skill Gaps in Cyber<br>
+Security; Cybercrime and Cybercrime “as-a-service”. Framework for applying Cyber Security.<br>
+Viruses and malware.</p>
+</section>
+
+
+<section>
+<h4>ECE 628 Biometrics and Image Processing (3 Units)</h4>
+<p class="paragraph">Overview of Images and Image Processing. Image acquisition and sampling theory. Image<br>
+transformations: Fourier, Discrete Cosine and Wavelet. Image transformations using MATLAB<br>
+toolboxes. Histogram processing and linear filtering. Neighbourhood operations. Spatial<br>
+filtering in MATLAB. Frequency domain filtering in MATLAB. Image noise reduction. Spatial<br>
+and adaptive noise filters. Image registration. Image Segmentation. Introduction to biometrics.<br>
+Applications of biometrics. Biometric Data Collection. Overview of computer vision methods.<br>
+Computer vision and image processing. Automated analysis of computer images.<br>
+Fingerprint biometrics. Performance limits and performance evaluation.</p>
+</section>
+
+
+<section>
+<h4>ECE 629 Nanoelectronics and Optoelectronics (3 Units)</h4>
+<p class="paragraph">Nanoelectronics<br>
+Overview of Nanotechnology – Fundamental Concepts and Applications.<br>
+Introduction of Nanoelectronics – description of electronics at the nanoscale – principles of<br>
+quantum mechanics, the wave-particle duality, wave functions and Schrodinger equation.<br>
+Electronic properties of molecules, carbon nanotubes and crystals, energy ban formation and<br>
+origin of metals, insulators and semiconductors. Nanomaterials for electronic applications.<br>
+Nanoelectronic devices – nanowire MOSFETSs, nanotubes FETS, quantum dot lasers, field<br>
+emission displays, solar cells, nano sensors.<br>
+Optoelectronics<br>
+Quantum mechanical effects of light on electronic materials. Photovoltaic effect (photodiodes,<br>
+phototransistors, photomultipliers, optoisolators, integrated optical circuits. Photoconductivity<br>
+and its application in photoresistors, photoconductive camera tubes, charge-coupled imaging<br>
+devices, photoemissive camera tube. Stimulated emission – injection laser diodes, quantum<br>
+cascade lasers. Radiative recombination devices – light emitting diodes. Optical fibre<br>
+communication, optocouplers.</p>
+</section>
+
+
+<section>
+<h4>ECE 630 Stochastic Control 3 Units</h4>
+<p class="paragraph">Prediction theories&nbsp;of filtering; Kalama Filtering.&nbsp;Control of Stochastic system, System identification; Cost Functions.&nbsp;Minimum Variance Control. Certainty equivalent principle.&nbsp;Stationary noise disturbances; Optimal Control law for Special noise models. Least squares<br>
+estimation and control. The Fokker-plan-Kolmogorov Equation. Method of moments, Yaupon. Theory; Circle Criteria, Separation theorem. Optimality, Piece-wise representation and&nbsp;numerical Analysis of non-linear Stochastic system.</p>
+</section>
+
+<section>
+<h4>ECE 631 Optimal Control (3 Units)</h4>
+<p class="paragraph">Linear programming Dynamic programming. Calculus of variations. Hill climbing techniques.&nbsp;Poutryagins&nbsp;maximum principles.&nbsp;Hamilton-Jacobi Theory. Matrix Ricatti Equations.&nbsp;Extremization and linear integrals via Green’s Theorem. Theory of second variations. The<br>
+singular problem. Some sufficient conditions. Generalized controls; Linear optimal controls via&nbsp;spectral factorizations.</p>
+</section>
+
+<section>
+<h4>ECE 632 Multivariable Control (3 Units)</h4>
+<p>Functional Controllability&nbsp;system matrix,&nbsp;matrix-fraction and inverse matrix descriptions for&nbsp;dynamical system. Multivariable poles and zeros; Frequency domain multivariable stability Criteria; Generalized diagonal dominance. Singular value decompositions. Criteria for&nbsp;robustness; Normality.Quasi-Nyquist and Multivariable root loci. Non-proper system frequency&nbsp;response. Non-interacting control. Modal control. Pole assignment; state and output feedback.&nbsp;Disturbance rejection. Design examples from industrial problems.</p>
+</section>
+
+<section>
+<h4>ECE 633 Linear Systems (3 Units)</h4>
+<p class="paragraph">Basic systems concepts: systems, models, representations, dynamical systems representation;<br>
+Input/output representation state space description singular points and flow pattern in state space,<br>
+pancake theory and Benison theorem. Linear System; controllability, operability, minimal<br>
+representation, stability criteria, Lyapunov stability theory. Equivalent discrete systems Z and W<br>
+Transforms; discrete data, dynamical system sampling theory. Equivalent discrete Systems Z<br>
+and W transforms, discrete data, dynamical systems sampling theory. Stochastic processes,<br>
+processes, stationary processes, models for stationary. Processes, models for stationary<br>
+processes. Linear filters, impulse response Functions, frequency response functions,<br>
+autocorrelation functions and spectral. Density functions; Wiener-Khinchin relations.</p>
+</section>
+
+
+<section>
+<h4>ECE 634 Large-Scale System (3 Units)</h4>
+<p>Large&nbsp;scale system Modeling in time and&nbsp;frequency domains. Aggregation, Descriptor Variables, perturbation Methods. Moment matching, Continues partial fraction expansions and<br>
+Approximations, Error minimization. Hierarchical Control of large scale systems. Decentralized<br>
+Control and stabilization, Robust System control.</p>
+</section>
+
+
+<section>
+<h4>ECE 635 System Modeling and Simulation (3 Units)</h4>
+<p>Modeling different levels (of systems complexity) for different applications; Design verification,<br>
+fault analysis, time analysis and testing. Concept of dynamic feedback systems, including; stability, adaptive control and&nbsp;Characteristics of linear vs non-linear systems. Artificial&nbsp;intelligence and Microprocessor application. An introduction to systems, analysis by simulation;&nbsp;continuous, non-linear and Distribution system. Analog simulation with logic elements and hybrid Systems. Solution of difference equations using state space and Z-transform Methods,&nbsp;numerical integration; stability.&nbsp;Digital simulation of one discrete&nbsp;(CPPSS) AND ONE&nbsp;CONTINUOUS (CSMP) simulation language; Pseudorandom members.</p>
+</section>
+
+<section>
+<h4>ECE 636 Advanced Control Engineering (3 Units)</h4>
+<p class="paragraph">Types of system nonlinearities, small perturbation methods, describing functions, phaseplane<br>
+analysis. Principles of sampled systems. Applications of Z-transforms. System performance and<br>
+stability. State space analysis of control systems. The transition matrix. Controllability and<br>
+observability, pole assignment. On-line computer control. Derivation of digital control<br>
+algorithms. Microprocessor application. Introduction to adaptive control: Hill climbing and<br>
+model refernce adaptive systems. Lyapunov’s direct method of stability analysis. Lyapunov’s<br>
+functions. Stability regions for sample non-linear systems. System identification and testing<br>
+methods. Applications of statistical correlation techniques.</p>
+</section>
+
+
+<section>
+<h4>ECE 637 Linear System Theory (3 Units)</h4>
+<p class="paragraph">Review of elementary linear algebra. Eigenspaces. Vector space partitions. Vector matrix<br>
+differential equations. The transition matrix. State space theory of linear dynamical systems.<br>
+Reach ability and pole assign ability. Introduction to optimal control with quadratic cost. The<br>
+Lyapunov matrix equation and the matrix ricatti equation. Introduction to polynomial algebras<br>
+leading to system theory in the Frequency domain. The system matrix. Introduction to Lyapunov<br>
+stability theory. Random processes in dynamical systems.</p>
+</section>
+
+
+<section>
+<h4>ECE 638 System Control 3 Units</h4>
+<p class="paragraph">The minimum effort control; The regulator control; The tracker control; Digital control<br>
+implementation; Process identification; Advanced Control strategies: NIMC, Adaptive, Fuzzy<br>
+Logic; MPC and GLC</p>
+</section>
+
+</main>
+
+
+
+<footer class="site-footer">
+    <div class="footer-contianer">
+        <div class="footer-row flex-4">
+            <div class="footer-col col-1">
+                <figure class="unn-logo">
+                    <div class="img-container">
+                        <img src="../static/images/unn-logo.svg" alt="unn logo"/>
+                    </div>
+                    <figcaption>
+                        <p>Electronic Engineering</p>
+                    </figcaption>
+                </figure>
+            </div>
+            <div class="footer-col">
+                <ul>
+                    <li><a class="round-cta-btn" target="_self" href="../programs/programs.html">programmes</a></li>
+                    <li><a class="round-cta-btn" target="_self" href="../staffs/staffs.html">staff</a></li>
+                    <li><a class="round-cta-btn" target="_self" href="../alumni.html">almuni</a></li>
+                    <li><a class="round-cta-btn" target="_self" href="../digital-library/e-learning.html">e-learning</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                    <ul>
+                        <li><a class="round-cta-btn" target="_self" href="../research/research.html">research</a></li>
+                        <li><a class="round-cta-btn" target="_self" href="../newsandevents.html">news</a></li>
+                        <li><a class="round-cta-btn" target="_self" href="../aboutus.html">about us</a></li>
+                        <li><a class="round-cta-btn" target="_self" href="../contactus.html">contact us</a></li>
+                    </ul>
+            </div>
+        </div>
+    </div>
+    <!-- current date -->
+    <small style="text-align:center;display:block;" class="copyright">&copy; <span id="updated-year"> </span> Department of Electronic Engineering</small>
+</footer>
+<script src="../static/js/theme.js"></script>
+<script src="../static/js/index.js"></script>
+<script src="../static/js/owl.carousel.js"></script>
+
+<script>
+    	const updateYear = document.getElementById("updated-year");
+    	const date = new Date();
+    	updateYear.innerText += date.getFullYear();
+</script>
+</div>
+</body>
+</html>

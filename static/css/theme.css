@@ -1,48 +1,44 @@
-:root{
---white-color:#fff;
---black-color:#000000;
---green:#0f4625;
+:root {
+  --white-color: #fff;
+  --black-color: #000000;
+  --green: #0f4625;
 }
-.dark-theme{
---background-color:var(--black-color);
---green-background:var(--green);
---color:#696969;
---carousel-dot:#00ffff;
---hover-color:var(--white-color);
---logo-text-color:#696984;
---dark-theme:none;
---link-text-color:#fff;
---white-theme:inline-block;
---box-shadow:2px 2px 5px 1px rgba(255, 255, 255, 0.75),-2px -2px 5px 1px rgba(255, 255, 255, 0.75);
-
-}
-
-.light-theme{
---background-color:var(--white-color);
---green-background:var(--green);
---color:#696969;
---carousel-dot:#32cd32;
---hover-color:var(--black-color);
---logo-text-color:var(--green);
---dark-theme:inlline-block;
---white-theme:none;
---box-shadow:2px 2px 5px 1px rgba(0, 0, 0, 0.25);
---link-text-color:#000;
+.dark-theme {
+  --background-color: var(--black-color);
+  --green-background: var(--green);
+  --color: #696969;
+  --carousel-dot: #00ffff;
+  --hover-color: var(--white-color);
+  --logo-text-color: #696984;
+  --dark-theme: none;
+  --link-text-color: #fff;
+  --white-theme: inline-block;
+  --box-shadow: 2px 2px 5px 1px rgba(255, 255, 255, 0.75),
+    -2px -2px 5px 1px rgba(255, 255, 255, 0.75);
 }
 
-
-
-
+.light-theme {
+  --background-color: var(--white-color);
+  --green-background: var(--green);
+  --color: #696969;
+  --carousel-dot: #32cd32;
+  --hover-color: var(--black-color);
+  --logo-text-color: var(--green);
+  --dark-theme: inlline-block;
+  --white-theme: none;
+  --box-shadow: 2px 2px 5px 1px rgba(0, 0, 0, 0.25);
+  --link-text-color: #000;
+}
 
 /* Theme icon */
-.light-theme-icon{
-cursor: pointer;
-color: #696969;
-/* display:inline-block; */
-font-size:1em;
-padding:0px 12px;
-cursor: pointer;
-/* border:1px solid red; */
+.light-theme-icon {
+  cursor: pointer;
+  color: #696969;
+  display: inline-block;
+  font-size: 1.4em;
+  padding: 2px 12px 6px;
+  cursor: pointer;
+  /* border: 1px solid red; */
 }
 /* .light-theme-icon
 .light-icon path{
@@ -50,26 +46,20 @@ fill:var(--theme-icon-color);
 } */
 
 /* ============when dark mode is enabled============*/
-.black-theme{
-display:var(--dark-theme);
+.black-theme {
+  display: var(--dark-theme);
 }
 
 /* =============when light mode is enabled=========== */
-.white-theme{
-display:var(--white-theme);
+.white-theme {
+  display: var(--white-theme);
 }
-
-
-
-
-
-
 
 /* 
 Media Query
  */
-@media(min-width:980px){
-.light-theme-icon{
-/* padding:0px; */
-}
+@media (min-width: 980px) {
+  .light-theme-icon {
+    padding-top: 0;
+  }
 }

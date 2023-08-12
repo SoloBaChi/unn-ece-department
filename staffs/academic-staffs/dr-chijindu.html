@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"/>
+    <link rel="icon" href="../../static/images/unn-logo-2.png" type="images/favicon">
+    <link href="../../static/font-awesome/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href="../../static/css/index.css" rel="stylesheet">
+    <title>Dr. Chijindu Vincent Chukwudi - Department of Electronic Engineering UNN</title>
+   </head>
+<body class="dark-theme">
+ <!-- Welcome to ECE Department(Center Of Excellence), Excellence is our model 
+    ========Few Code Notes===============
+    Note that these were written for the essence of code maintainability
+    :::::Frequently Used classes
+    1. page-container: this class was used in this code as a general wrapper for each page
+
+    ::::Responsive Design Pattern
+    The principle applied in the development of this site is mobile first principle
+    -->
+<div class="page-container">
+<header class="header">
+    <div class="header-container">
+        <div class="header-row"> 
+        <div class="logo-container">
+            <div class="unn-logo">
+                <a href="../../index.html">
+                    <img src="../../static/images/unn-logo.svg">
+                </a>
+            </div>
+            <div class="logo-text">
+               <div>
+                <p>University of Nigeria</p>
+               </div>
+               <div>
+                <p>Department of Electronic and Computer Engineering</p>
+                <small class="department-motto">Center of Excellence...</small>
+               </div> 
+            </div>
+        </div>
+        <div>
+            <div class="toggle-btn" id="toggle-btn">&#9776;</div>
+            <div class="light-theme-icon">
+             <svg class="light-icon black-theme" width="18" height="18" viewBox="0 0 25 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M13.9867 28C18.3008 28 22.2409 26.0354 24.8513 22.8161C25.2375 22.3398 24.8164 21.6441 24.2196 21.7579C17.4337 23.0514 11.2021 17.8435 11.2021 10.9869C11.2021 7.0373 13.3144 3.40534 16.7475 1.44977C17.2766 1.14833 17.1436 0.345242 16.5422 0.234063C15.6993 0.0784728 14.8439 0.000127768 13.9867 0C6.26619 0 0 6.26232 0 14C0 21.7278 6.25636 28 13.9867 28Z" fill="#0A3E09"/>
+             </svg>
+            <svg class="light-icon white-theme" width="20" height="20" viewBox="-3.6 -3.6 43.20 43.20" xmlns="http://www.w3.org/2000/svg" fill="#ffffff" stroke="#ffffff" stroke-width="0.00036" transform="matrix(-1, 0, 0, -1, 0, 0)rotate(45)"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round" stroke="#ffffffCCCCCC" stroke-width="1.7280000000000002"></g><g id="SVGRepo_iconCarrier"> <g id="Lager_93" data-name="Lager 93" transform="translate(2 2)"> <g id="Sun_3_Brightness_3" data-name="Sun 3, Brightness 3"> 
+             <path id="Path_68" data-name="Path 68" d="M32,14H27.033c-2,1.769-.779,4,.967,4h4.967C34.966,16.231,33.746,14,32,14Z" fill="#ffffff"></path> <g id="Path_69" data-name="Path 69" fill="none" stroke-miterlimit="10"> <path d="M17.172,10.111a6,6,0,1,0,4.715,4.715A6.01,6.01,0,0,0,17.172,10.111Z" stroke="none"></path> <path d="M 15.99852275848389 13.99979972839355 C 15.40029907226563 13.99979972839355 14.83786392211914 14.26465797424316 14.45541763305664 14.72645950317383 C 14.18128776550293 15.05748176574707 13.88667678833008 15.62165832519531 14.04035758972168 16.43178939819336 C 14.1787109375 17.16349411010742 14.83581733703613 17.82003402709961 15.56771087646484 17.958740234375 C 15.71307563781738 17.98624801635742 15.85765266418457 18.00020027160645 15.99740505218506 18.00020027160645 C 16.59555816650391 18.00020027160645 17.15798187255859 17.73542404174805 17.54046440124512 17.27376556396484 C 17.81481742858887 16.94261169433594 18.1097583770752 16.37818908691406 17.95689964294434 15.57052993774414 C 17.81802749633789 14.83748245239258 17.1605224609375 14.17996406555176 16.42829895019531 14.041259765625 C 16.28293609619141 14.01375389099121 16.13835906982422 13.99979972839355 15.99860572814941 13.99979972839355 L 15.99852275848389 13.99979972839355 M 15.99860000610352 9.999795913696289 C 16.38235282897949 9.999801635742188 16.77459716796875 10.03580474853516 17.17200469970703 10.11100006103516 C 19.52100563049316 10.55599975585938 21.44199371337891 12.47699928283691 21.88699340820313 14.82600021362305 C 22.61180877685547 18.65568542480469 19.69624137878418 22.00020408630371 15.99740028381348 22.00020408630371 C 15.61366271972656 22.00020408630371 15.22141265869141 21.96419525146484 14.82400512695313 21.88899993896484 C 12.47600555419922 21.44400024414063 10.55400466918945 19.52299880981445 10.11000442504883 17.17499923706055 C 9.383377075195313 13.34440803527832 12.29961967468262 9.999755859375 15.99860000610352 9.999795913696289 Z" stroke="none" fill="#ffffff"></path> </g> <rect id="Rectangle_26" data-name="Rectangle 26" width="8" height="4" rx="1.993" transform="translate(26 14)" fill="#ffffff"></rect> <rect id="Rectangle_27" data-name="Rectangle 27" width="8" height="4" rx="1.993" transform="translate(18 26) rotate(90)" fill="#ffffff"></rect> <rect id="Rectangle_28" data-name="Rectangle 28" width="8" height="4" rx="1.993" transform="translate(18 -2) rotate(90)" fill="#ffffff"></rect> <rect id="Rectangle_29" data-name="Rectangle 29" width="8" height="4" rx="1.993" transform="translate(-2 14)" fill="#ffffff"></rect> <g id="Group_22" data-name="Group 22"> <rect id="Rectangle_30" data-name="Rectangle 30" width="6.925" height="3.766" rx="1.883" transform="translate(23.22 6.117) rotate(-45)" fill="#ffffff"></rect> </g> <g id="Group_23" data-name="Group 23"> <rect id="Rectangle_31" data-name="Rectangle 31" width="3.766" height="6.925" rx="1.883" transform="matrix(0.707, -0.707, 0.707, 0.707, 23.22, 25.883)" fill="#ffffff"></rect> </g> <g id="Group_24" data-name="Group 24"> <rect id="Rectangle_32" data-name="Rectangle 32" width="3.766" height="6.925" rx="1.883" transform="translate(1.22 3.883) rotate(-45)" fill="#ffffff"></rect> </g> <g id="Group_25" data-name="Group 25"> <rect id="Rectangle_33" data-name="Rectangle 33" width="6.925" height="3.766" rx="1.883" transform="translate(1.22 28.117) rotate(-45)" fill="#ffffff"></rect> </g> </g> </g> </g>
+            </svg>
+            </div>
+            <nav class="navbar-container">
+                <div class="close-toggle-btn">
+                  <span>&#10005</span>
+                </div>
+                <ul class="list-menu">
+                    <li class="list-item"><a href="../../index.html">home</a></li>
+                    <li class="list-item dropdown dropdown-1"><a href="../../programs/programs.html">programmes <span class="fa fa-caret-down"></span></a>
+                        <ul class="dropdown-menu">
+                        <li> <a href="../../programs/undergraduate.html" target="_blank">undergraduate degree programmes</a></li>
+                        <li class="list-item dropdown dropdown-2"> <a href=".">postgraduate degree programmes <span class="fa fa-caret-down"></span></a>
+                            <ul class="dropdown-menu">
+                             <li> <a href="../../programs/msc.html" target="_blank">M.Sc and M.Eng Degree Programmes</a></li>
+                             <li> <a href="../../programs/phd.html" target="_blank">Phd Degree Programmes</a></li>
+                            </ul>
+                        </li>
+                        </ul>
+                    </li>
+                    <li class="list-item dropdown dropdown-1"><a href="../../staffs/staffs.html">staff <span class="fa fa-caret-down"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="../academic-staffs/academic.html">academic staff</a></li>
+                            <li><a href="../technical-staffs/technical.html">technical staff</a></li>
+                            <li><a href="../administrative-staffs/administrative.html">administrative staff</a></li>
+                        </ul>
+                    </li>
+                    <li class="list-item dropdown"><a href="#">digital-learning <span class="fa fa-caret-down"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="../../digital-library/e-learning.html">e-learnig</a></li>
+                            <li><a href="../../digital-library/virtual-libary.html">virtual library</a></li>
+                        </ul>
+                    </li>
+                    <li class="list-item dropdown"><a href="../../research.html">research <span class="fa fa-caret-down"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="../../digitalelectronics.html">digital elctronics</a></li>
+                            <li><a href="../../research/telecommunication.html">communications</a></li>
+                            <li><a href="../../research/control.html">control engineering</a></li>
+                        </ul>
+                    </li>
+                    <li class="list-item"><a href="../../alumni.html">alumni</a></li>
+                    <li class="list-item"><a href="../../newsandevents.html">news &amp; events</a></li>
+                    <li class="list-item"><a href="../../contactus.html">contact us</a></li>
+                    <li class="list-item"><a href="../../aboutus.html">about us</a></li>
+                    <!-- <li><a href="#"><input type="search"></a></li> -->
+                </ul>
+            </nav>
+        </div>
+        </div>
+    </div>
+</header>
+
+
+<!--Description: main site section -->
+<main class="staff-page">
+<!-- contactus page -->
+<section class="academic-staff">
+<div class="profile-header">
+    <h3>Dr. Chijindu Vincent Chukwudi</h3>
+    <img src="http://ece.unn.edu.ng/wp-content/uploads/sites/278/2020/08/research-gate-e1597437663821.jpg"/>
+    <p><small>Senior Lecturer</small></p>
+    <p>Department of Electronic Engineering,</p>
+    <p>Faculty of Engineering,</p>
+    <p>University of Nigeria, Nsukka.</p>
+    <p><a href="mailto:vincent.chijindu@unn.edu.ng">vincent.chijindu@unn.edu.ng</a></p>
+</div>
+<div class="more-info">
+<dl>
+<section>
+    <h3>Educational Institutions Attended with Dates</h3>
+    <dd><p>Anambra State University of Technology Enugu. ( 1983-1988 )</p></dd>
+
+<dd><p>Enugu State University of Science & Technology Enugu ( 1991-1993 )</p></dd>
+
+<dd><p>University of Nigeria, Nsukka ( 1995-1997 )</p></dd>
+
+<dd><p>International Institute of Missions & Biblical Studies Enugu ( 2006/2007 )</p></dd>
+
+<dd><p>Nnamdi Azikiwe University, Awka ( 2009 – 2016)</p></dd>
+<dt><P>Academic Qualifications Obtained</P></dt>
+
+<dd><p>B. Eng. Bachelor of Engineering – Electrical/Electronic ( 1988 )</p></dd>
+<dd><p>M. Eng. Master of Engineering – Computer Science & Engineering ( 1993 )</p></dd>
+<dd><p>PGD Man. Postgraduate Diploma in Management ( 1997 )</p></dd>
+<dd><p>PGD Min. Postgraduate Diploma in Ministry ( 2007 )</p></dd>
+<dd><p>Ph.D Doctor of Philosophy – Computer Engineering (2016)</p></dd>
+</section>
+<section>
+<h3>Awards Received</h3>
+<ol>
+<li><p class="paragraph">Certificate of Merit Best Graduating Student in the Department of Electrical & Electronic Engineering, Anambra State University of Technology 1987/88</p></li>
+<li><p class="paragraph">Certificate of National Service, 17th Sept., 1989</p></li>
+<li><p class="paragraph">Member, Nigeria Computer Society, (No. 02920)</p></li>
+<li><p class="paragraph">Commendation Letter from Managing Director, Mercedes – Benz ANAMMCO LTD for serving in a strategic Committee of the Company, March 21, 2005</p></li>
+<li><p class="paragraph">Certificate of Long Service from Mercedes – Benz ANAMMCO LTD for Ten years of Loyal and Dedicated Service to the Company, 22nd December, 2005. 6. Certificate of Ordination, 25th Nov, 2007</p></li>
+</ol>
+</section>
+<section>
+<h3>Working Experience</h3>    
+<dt><p>1.INDUSTRIAL DEVELOPMENT CENTER (IDC), ENUGU STATE UNIVERSITY OF SCIENCE & TECHNOLOGY ENUGU.</p></dt>
+<ol>
+</ol>
+<dt><p>Research Assistant (Jan, 1991 – Sep, 1993)</p></dt>
+<dt><p>Responsibilities</p></dt> 
+<ul>   
+<li><p class="paragraph">Assisting in conducting lectures and research in computer systems, telecommunication engineering, artificial intelligence and biotechnology.</p></li>
+<li><p class="paragraph">Worked with the research team that developed the 10,000 lines indigenous digital switch for NITEL LTD, was involved in schematic/logic circuit drawing and review</p></li>
+<li><p class="paragraph">Worked as a consultant team member that designed and developed the prototype of the NITEL EAGLE digital PABX, was involved in schematic/logic circuit drawing, review and collation of components for PCB assembly</p></li>
+<li><p class="paragraph">Conducted Computer Appreciation training for principal officers of UNTH Enugu Accounts Department in relation to Hospital Accounting and Administration.</p></li>
+<li><p class="paragraph">Managed the Centers equipment and component store.</p></li>
+</ul>
+<dt><p>Research Fellow II (Oct, 1993 – Aug, 1995).</p></dt>
+<dt><p>Responsibilities</p></dt> 
+<ul>
+<li><p class="paragraph">Conducting and coordinating lectures and research in computer systems, telecommunication engineering, artificial intelligence and biotechnology.</p></li>
+<li><p class="paragraph">Managed the Installation and implementation team of NITEL Anambra Territory Local Area Network System</p></li>
+<li><p class="paragraph">Supervised the project team for the computerization of NITEL Anambra Territory Subscriber Ledger Accounting System including training of responsible officers</p></li>
+<li><p class="paragraph">Handled undergraduate and postgraduate courses in Artificial Intelligence, File Processing Techniques and Application Packages for Computer Science and Engineering students</p></li>
+ </ul>
+<dt><P>2. ANAMBRA MOTOR MANUFACTURING COMPANY (ANAMMCO) LIMITED ENUGU.</P></dt>
+<dt><p>Asst. Manager – Systems Analyst (Sep. 1995 – Dec. 1996)</p></dt>
+<dt><p>Responsibilities</p></dt>
+<ul>
+<li><p class="paragraph">Systems analysis, design, development and computerization, operations research and management, coordinating organization functions.</p></li>
+<li><p class="paragraph">Managed system development team from evaluation through implementation for ACO stores (Clinic and Canteen)</p></li>
+<li><p class="paragraph">Headed the development and implementation team of Solomon Accounting Software including the development of new and revised policies and procedures</p></li>
+<li><p class="paragraph">Managed organizational chart, staff position changes and job description matters</p></li>
+<li><p class="paragraph">Coordinated the design and modification of all corporate forms and reports.</p></li>
+</ul>
+<dt><p>Manager – Systems Analyst (Jan. 1997 – Sep. 1998)</p></dt>
+<dt><p>Senior Manager – Organization (Sep. 1998 – Oct. 2004)</p></dt>
+<dt><p>Responsibilities</p></dt>
+<ul>
+<li><p class="paragraph">Control and maintenance of Company’s structures with respect to personnel position changes, job description and evaluation, regulations and procedures.</p></li>
+<li><p class="paragraph">Managed organizational chart, staff position changes and job description matters</p></li>
+<li><p class="paragraph">Developed and wrote corporate personnel, financial and service regulations and procedures</p></li>
+<li><p class="paragraph">Coordinated job evaluation committee functions</p></li>
+<li><p class="paragraph">Reported monthly staff position changes</p></li>
+<li><p class="paragraph">Coordinated the design and modification of all corporate forms and reports.</p></li>
+</ul>
+<dd><p>Asst. General Manager – Organization (Oct. 2004 – Sep. 2006)</p></dd>
+<dt><p>Responsibilities</p></dt>
+<ul>
+<li><p class="paragraph">Management of organizational structures with respect to personnel position changes, and coordination of activities of investigation, analysis and improvement in methods and standards for work simplification, avoiding duplication of functions through review/update of regulations and procedures. In addition to this is the management of contracts and indirect goods procurement.</p></li>
+<li><p class="paragraph">Managed structural and staff position changes and job evaluation matters</p></li>
+<li><p class="paragraph">Coordinated the work of the committee on cost savings strategies for ACO</p></li>
+<li><p class="paragraph">Developed and wrote corporate regulations and procedures</p></li>
+<li><p class="paragraph">Developed and coordinated product pricing and supplier evaluation</p></li>
+<li><p class="paragraph">Managed the procurement/pricing of food items for staff canteen</p></li>
+<li><p class="paragraph">Negotiated terms for new and existing service contracts for various services in ACO including office cleaning, security services, digital clocking system, Solomon IV accounting software.</p></li>
+</ul>
+<dt><p>THE OLD PATH REVIVAL COMMISSION ENUGU.</p></dt>
+<dt><p>Head Christian Education/Associate Pastor(Vocational Service) (Sep. 2006 – Apr. 2009)</p></dt>
+<dt><p>Responsibilities</p></dt>
+<ul>
+<li><p class="paragraph">Conducting and coordinating lectures and research in artificial intelligence, digital systems design, electric circuit analysis and synthesis, industrial electronics, systems design and programming, file processing techniques and biotechnology.</p></li>
+</ul>
+</section>
+<section>
+<h3>RESEARCH AND TEACHING ACTIVITIES</h3>
+<ol>
+<li><p class="paragraph"> Studies on the Design and Development of Digital Private Automatic Branch Exchange (A Project captioned NITEL EAGLE DIGITAL PABX), 1990 – 1992 (Not published – Contract Agreement)</p></li>
+<li><p class="paragraph"> Studies on Computer Simulation of Robot Intelligence 1991-1993 (Master of Engineering work)</p></li>
+<li><p class="paragraph"> Practical training on Computer Appreciation, Hardware Maintenance and Computer Assembly for Students at Golden Center for Computer Studies Enugu 1993 – 1995</p></li>
+<li><p class="paragraph"> Lectures on Artificial Intelligence, File Processing Techniques and Application Packages for undergraduate and postgraduate students at Enugu State University of Science & Technology 1994/1995 and 1995/1996 sessions</p></li>
+<li><p class="paragraph"> Implementation of a Local Area Network with optic fiber link to three remote locations for ANAMBRA MOTOR MANUFACTURING COMPANY (ANAMMCO) ENUGU, 1998- 1999. (Not published – Company project)</p></li>
+<li><p class="paragraph"> Implementation of Solomon IV Accounting Software for ANAMBRA MOTOR MANUFACTURING COMPANY (ANAMMCO) ENUGU, 1998-1999 (Not published – Company project)</p></li>
+<li><p class="paragraph"> Lectures on Artificial Intelligence, Software Engineering, Electronic Measurements, Electric Circuit Analysis & Synthesis and Industrial Electronics for undergraduate students 2008/2009 to date and Computer Systems Architecture and Software Engineering for postgraduate students all at University of Nigeria</p></li>
+<li><p class="paragraph"> Research on Artificial intelligence in Medical Diagnosis case of Prostate disease diagnosis through image segmentation 2010 – 2016 (Doctor of Philosophy work).</p></li>
+</ol>
+</section>
+<section>
+<h3>ACADEMIC PUBLICATIONS/PAPERS</h3>
+<ol>
+<li><p class="paragraph">1. Mobisson O. U. and Chijindu V.C., “Highly Integrated Personal Computing System For Urban Market Environment: The Case For Omata Data Processing Module”, A paper presented at the FIRST AFRICA-USA INTERNATIONAL CONFERENCE ON MANUFACTURING TECHNOLOGY at Sheraton Hotel, Ikeja Lagos, Nigeria, January1993, (Paper No. AUSAC#1-087).</p></li>
+<li><p class="paragraph">2. Chijindu V. C. & Inyiama H. C., “Social Implication of Robots – An Overview”, International Journal of Physical Sciences Vol 7(8), pp. 1270-1275, 16 Feb. 2012.</p></li>
+<li><p class="paragraph">3. Uzedhe O. Godwin & Vincent C. Chijindu, “Led Based Alternative Lighting System for Low Energy Consumption in Electrically Challenged Environments”, Academic Research International (AR Int.) Vol 02 No. 03, pp. 161-171, May 2012.</p></li>
+<li><p class="paragraph">4. Inyiama H. C., Chijindu V. C. & Ufoaroh S. U., “Intelligent Agents – Autonomy Issues”, Afr. J. of Comp & ICTs Vol 5, No. 4, pp. 49-52, June 2012.</p></li>
+<li><p class="paragraph">5. A.O. Edeh & V.C. Chijindu (2012). Use of ICT in Knowledge Consolidation and Management: The Case of WAEC Review Questions on English Language in Nigeria. Afr J. of Comp & ICTs. Vol. 5, No. 4. Issue 2, pp 115-127. August 2012</p></li>
+<li><p class="paragraph">6. Chijindu V. C., Inyiama H. C. & Uzedhe G. O., “Medical Image Segmentation Methodologies – A Classified Overview”, Afr. J. of Comp & ICTs Vol 5, No. 5, pp. 100-108, September 2012.</p></li>
+<li><p class="paragraph">7. Chijindu V. C., “Search in Artificial Intelligence Problem Solving”, Afr. J. of Comp & ICTs Vol. 5, No. 5. pp 37-42, September, 2012. 6</p></li>
+<li><p class="paragraph">8. Ahaneku MA & Engr. Chijindu VC. “Frequency Re-Use and the Implication of Limited Network Resources in Cellular Mobile Systems”. Global Adv. Res. J. Eng. Technol. Innov. Vol. 2(6), pp. 167-172, July, 2013.</p></li>
+<li><p class="paragraph">9. Udora N. Nwawelu, Anthony N. Nzeako, Mamilus A. Ahaneku, Vincent C. Chijindu. “Performance Evaluation of the Lionet Quality of Service in Nsukka Campus of the University of Nigeria”. International Journal of Communications, Network and System Sciences, July, 2014.</p></li>
+<li><p class="paragraph">10. V.C. Chijindu, M.A. Ahaneku & A.O. Edeh. “Dynamic Knowledge Consolidation & Management Using ICT: The Case of JAMB Review Questions on English Language in Nigeria”. International Journal of Scientific & Engineering Research, Vol. 5, Iss. 9, pp 460- 478, September, 2014.</p></li>
+<li><p class="paragraph">11. F.N. Ugwoke, K.C. Okafor, V.C. Chijindu., “Security QoS Profiling Against Cyber Terrorism in Airport Network Systems”, IEEE Xplore Digital Library – CyberSpace (CYBERAbuja) International Conference on 4-7 Nov. 2015.</p></li>
+<li><p class="paragraph">12. K.C. Okafor, F.N. Ugwoke , Adaora Angela Obayi.I, V.C. Chijindu, O.U.Oparaku, “Analysis of Cloud Network Management Using Resource Allocation and Task Scheduling Services”, International Journal of Advanced Computer Science and Applications (IJACSA), Vol. 7 Iss. 1, January 2016.</p></li>
+<li><p class="paragraph">13. Samuel Ugwu, Vincent C. Chijindu, Charles C. Osuagwu, “Development of Expert System: Computer-Based Home Doctor”, International Journal of Science and Engineering Research, Vol. 7, Iss. 5, pp 1090-1111, May, 2016.</p></li>
+<li><p class="paragraph">14. K.C. Okafor, G. Ononiwu, V.C. Chijindu, O.C. Nosiri, “Quality of Service Performance in Field Programmable Gate Array Datacenter Network Domain”, IEEE Transaction on Cloud Computing, June 2016.    </p></li>
+</ol>
+</section>
+
+
+
+
+
+
+</dl>
+</div>
+<div class="profile-footer">
+    <a href="https://www.researchgate.net/profile/Chinedu-Duru" target="_blank">
+        <img src="http://ece.unn.edu.ng/wp-content/uploads/sites/278/2020/08/research-gate-e1597437663821.jpg"/>
+    </a>
+    <a href="https://scholar.google.com/citations?user=ptGOJrgAAAAJ&hl=en&oi=sra" target="_blank">
+        <img src="http://ece.unn.edu.ng/wp-content/uploads/sites/278/2020/08/gscholar-e1597439147191.jpg"/>
+    </a>
+</div>
+</section>
+</main>
+
+
+
+<footer class="site-footer">
+    <div class="footer-contianer">
+        <div class="footer-row flex-4">
+            <div class="footer-col col-1">
+                <figure class="unn-logo">
+                    <div class="img-container">
+                        <img src="../../static/images/unn-logo.svg" alt="unn logo"/>
+                    </div>
+                    <figcaption>
+                        <p>Electronic Engineering</p>
+                    </figcaption>
+                </figure>
+            </div>
+            <div class="footer-col">
+                <ul>
+                    <li><a class="round-cta-btn" target="_blank" href="../programs/programs.html">programmes</a></li>
+                    <li><a class="round-cta-btn" target="_blank" href="../../staffs/staffs.html">staff</a></li>
+                    <li><a class="round-cta-btn" target="_blank" href="../../alumni.html">almuni</a></li>
+                    <li><a class="round-cta-btn" target="_blank" href="../../digital-library/e-learning.html">e-learning</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                    <ul>
+                        <li><a class="round-cta-btn" target="_blank" href="../../research/research.html">research</a></li>
+                        <li><a class="round-cta-btn" target="_blank" href="../../newsandevents.html">news</a></li>
+                        <li><a class="round-cta-btn" target="_blank" href="../../aboutus.html">about us</a></li>
+                        <li><a class="round-cta-btn" target="_blank" href="../../contactus.html">contact us</a></li>
+                    </ul>
+            </div>
+        </div>
+    </div>
+    <!-- current date -->
+    <small style="text-align:center;display:block;" class="copyright">&copy; <span id="updated-year"> </span> Department of Electronic Engineering</small>
+</footer>
+<script src="../../static/js/theme.js"></script>
+<script src="../../static/js/index.js"></script>
+<script src="../../static/js/owl.carousel.js"></script>
+
+<script>
+    	const updateYear = document.getElementById("updated-year");
+    	const date = new Date();
+    	updateYear.innerText += date.getFullYear();
+</script>
+</div>
+</body>
+</html>
