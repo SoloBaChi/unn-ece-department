@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=0.0">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"/>
@@ -122,59 +122,69 @@
 <span><i>Books related to</i></span>
 <h3 style="text-align:left;">artificial intelligence</h3>
 <!-- ebooks will be fetched from open libray  -->
+<span class="fetching"><i>fetching !!!</i></span>
 </section>
 
 <section class="book-template ebook-section thermodynamics" id="thermodynamics">
 <span><i>Books related to</i></span>
 <h3 style="text-align:left;">thermodynamics</h3>
 <!-- ebooks will be fetched from open libray  -->
+<span class="fetching"><i>fetching !!!</i></span>
 </section>
 
 <section class="book-template ebook-section signal-processing" id="signal-processing">
 <span><i>Books related to</i></span>
 <h3 style="text-align:left;">signal processing</h3>
 <!-- ebooks will be fetched from open libray  -->
+<span class="fetching"><i>fetching !!!</i></span>
 </section>
 
 <section class="book-template ebook-section electromagnetic-wave" id="electromagnetic-wave">
 <span><i>Books related to</i></span>
 <h3 style="text-align:left;">electromagnetic wave</h3>
 <!-- ebooks will be fetched from open libray  -->
+<span class="fetching"><i>fetching !!!</i></span>
 </section>
 
 <section class="book-template ebook-section modern-programming" id="modern-programming">
 <span><i>Books related to</i></span>
 <h3 style="text-align:left;">modern programming</h3>
 <!-- ebooks will be fetched from open libray  -->
+<span class="fetching"><i>fetching !!!</i></span>
 </section>
 
 <section class="book-template ebook-section digital-electronic" id="digital-electronic">
 <span><i>Books related to</i></span>
 <h3 style="text-align:left;">digital electronics</h3>
 <!-- ebooks will be fetched from open libray  -->
+<span class="fetching"><i>fetching !!!</i></span>
 </section>
 
 <section class="book-template ebook-section telecommunication-engineering" id="telecommunication-engineering">
 <!-- ebooks will be fetched from open libray  -->
 <span><i>Books related to</i></span>
 <h3 style="text-align:left;">telecommunication engineering</h3>
+<span class="fetching"><i>fetching !!!</i></span>
 </section>
 
 <section class="book-template ebook-section control-theory" id="control-theory">
 <span><i>Books related to</i></span>
 <h3 style="text-align:left;">control theory</h3>
 <!-- ebooks will be fetched from open libray  -->
+<span class="fetching"><i> fetching !!!</i></span>
 </section>
 <section class="book-template ebook-section engineering-analysis" id="engineering-analysis">
 <span><i>Books related to</i></span>
 <h3 style="text-align:left;">engineering analysis</h3>
 <!-- ebooks will be fetched from open libray  -->
+<span class="fetching"><i> fetching !!!</i></span>
 </section>
 
 <section class="book-template ebook-section reliability-engineering" id="reliability-engineering">
 <span><i>Books related to</i></span>
 <h3 style="text-align:left;">reliability engineering</h3>
 <!-- ebooks will be fetched from open libray  -->
+<span class="fetching"><i> fetching !!!</i></span>
 </section>
 
 </main>
@@ -264,6 +274,8 @@
 //create ebooks
 function createEBooks(booksArr,id){
 let div = document.createElement("DIV");
+const fetchPlaceholder =  document.querySelectorAll(".fetching");
+console.log(fetchPlaceholder)
 for(let i=0; i< booksArr.length;i++){
  let {title,isbn,lccn,oclc,ebook_access,number_of_pages_median:pages,author_name,publisher,publish_year:year,language,edition_key,ia_collection} =  booksArr[i];
 
@@ -393,34 +405,35 @@ console.log(booksArr)
 document.getElementById(`circuit-theory`).appendChild(div);
 }
 else if(id === "artificial intelligence"){
-document.getElementById(`artificial-intelligence`).appendChild(div);
+document.getElementById(`artificial-intelligence`).replaceChild(div,fetchPlaceholder[0]);
+// document.getElementById(`artificial-intelligence`).appendChild(div);
 }
 else if(id === "thermodynamics"){
-document.getElementById(`thermodynamics`).appendChild(div);
+document.getElementById(`thermodynamics`).replaceChild(div,fetchPlaceholder[0]);
 }
 else if(id === "signal processing"){
-document.getElementById(`signal-processing`).appendChild(div);
+document.getElementById(`signal-processing`).replaceChild(div,fetchPlaceholder[0]);
 }
 else if(id === "electromagnetic wave"){
-document.getElementById(`electromagnetic-wave`).appendChild(div);
+document.getElementById(`electromagnetic-wave`).replaceChild(div,fetchPlaceholder[0]);
 }
 else if(id === "modern programming"){
-document.getElementById(`modern-programming`).appendChild(div);
+document.getElementById(`modern-programming`).replaceChild(div,fetchPlaceholder[0]);
 }
 else if(id === "digital electronic"){
-document.getElementById(`digital-electronic`).appendChild(div);
+document.getElementById(`digital-electronic`).replaceChild(div,fetchPlaceholder[0]);
 }
 else if(id === "telecommunication engineering"){
-document.getElementById(`telecommunication-engineering`).appendChild(div);
+document.getElementById(`telecommunication-engineering`).replaceChild(div,fetchPlaceholder[0]);
 }
 else if(id === "control theory"){
-document.getElementById(`control-theory`).appendChild(div);
+document.getElementById(`control-theory`).replaceChild(div,fetchPlaceholder[0]);
 }
 else if(id === "engineering analysis"){
-document.getElementById(`engineering-analysis`).appendChild(div);
+document.getElementById(`engineering-analysis`).replaceChild(div,fetchPlaceholder[0]);
 }
 else{
-document.getElementById(`reliability-engineering`).appendChild(div);
+document.getElementById(`reliability-engineering`).replaceChild(div,fetchPlaceholder[0]);
 }
 
 }

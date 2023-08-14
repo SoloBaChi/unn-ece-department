@@ -22,7 +22,7 @@
     ::::Responsive Design Pattern
     The principle applied in the development of this site is mobile first principle
     -->
-<div class="page-container">
+<div class="page-container" id="page-container">
 <header class="header">
     <div class="header-container">
         <div class="header-row"> 
@@ -60,31 +60,31 @@
                     <li class="list-item"><a href="../../index.html">home</a></li>
                     <li class="list-item dropdown dropdown-1"><a href="../../programs/programs.html">programmes <span class="fa fa-caret-down"></span></a>
                         <ul class="dropdown-menu">
-                        <li> <a href="../../programs/undergraduate.html" target="_blank">undergraduate degree programmes</a></li>
-                        <li class="list-item dropdown dropdown-2"> <a href=".">postgraduate degree programmes <span class="fa fa-caret-down"></span></a>
+                        <li> <a href="../../programs/undergraduate.html" target="_self">undergraduate degree programmes</a></li>
+                        <li class="list-item dropdown dropdown-2"> <a href="../../programs/undergraduate.html">postgraduate degree programmes <span class="fa fa-caret-down"></span></a>
                             <ul class="dropdown-menu">
-                             <li> <a href="../../programs/msc.html" target="_blank">M.Sc and M.Eng Degree Programmes</a></li>
-                             <li> <a href="../../programs/phd.html" target="_blank">Phd Degree Programmes</a></li>
+                             <li> <a href="../../programs/msc.html" target="_self">M.Sc and M.Eng Degree Programmes</a></li>
+                             <li> <a href="../../programs/phd.html" target="_self">Phd Degree Programmes</a></li>
                             </ul>
                         </li>
                         </ul>
                     </li>
                     <li class="list-item dropdown dropdown-1"><a href="../../staffs/staffs.html">staff <span class="fa fa-caret-down"></span></a>
                         <ul class="dropdown-menu">
-                            <li><a href="../academic-staffs/academic.html">academic staff</a></li>
-                            <li><a href="../technical-staffs/technical.html">technical staff</a></li>
-                            <li><a href="../administrative-staffs/administrative.html">administrative staff</a></li>
+                            <li><a href="../../staffs/academic-staffs/academic.html">academic staff</a></li>
+                            <li><a href="../../staffs/technical-staffs/technical.html">technical staff</a></li>
+                            <li><a href="../../staffs/administrative-staffs/administrative.html">administrative staff</a></li>
                         </ul>
                     </li>
-                    <li class="list-item dropdown"><a href="#">digital-learning <span class="fa fa-caret-down"></span></a>
+                    <li class="list-item dropdown"><a href="../../digital-library/virtual-libary.html">digital-learning <span class="fa fa-caret-down"></span></a>
                         <ul class="dropdown-menu">
                             <li><a href="../../digital-library/e-learning.html">e-learnig</a></li>
                             <li><a href="../../digital-library/virtual-libary.html">virtual library</a></li>
                         </ul>
                     </li>
-                    <li class="list-item dropdown"><a href="../../research.html">research <span class="fa fa-caret-down"></span></a>
+                    <li class="list-item dropdown"><a href="../../research/research.html">research <span class="fa fa-caret-down"></span></a>
                         <ul class="dropdown-menu">
-                            <li><a href="../../digitalelectronics.html">digital elctronics</a></li>
+                            <li><a href="../../research/digitalelectronics.html">digital elctronics</a></li>
                             <li><a href="../../research/telecommunication.html">communications</a></li>
                             <li><a href="../../research/control.html">control engineering</a></li>
                         </ul>
@@ -107,9 +107,10 @@
 <!-- contactus page -->
 <section class="academic-staff">
 <div class="profile-header">
-<section>
 <h3>Prof. Ani Cosmas Ikechukwu</h3> 
-<img src="http://ece.unn.edu.ng/wp-content/uploads/sites/278/2020/08/research-gate-e1597437663821.jpg"/>  
+<div class="img-container">
+<img src="https://ece.unn.edu.ng/wp-content/uploads/sites/278/2022/11/1491_ANI_Cosmas.png"/>  
+</div>
 <p><small>Professor of Electronic Engineering</small></p>
 <p>Department of Electronic Engieering,</p>
 <p>Faculty of Engineering,</p>
@@ -117,8 +118,8 @@
 <p>Enugu State, Nigeria.</p>
 <p><a href="mailto:cosmas.ani@unn.edu.ng">cosmas.ani@unn.edu.ng</a></p>
 </div>
-<div class="more-info">
-<dl>
+</section>
+
 <section>    
 <h3>About Prof. Ani I. Cosmas (Ph.D)</h3>
 <dt><p>Professor, Ani Cosmas Ikechukwu is a professor of Electronic Engineering, at the department of Electronic Engineering, Faculty of Engineering, University of Nigeria, Nsukka.
@@ -129,6 +130,8 @@ Prof. Ani Cosmas is the author/coauthor of several books including: “Electrica
 He has held several leadership positions in the department of Electronic Engineering and faculty of Engineering including the Head of Department, Electronic Engineering and the Associate Deanship of the Faculty of Engineering.
 </p></dt>
 </section>
+
+
 <section>
 <h3>Academic Qualifications</h3>
 <dt><p>Ph.D. Degree (1992 -1995)</p></dt>
@@ -150,6 +153,7 @@ He has held several leadership positions in the department of Electronic Enginee
 <dd><p>Attended Abor High School Abor, Udi LGA, Enugu State between 1971 and 1975. </p></dd>
 <dd><p>Obtained O’ Level School Certificate.</p></dd>
 </section>
+
 <section>
 <h3>Research Interest</h3>
 <dt><p>Telecommunication Networks Performance Management -Resource Management.</p></dt>
@@ -165,19 +169,19 @@ He has held several leadership positions in the department of Electronic Enginee
 <li><p class="paragraph">Development of Integrated ATM Network Performance Management System</p></li>
 <li><p class="paragraph">Development of GSM Network Resource Allocation Template</p></li>
 <li><p class="paragraph">Development of Optimum Handover Resource Reservation Scheme for LTE network</p></li>
-
 </ul>
 </section>
+
 <section>
 <h3>Work Experience</h3>
-<dt>After Civil Aviation Programme</dt>
-<dd><p>Worked in the Ministry of Civil Aviation in 1979 as maintenance officer at the Ilorin Airport. Equipment maintained covered the range of equipment classed under instrument landing systems (ILS). During the period, I headed Aeronautic Navigation Instrument Installation Team that installed the Non-Directional Beacon (NDB) at Ajaokuta air-strip.</p></dd>
-<dt><p>After M.Sc. Degree Programme (1986 – till present)</p></dt>
-<dd><p>I Work as Lecturer in the Department of Electronic Engineering, University of Nigeria, Nsukka, Nigeria.
+<h4>After Civil Aviation Programme</h4>
+<dd><p class="paragraph">Worked in the Ministry of Civil Aviation in 1979 as maintenance officer at the Ilorin Airport. Equipment maintained covered the range of equipment classed under instrument landing systems (ILS). During the period, I headed Aeronautic Navigation Instrument Installation Team that installed the Non-Directional Beacon (NDB) at Ajaokuta air-strip.</p></dd>
+<dt><p class="paragraph">After M.Sc. Degree Programme (1986 – till present)</p></dt>
+<dd><p class="paragraph">I Work as Lecturer in the Department of Electronic Engineering, University of Nigeria, Nsukka, Nigeria.
 My jobs as Lecturer entail Teaching and Research. The teaching aspect covers both the undergraduate and postgraduate courses delivery and laboratories; final year and postgraduate
 student project supervisions are included.</p></dd>
 
-<dt><p>Consultancy</p></dt>
+<h5>Consultancy</h5>
 <ol>
 <li><p class="paragraph">I have equally acted, severally, as consultant to Nigeria Communication Commission</p></li>
 (Abuja) on capacity building.
@@ -188,6 +192,7 @@ Streams Company Ltd.
 Telecommunication Corporate Training.
 </ol>
 </section>
+
 <section>
 <h3>Administrative Experience and Date</h3>
 <ol>
@@ -204,22 +209,23 @@ Telecommunication Corporate Training.
 <li><p class="paragraph">Faculty Representative in Senate, 2008 – to date.</p></li>
 <li><p class="paragraph">Director, Computer Communication Centre, UNN, 2010 – 2012.</p></li>
 </ol>
-<dt>Professional Affiliation</dt>
+<h4>Professional Affiliation</h4>
 <ol>
 <li><p class="paragraph">Associate Member of Institute of Electrical Engineers (AMIEE).</p></li>
 <li><p class="paragraph">Member of Nigeria Society of Engineer (MNSE).</p></li>
 <li><p class="paragraph">The Engineering Council Register (United kingdom).</p></li>
 </ol>
 </section>
+
 <section>
 <h3>Latest Publications (Since 2010)</h3>
-<dt><p>BOOKS</p></dt>
+<h5>BOOKS</h5>
 <ol>
 <li><p class="paragraph">C. I. Ani, “Electrical Transmission Media & Antennas”, FIAC Press Enugu, Nigeria,2010.</p></li>
 <li><p class="paragraph">O. Okonor and C. I. Ani, “Beginners Choice for Learning Programming (C++ and Java)”,St. CIKO publishers, 2010.</p></li>
 </ol>
 
-<dt><p>JOURNALS</p></dt>
+<h4>JOURNALS</h4>
 <ol>
 <li><p class="paragraph">F. I. Onah, Mom Joseph and C. I. Ani, “Generalized Processor Sharing (GPS). Techniques”, Nigeria Journal of Technology (NIJOTECH), Vol. 29, No. 1, March 2010.pp 110 – 120.</p></li>
 <li><p class="paragraph">C. I. Ani, “The Effect of Nigerian Factors on GSM Network Traffic Loading”,ELECTROSCOPE, International Journal for Electrical and Telecommunication System Research, November, 2010, Volume 4, Number 4, pp 93 – 97.</p></li>
@@ -232,19 +238,18 @@ Telecommunication Corporate Training.
 <li><p class="paragraph">Joseph M. Mom and C. I. Ani, “Application of Self-Organizing Map to Intelligent Analysis of Cellular Networks”, ARPN Journal of Engineering and Applied Sciences, Vol. 8, No. 6, June 2013, pp. 407 – 412. ISSN 1819-6608.</p></li>
 </ol>
 </section>
-</dl>
-</div>
+
+<section>
 <div class="profile-footer">
-    <a href="https://www.researchgate.net/profile/Augustine-Ajibo" target="_blank">
+    <a href="#" target="_blank">
         <img src="http://ece.unn.edu.ng/wp-content/uploads/sites/278/2020/08/research-gate-e1597437663821.jpg"/>
     </a>
-    <a href="https://scholar.google.com/citations?user=o7gowyzzyDsC&hl=en&oi=sra" target="_blank">
+    <a href="#" target="_blank">
         <img src="http://ece.unn.edu.ng/wp-content/uploads/sites/278/2020/08/gscholar-e1597439147191.jpg"/>
     </a>
 </div>
 </section>
 </main>
-
 
 <footer class="site-footer">
     <div class="footer-contianer">
@@ -261,18 +266,18 @@ Telecommunication Corporate Training.
             </div>
             <div class="footer-col">
                 <ul>
-                    <li><a class="round-cta-btn" target="_blank" href="../programs/programs.html">programmes</a></li>
-                    <li><a class="round-cta-btn" target="_blank" href="../../staffs/staffs.html">staff</a></li>
-                    <li><a class="round-cta-btn" target="_blank" href="../../alumni.html">almuni</a></li>
-                    <li><a class="round-cta-btn" target="_blank" href="../../digital-library/e-learning.html">e-learning</a></li>
+                    <li><a class="round-cta-btn" target="_self" href="../../programs/programs.html">programmes</a></li>
+                    <li><a class="round-cta-btn" target="_self" href="../../staffs/staffs.html">staff</a></li>
+                    <li><a class="round-cta-btn" target="_self" href="../../alumni.html">almuni</a></li>
+                    <li><a class="round-cta-btn" target="_self" href="../../digital-library/e-learning.html">e-learning</a></li>
                 </ul>
             </div>
             <div class="footer-col">
                     <ul>
-                        <li><a class="round-cta-btn" target="_blank" href="../../research/research.html">research</a></li>
-                        <li><a class="round-cta-btn" target="_blank" href="../../newsandevents.html">news</a></li>
-                        <li><a class="round-cta-btn" target="_blank" href="../../aboutus.html">about us</a></li>
-                        <li><a class="round-cta-btn" target="_blank" href="../../contactus.html">contact us</a></li>
+                        <li><a class="round-cta-btn" target="_self" href="../../research/research.html">research</a></li>
+                        <li><a class="round-cta-btn" target="_self" href="../../newsandevents.html">news</a></li>
+                        <li><a class="round-cta-btn" target="_self" href="../../aboutus.html">about us</a></li>
+                        <li><a class="round-cta-btn" target="_self" href="../../contactus.html">contact us</a></li>
                     </ul>
             </div>
         </div>
@@ -280,6 +285,13 @@ Telecommunication Corporate Training.
     <!-- current date -->
     <small style="text-align:center;display:block;" class="copyright">&copy; <span id="updated-year"> </span> Department of Electronic Engineering</small>
 </footer>
+
+<!-- ====================================
+    SCroll TOP Arrow Icon
+========================================= -->
+<a href="#page-container" class="scroll-top fa fa-angle-up"></a>
+
+
 <script src="../../static/js/theme.js"></script>
 <script src="../../static/js/index.js"></script>
 <script src="../../static/js/owl.carousel.js"></script>

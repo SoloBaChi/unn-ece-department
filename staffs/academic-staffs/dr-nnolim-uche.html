@@ -22,7 +22,7 @@
     ::::Responsive Design Pattern
     The principle applied in the development of this site is mobile first principle
     -->
-<div class="page-container">
+<div class="page-container" id="page-container">
 <header class="header">
     <div class="header-container">
         <div class="header-row"> 
@@ -60,31 +60,31 @@
                     <li class="list-item"><a href="../../index.html">home</a></li>
                     <li class="list-item dropdown dropdown-1"><a href="../../programs/programs.html">programmes <span class="fa fa-caret-down"></span></a>
                         <ul class="dropdown-menu">
-                        <li> <a href="../../programs/undergraduate.html" target="_blank">undergraduate degree programmes</a></li>
-                        <li class="list-item dropdown dropdown-2"> <a href=".">postgraduate degree programmes <span class="fa fa-caret-down"></span></a>
+                        <li> <a href="../../programs/undergraduate.html" target="_self">undergraduate degree programmes</a></li>
+                        <li class="list-item dropdown dropdown-2"> <a href="../../programs/undergraduate.html">postgraduate degree programmes <span class="fa fa-caret-down"></span></a>
                             <ul class="dropdown-menu">
-                             <li> <a href="../../programs/msc.html" target="_blank">M.Sc and M.Eng Degree Programmes</a></li>
-                             <li> <a href="../../programs/phd.html" target="_blank">Phd Degree Programmes</a></li>
+                             <li> <a href="../../programs/msc.html" target="_self">M.Sc and M.Eng Degree Programmes</a></li>
+                             <li> <a href="../../programs/phd.html" target="_self">Phd Degree Programmes</a></li>
                             </ul>
                         </li>
                         </ul>
                     </li>
                     <li class="list-item dropdown dropdown-1"><a href="../../staffs/staffs.html">staff <span class="fa fa-caret-down"></span></a>
                         <ul class="dropdown-menu">
-                            <li><a href="../academic-staffs/academic.html">academic staff</a></li>
-                            <li><a href="../technical-staffs/technical.html">technical staff</a></li>
-                            <li><a href="../administrative-staffs/administrative.html">administrative staff</a></li>
+                            <li><a href="../../staffs/academic-staffs/academic.html">academic staff</a></li>
+                            <li><a href="../../staffs/technical-staffs/technical.html">technical staff</a></li>
+                            <li><a href="../../staffs/administrative-staffs/administrative.html">administrative staff</a></li>
                         </ul>
                     </li>
-                    <li class="list-item dropdown"><a href="#">digital-learning <span class="fa fa-caret-down"></span></a>
+                    <li class="list-item dropdown"><a href="../../digital-library/virtual-libary.html">digital-learning <span class="fa fa-caret-down"></span></a>
                         <ul class="dropdown-menu">
                             <li><a href="../../digital-library/e-learning.html">e-learnig</a></li>
                             <li><a href="../../digital-library/virtual-libary.html">virtual library</a></li>
                         </ul>
                     </li>
-                    <li class="list-item dropdown"><a href="../../research.html">research <span class="fa fa-caret-down"></span></a>
+                    <li class="list-item dropdown"><a href="../../research/research.html">research <span class="fa fa-caret-down"></span></a>
                         <ul class="dropdown-menu">
-                            <li><a href="../../digitalelectronics.html">digital elctronics</a></li>
+                            <li><a href="../../research/digitalelectronics.html">digital elctronics</a></li>
                             <li><a href="../../research/telecommunication.html">communications</a></li>
                             <li><a href="../../research/control.html">control engineering</a></li>
                         </ul>
@@ -107,11 +107,13 @@
 <!-- contactus page -->
 <section class="academic-staff">
 <div class="profile-header">
-<h3>Dr. Nnolim Uche Afam</h3>
-<img src="http://ece.unn.edu.ng/wp-content/uploads/sites/278/2020/08/research-gate-e1597437663821.jpg"/>
+<h2>Dr. Nnolim Uche Afam</h2>
+<div class="img-container">
+<img src="https://i.pinimg.com/236x/07/f3/88/07f388d9df8a9eff8b048d7ce60888db.jpg"/>
 </div>
-<div class="more-info">
-<dl>
+</div>
+</section>
+
 <section>
     <h3>EDUCATION AND QUALIFICATION</h3>
     <dt><p>University of Kent, Canterbury, Kent, UK (Sept 2006 – July 2010)</p></dt>
@@ -123,6 +125,7 @@
     <dt><p>University of Minnesota-Twin Cities, (UMN-TC), Minneapolis, MN, USA (Jan 1999 – May 2003)</p></dt>
     <dd><p>BEE – Bachelor of Electrical/Electronic Engineering</p></dd>
 </section>
+
 <section>    
     <h3>EMPLOYMENT</h3>
     <dt><p>Department of Electronic Engineering, Faculty of Engineering, University of Nigeria, Nsukka, Nigeria Lecturer July 2013 – present</p></dt>
@@ -146,10 +149,11 @@
         <li><p class="paragraph">Taught courses in Engineering and Computer Science.</p></li>
     </ul>
 </section>
+
 <section>    
     <h3>PUBLICATIONS</h3>
 <ul>
-    <li><p class="paragraph">Nnolim, U. A., Log hybrid architecture for tonal correction combined with modified unsharp masking filter algorithm for colour image enhancement, INTEGRATION, the VLSI journal, vol. 48, pp. 221-229, 2015.</p></li>
+<li><p class="paragraph">Nnolim, U. A., Log hybrid architecture for tonal correction combined with modified unsharp masking filter algorithm for colour image enhancement, INTEGRATION, the VLSI journal, vol. 48, pp. 221-229, 2015.</p></li>
 <li><p class="paragraph">Nnolim, U. A., A Fuzzy Homomorphic Algorithm For Image Enhancement, NIJOTECH, vol. 34, No. 1, pp. 156-163, January 2015.</p></li>
 <li><p class="paragraph">Nnolim, U. A., Implementation of Spatial Domain Homomorphic Filtering on Embedded Mobile Devices, NIJOTECH, vol. 34, No. 2, April 2015.</p></li>
 <li><p class="paragraph">Nnolim, U. A., Design and implementation of novel, fast, pipelined HSI2RGB and log-hybrid RGB2HSI colour converter architectures for image enhancement, Journal of Microprocessors and Microsystems, vol. 39, pp. 223-236, 2015.</p></li>
@@ -160,20 +164,18 @@
 <li><p class="paragraph">U. Nnolim, FPGA Architectures for Logarithmic Colour Image Processing, Ph.D. thesis, University of Kent at Canterbury, Canterbury-Kent, 2009.</p></li>
 </ul>
 </section>
-</dl>
-</div>
+
+<section>
 <div class="profile-footer">
-    <a href="https://www.researchgate.net/profile/Ifeanyi-Chinaeke-Ogbuka" target="_blank">
+    <a href="#" target="_blank">
         <img src="http://ece.unn.edu.ng/wp-content/uploads/sites/278/2020/08/research-gate-e1597437663821.jpg"/>
     </a>
-    <a href="http://scholar.google.com/citations?user=ojIMuoUAAAAJ&hl=en&oi=sra" target="_blank">
+    <a href="#" target="_blank">
         <img src="http://ece.unn.edu.ng/wp-content/uploads/sites/278/2020/08/gscholar-e1597439147191.jpg"/>
     </a>
 </div>
 </section>
 </main>
-
-
 
 <footer class="site-footer">
     <div class="footer-contianer">
@@ -190,18 +192,18 @@
             </div>
             <div class="footer-col">
                 <ul>
-                    <li><a class="round-cta-btn" target="_blank" href="../programs/programs.html">programmes</a></li>
-                    <li><a class="round-cta-btn" target="_blank" href="../../staffs/staffs.html">staff</a></li>
-                    <li><a class="round-cta-btn" target="_blank" href="../../alumni.html">almuni</a></li>
-                    <li><a class="round-cta-btn" target="_blank" href="../../digital-library/e-learning.html">e-learning</a></li>
+                    <li><a class="round-cta-btn" target="_self" href="../../programs/programs.html">programmes</a></li>
+                    <li><a class="round-cta-btn" target="_self" href="../../staffs/staffs.html">staff</a></li>
+                    <li><a class="round-cta-btn" target="_self" href="../../alumni.html">almuni</a></li>
+                    <li><a class="round-cta-btn" target="_self" href="../../digital-library/e-learning.html">e-learning</a></li>
                 </ul>
             </div>
             <div class="footer-col">
                     <ul>
-                        <li><a class="round-cta-btn" target="_blank" href="../../research/research.html">research</a></li>
-                        <li><a class="round-cta-btn" target="_blank" href="../../newsandevents.html">news</a></li>
-                        <li><a class="round-cta-btn" target="_blank" href="../../aboutus.html">about us</a></li>
-                        <li><a class="round-cta-btn" target="_blank" href="../../contactus.html">contact us</a></li>
+                        <li><a class="round-cta-btn" target="_self" href="../../research/research.html">research</a></li>
+                        <li><a class="round-cta-btn" target="_self" href="../../newsandevents.html">news</a></li>
+                        <li><a class="round-cta-btn" target="_self" href="../../aboutus.html">about us</a></li>
+                        <li><a class="round-cta-btn" target="_self" href="../../contactus.html">contact us</a></li>
                     </ul>
             </div>
         </div>
@@ -209,6 +211,13 @@
     <!-- current date -->
     <small style="text-align:center;display:block;" class="copyright">&copy; <span id="updated-year"> </span> Department of Electronic Engineering</small>
 </footer>
+
+<!-- ====================================
+    SCroll TOP Arrow Icon
+========================================= -->
+<a href="#page-container" class="scroll-top fa fa-angle-up"></a>
+
+
 <script src="../../static/js/theme.js"></script>
 <script src="../../static/js/index.js"></script>
 <script src="../../static/js/owl.carousel.js"></script>

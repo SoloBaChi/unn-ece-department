@@ -103,9 +103,9 @@
 
 
 <!--Description: main site section -->
-<main>
+<main class="e-learning-page">
 <section class="welcome-text">
-    <h1>welcome to electronic and computer engineering E-Learning</h1>
+    <h1>welcome to electronic and computer engineering E-Learning Platform</h1>
 </section>
 
 <section class="book-template">
@@ -114,11 +114,22 @@
 
 
 <!-- JUST in -->
-<section id="books">
+<!-- <section id="books">
 <p>here</p>
     
-</section>
+</section> -->
 
+
+<section>
+<h4>course categories</h4>
+<div  class="btn-group">
+<a href="../programs/first-year-coursereg.html">first year</a>
+<a href="../programs/second-year-coursereg.html">second year</a>
+<a href="../programs/third-year-coursereg.html">third year</a>
+<a href="../programs/fourth-year-coursereg.html">fouth year</a>
+<a href="../programs/fifth-year-coursereg.html">fith year</a>
+</div>
+</section>
 
 
 
@@ -232,6 +243,7 @@ imageLinks = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS42KZMRzAKk4
  </div>
  `
  // div.innerHTML += figure;
+ div.classList.add("flex-1")
  div.insertAdjacentHTML("beforeend",figure)
 }
 document.getElementById("books").appendChild(div)
