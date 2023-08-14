@@ -22,7 +22,7 @@
     ::::Responsive Design Pattern
     The principle applied in the development of this site is mobile first principle
     -->
-<div class="page-container">
+<div class="page-container" id="page-container">
 <header class="header">
     <div class="header-container">
         <div class="header-row"> 
@@ -60,31 +60,31 @@
                     <li class="list-item"><a href="../../index.html">home</a></li>
                     <li class="list-item dropdown dropdown-1"><a href="../../programs/programs.html">programmes <span class="fa fa-caret-down"></span></a>
                         <ul class="dropdown-menu">
-                        <li> <a href="../../programs/undergraduate.html" target="_blank">undergraduate degree programmes</a></li>
-                        <li class="list-item dropdown dropdown-2"> <a href=".">postgraduate degree programmes <span class="fa fa-caret-down"></span></a>
+                        <li> <a href="../../programs/undergraduate.html" target="_self">undergraduate degree programmes</a></li>
+                        <li class="list-item dropdown dropdown-2"> <a href="../../programs/undergraduate.html">postgraduate degree programmes <span class="fa fa-caret-down"></span></a>
                             <ul class="dropdown-menu">
-                             <li> <a href="../../programs/msc.html" target="_blank">M.Sc and M.Eng Degree Programmes</a></li>
-                             <li> <a href="../../programs/phd.html" target="_blank">Phd Degree Programmes</a></li>
+                             <li> <a href="../../programs/msc.html" target="_self">M.Sc and M.Eng Degree Programmes</a></li>
+                             <li> <a href="../../programs/phd.html" target="_self">Phd Degree Programmes</a></li>
                             </ul>
                         </li>
                         </ul>
                     </li>
                     <li class="list-item dropdown dropdown-1"><a href="../../staffs/staffs.html">staff <span class="fa fa-caret-down"></span></a>
                         <ul class="dropdown-menu">
-                            <li><a href="../academic-staffs/academic.html">academic staff</a></li>
-                            <li><a href="../technical-staffs/technical.html">technical staff</a></li>
-                            <li><a href="../administrative-staffs/administrative.html">administrative staff</a></li>
+                            <li><a href="../../staffs/academic-staffs/academic.html">academic staff</a></li>
+                            <li><a href="../../staffs/technical-staffs/technical.html">technical staff</a></li>
+                            <li><a href="../../staffs/administrative-staffs/administrative.html">administrative staff</a></li>
                         </ul>
                     </li>
-                    <li class="list-item dropdown"><a href="#">digital-learning <span class="fa fa-caret-down"></span></a>
+                    <li class="list-item dropdown"><a href="../../digital-library/virtual-libary.html">digital-learning <span class="fa fa-caret-down"></span></a>
                         <ul class="dropdown-menu">
                             <li><a href="../../digital-library/e-learning.html">e-learnig</a></li>
                             <li><a href="../../digital-library/virtual-libary.html">virtual library</a></li>
                         </ul>
                     </li>
-                    <li class="list-item dropdown"><a href="../../research.html">research <span class="fa fa-caret-down"></span></a>
+                    <li class="list-item dropdown"><a href="../../research/research.html">research <span class="fa fa-caret-down"></span></a>
                         <ul class="dropdown-menu">
-                            <li><a href="../../digitalelectronics.html">digital elctronics</a></li>
+                            <li><a href="../../research/digitalelectronics.html">digital elctronics</a></li>
                             <li><a href="../../research/telecommunication.html">communications</a></li>
                             <li><a href="../../research/control.html">control engineering</a></li>
                         </ul>
@@ -108,15 +108,17 @@
 <section class="academic-staff">
 <div class="profile-header">
    <h3>Dr. Ahaneku Mamilus Aginwa</h3>
-   <img src="http://ece.unn.edu.ng/wp-content/uploads/sites/278/2020/08/research-gate-e1597437663821.jpg"/>
-    <p><small>Senior Lecturer</small></p>
+   <div class="img-container">
+   <img src="../../static/images/dr-ahaneku.png"/>
+   </div>
+    <span>Senior Lecturer</span>
     <p>Department of Electronic Engineering,</p>
     <p>Faculty of Engineering,</p>
     <p>University of Nigeria Nsukka.</p>
     <p><a href="mailto:mamilus.ahaneku@unn.edu.ng">mamilus.ahaneku@unn.edu.ng</a></p>
 </div>
-<div class="more-info">
-<dl>
+</section>
+
     <section>
     <h3>Work Experience</h3>
     <dt>LECTURER</dt>    
@@ -147,6 +149,7 @@
 <li><p class="paragraph">B.ENG (FUTO) Electrical/Electronic Engineering (1994)</p></li>
 </ul>
 </section>
+
 <section>    
 <h3>Workshops And Conferences Attended With Dates</h3>
     <dt><p>Training Workshop on Research Methods and Academic Writing in Engineering organized by Global Research Group, Nsukka. Nov. 8 – 9, 2013.</p></dt>
@@ -155,6 +158,7 @@
     <dt><p>2nd International Conference on Information Science and Engineering (ICTSE), China, Dec. 4- 6, 2010.</p></dt>
     <dt><p>1st CSTD/NASRDA National Conference on Mobilizing Nigerian Universities for Collaborative Research and Development in Satellite Technology (Abuja 2007), Rockview Hotels, Abuja, March 12 -13, 2007.</p></dt>
 </section>
+
 <section>    
     <h3>Professional Affiliations</h3>
     <ol>
@@ -162,6 +166,7 @@
         <li>Member Nigerian Institution of Electrical and Electronic Engineers</li>
     </ol>
 </section>
+
 <section>  
     <h3>National and International Journal Publications</h3>
     <ol>
@@ -182,14 +187,14 @@
         <li><p class="paragraph">Okonor, O.E; Ahaneku, M.A (2010) ; ‘ Comparative analysis of Network on Chip, LAN and Internet’. A conference paper on Information Science and Engineering (ICTSE), 2010 2nd International conference, Dec 4-6, 2010.Published in IEEE Xplore. 15’ Ahaneku, M.A. (2007) ‘FM Threshold and Methods of Limiting its Effect on performance’. A publication.(Nig. Journal of Technology, Vol.26 No.1</p></li>
 </ol>
 </section>
-</dl>
-</div>
+
+<section>
 <div class="profile-footer">
-    <a href="https://www.researchgate.net/profile/Ifeanyi-Chinaeke-Ogbuka" target="_blank">
-        <img src="http://ece.unn.edu.ng/wp-content/uploads/sites/278/2020/08/research-gate-e1597437663821.jpg"/>
+    <a href="#" target="_blank">
+        <!-- <img src="http://ece.unn.edu.ng/wp-content/uploads/sites/278/2020/08/research-gate-e1597437663821.jpg"/> -->
     </a>
-    <a href="http://scholar.google.com/citations?user=ojIMuoUAAAAJ&hl=en&oi=sra" target="_blank">
-        <img src="http://ece.unn.edu.ng/wp-content/uploads/sites/278/2020/08/gscholar-e1597439147191.jpg"/>
+    <a href="#" target="_blank">
+        <!-- <img src="http://ece.unn.edu.ng/wp-content/uploads/sites/278/2020/08/gscholar-e1597439147191.jpg"/> -->
     </a>
 </div>
 </section>
@@ -212,18 +217,18 @@
             </div>
             <div class="footer-col">
                 <ul>
-                    <li><a class="round-cta-btn" target="_blank" href="../programs/programs.html">programmes</a></li>
-                    <li><a class="round-cta-btn" target="_blank" href="../../staffs/staffs.html">staff</a></li>
-                    <li><a class="round-cta-btn" target="_blank" href="../../alumni.html">almuni</a></li>
-                    <li><a class="round-cta-btn" target="_blank" href="../../digital-library/e-learning.html">e-learning</a></li>
+                    <li><a class="round-cta-btn" target="_self" href="../../programs/programs.html">programmes</a></li>
+                    <li><a class="round-cta-btn" target="_self" href="../../staffs/staffs.html">staff</a></li>
+                    <li><a class="round-cta-btn" target="_self" href="../../alumni.html">almuni</a></li>
+                    <li><a class="round-cta-btn" target="_self" href="../../digital-library/e-learning.html">e-learning</a></li>
                 </ul>
             </div>
             <div class="footer-col">
                     <ul>
-                        <li><a class="round-cta-btn" target="_blank" href="../../research/research.html">research</a></li>
-                        <li><a class="round-cta-btn" target="_blank" href="../../newsandevents.html">news</a></li>
-                        <li><a class="round-cta-btn" target="_blank" href="../../aboutus.html">about us</a></li>
-                        <li><a class="round-cta-btn" target="_blank" href="../../contactus.html">contact us</a></li>
+                        <li><a class="round-cta-btn" target="_self" href="../../research/research.html">research</a></li>
+                        <li><a class="round-cta-btn" target="_self" href="../../newsandevents.html">news</a></li>
+                        <li><a class="round-cta-btn" target="_self" href="../../aboutus.html">about us</a></li>
+                        <li><a class="round-cta-btn" target="_self" href="../../contactus.html">contact us</a></li>
                     </ul>
             </div>
         </div>
@@ -231,6 +236,13 @@
     <!-- current date -->
     <small style="text-align:center;display:block;" class="copyright">&copy; <span id="updated-year"> </span> Department of Electronic Engineering</small>
 </footer>
+
+<!-- ====================================
+    SCroll TOP Arrow Icon
+========================================= -->
+<a href="#page-container" class="scroll-top fa fa-angle-up"></a>
+
+
 <script src="../../static/js/theme.js"></script>
 <script src="../../static/js/index.js"></script>
 <script src="../../static/js/owl.carousel.js"></script>

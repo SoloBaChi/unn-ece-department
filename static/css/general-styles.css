@@ -41,10 +41,10 @@ article {
   padding: 0.5rem 5%;
   /* border: 1px solid yellow; */
 }
-
-/* main section {
-  padding: 0.5rem 5%;
-} */
+header,
+section {
+  margin-bottom: 2.5rem;
+}
 
 /* headings styles */
 h1,
@@ -94,13 +94,15 @@ ol li {
   color: var(--color);
   margin-bottom: 0.2rem;
 }
-/* p{
-margin-top:1rem;
-} */
+main p {
+  margin-bottom: 0.8rem;
+}
 
 /* for all list styles */
 ul {
   list-style-type: none;
+}
+ol {
   padding: 0;
   margin: 0;
 }
@@ -145,7 +147,7 @@ img {
   border: none;
 }
 .paragraph {
-  margin-bottom: 2em;
+  margin-bottom: 1.4em;
   /* border:1px solid green; */
   font-size: 0.95rem;
   line-height: 1.8;

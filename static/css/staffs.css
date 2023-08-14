@@ -23,6 +23,19 @@
 .staff-page .administrative-staff .staff-container a {
   text-decoration: none;
 }
+.staff-page .img-container {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin-bottom: 0.8rem;
+}
+.staff-page .img-container img {
+  height: 100%;
+  border-radius: inherit;
+}
+.staff-page .organizational-email {
+  word-break: break-all;
+}
 .academic-staff .more-info dt {
   margin-bottom: 0.5rem;
   text-transform: capitalize;

@@ -22,7 +22,7 @@
     ::::Responsive Design Pattern
     The principle applied in the development of this site is mobile first principle
     -->
-<div class="page-container">
+<div class="page-container" id="page-container">
 <header class="header">
     <div class="header-container">
         <div class="header-row"> 
@@ -60,31 +60,31 @@
                     <li class="list-item"><a href="../../index.html">home</a></li>
                     <li class="list-item dropdown dropdown-1"><a href="../../programs/programs.html">programmes <span class="fa fa-caret-down"></span></a>
                         <ul class="dropdown-menu">
-                        <li> <a href="../../programs/undergraduate.html" target="_blank">undergraduate degree programmes</a></li>
-                        <li class="list-item dropdown dropdown-2"> <a href=".">postgraduate degree programmes <span class="fa fa-caret-down"></span></a>
+                        <li> <a href="../../programs/undergraduate.html" target="_self">undergraduate degree programmes</a></li>
+                        <li class="list-item dropdown dropdown-2"> <a href="../../programs/undergraduate.html">postgraduate degree programmes <span class="fa fa-caret-down"></span></a>
                             <ul class="dropdown-menu">
-                             <li> <a href="../../programs/msc.html" target="_blank">M.Sc and M.Eng Degree Programmes</a></li>
-                             <li> <a href="../../programs/phd.html" target="_blank">Phd Degree Programmes</a></li>
+                             <li> <a href="../../programs/msc.html" target="_self">M.Sc and M.Eng Degree Programmes</a></li>
+                             <li> <a href="../../programs/phd.html" target="_self">Phd Degree Programmes</a></li>
                             </ul>
                         </li>
                         </ul>
                     </li>
                     <li class="list-item dropdown dropdown-1"><a href="../../staffs/staffs.html">staff <span class="fa fa-caret-down"></span></a>
                         <ul class="dropdown-menu">
-                            <li><a href="../academic-staffs/academic.html">academic staff</a></li>
-                            <li><a href="../technical-staffs/technical.html">technical staff</a></li>
-                            <li><a href="../administrative-staffs/administrative.html">administrative staff</a></li>
+                            <li><a href="../../staffs/academic-staffs/academic.html">academic staff</a></li>
+                            <li><a href="../../staffs/technical-staffs/technical.html">technical staff</a></li>
+                            <li><a href="../../staffs/administrative-staffs/administrative.html">administrative staff</a></li>
                         </ul>
                     </li>
-                    <li class="list-item dropdown"><a href="#">digital-learning <span class="fa fa-caret-down"></span></a>
+                    <li class="list-item dropdown"><a href="../../digital-library/virtual-libary.html">digital-learning <span class="fa fa-caret-down"></span></a>
                         <ul class="dropdown-menu">
                             <li><a href="../../digital-library/e-learning.html">e-learnig</a></li>
                             <li><a href="../../digital-library/virtual-libary.html">virtual library</a></li>
                         </ul>
                     </li>
-                    <li class="list-item dropdown"><a href="../../research.html">research <span class="fa fa-caret-down"></span></a>
+                    <li class="list-item dropdown"><a href="../../research/research.html">research <span class="fa fa-caret-down"></span></a>
                         <ul class="dropdown-menu">
-                            <li><a href="../../digitalelectronics.html">digital elctronics</a></li>
+                            <li><a href="../../research/digitalelectronics.html">digital elctronics</a></li>
                             <li><a href="../../research/telecommunication.html">communications</a></li>
                             <li><a href="../../research/control.html">control engineering</a></li>
                         </ul>
@@ -108,15 +108,17 @@
 <section class="academic-staff">
 <div class="profile-header">
     <h3>Dr. Chijindu Vincent Chukwudi</h3>
-    <img src="http://ece.unn.edu.ng/wp-content/uploads/sites/278/2020/08/research-gate-e1597437663821.jpg"/>
+    <div class="img-container">
+    <img src="https://i.pinimg.com/236x/07/f3/88/07f388d9df8a9eff8b048d7ce60888db.jpg"/>
+    </div>
     <p><small>Senior Lecturer</small></p>
     <p>Department of Electronic Engineering,</p>
     <p>Faculty of Engineering,</p>
     <p>University of Nigeria, Nsukka.</p>
     <p><a href="mailto:vincent.chijindu@unn.edu.ng">vincent.chijindu@unn.edu.ng</a></p>
 </div>
-<div class="more-info">
-<dl>
+</section>
+
 <section>
     <h3>Educational Institutions Attended with Dates</h3>
     <dd><p>Anambra State University of Technology Enugu. ( 1983-1988 )</p></dd>
@@ -136,6 +138,7 @@
 <dd><p>PGD Min. Postgraduate Diploma in Ministry ( 2007 )</p></dd>
 <dd><p>Ph.D Doctor of Philosophy – Computer Engineering (2016)</p></dd>
 </section>
+
 <section>
 <h3>Awards Received</h3>
 <ol>
@@ -146,6 +149,7 @@
 <li><p class="paragraph">Certificate of Long Service from Mercedes – Benz ANAMMCO LTD for Ten years of Loyal and Dedicated Service to the Company, 22nd December, 2005. 6. Certificate of Ordination, 25th Nov, 2007</p></li>
 </ol>
 </section>
+
 <section>
 <h3>Working Experience</h3>    
 <dt><p>1.INDUSTRIAL DEVELOPMENT CENTER (IDC), ENUGU STATE UNIVERSITY OF SCIENCE & TECHNOLOGY ENUGU.</p></dt>
@@ -207,6 +211,7 @@
 <li><p class="paragraph">Conducting and coordinating lectures and research in artificial intelligence, digital systems design, electric circuit analysis and synthesis, industrial electronics, systems design and programming, file processing techniques and biotechnology.</p></li>
 </ul>
 </section>
+
 <section>
 <h3>RESEARCH AND TEACHING ACTIVITIES</h3>
 <ol>
@@ -220,6 +225,7 @@
 <li><p class="paragraph"> Research on Artificial intelligence in Medical Diagnosis case of Prostate disease diagnosis through image segmentation 2010 – 2016 (Doctor of Philosophy work).</p></li>
 </ol>
 </section>
+
 <section>
 <h3>ACADEMIC PUBLICATIONS/PAPERS</h3>
 <ol>
@@ -245,55 +251,21 @@
 
 
 
-</dl>
-</div>
+<section>
 <div class="profile-footer">
-    <a href="https://www.researchgate.net/profile/Chinedu-Duru" target="_blank">
+    <!-- <a href="#" target="_blank">
         <img src="http://ece.unn.edu.ng/wp-content/uploads/sites/278/2020/08/research-gate-e1597437663821.jpg"/>
     </a>
-    <a href="https://scholar.google.com/citations?user=ptGOJrgAAAAJ&hl=en&oi=sra" target="_blank">
+    <a href="#" target="_blank">
         <img src="http://ece.unn.edu.ng/wp-content/uploads/sites/278/2020/08/gscholar-e1597439147191.jpg"/>
-    </a>
+    </a> -->
 </div>
 </section>
 </main>
 
 
 
-<footer class="site-footer">
-    <div class="footer-contianer">
-        <div class="footer-row flex-4">
-            <div class="footer-col col-1">
-                <figure class="unn-logo">
-                    <div class="img-container">
-                        <img src="../../static/images/unn-logo.svg" alt="unn logo"/>
-                    </div>
-                    <figcaption>
-                        <p>Electronic Engineering</p>
-                    </figcaption>
-                </figure>
-            </div>
-            <div class="footer-col">
-                <ul>
-                    <li><a class="round-cta-btn" target="_blank" href="../programs/programs.html">programmes</a></li>
-                    <li><a class="round-cta-btn" target="_blank" href="../../staffs/staffs.html">staff</a></li>
-                    <li><a class="round-cta-btn" target="_blank" href="../../alumni.html">almuni</a></li>
-                    <li><a class="round-cta-btn" target="_blank" href="../../digital-library/e-learning.html">e-learning</a></li>
-                </ul>
-            </div>
-            <div class="footer-col">
-                    <ul>
-                        <li><a class="round-cta-btn" target="_blank" href="../../research/research.html">research</a></li>
-                        <li><a class="round-cta-btn" target="_blank" href="../../newsandevents.html">news</a></li>
-                        <li><a class="round-cta-btn" target="_blank" href="../../aboutus.html">about us</a></li>
-                        <li><a class="round-cta-btn" target="_blank" href="../../contactus.html">contact us</a></li>
-                    </ul>
-            </div>
-        </div>
-    </div>
-    <!-- current date -->
-    <small style="text-align:center;display:block;" class="copyright">&copy; <span id="updated-year"> </span> Department of Electronic Engineering</small>
-</footer>
+
 <script src="../../static/js/theme.js"></script>
 <script src="../../static/js/index.js"></script>
 <script src="../../static/js/owl.carousel.js"></script>

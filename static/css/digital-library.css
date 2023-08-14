@@ -148,6 +148,16 @@ figure.card .card-container .fa-ellipsis {
   height: 100%;
   border-radius: 14px;
 }
+.e-learning-page .btn-group a {
+  display: block;
+  border: 1px solid var(--color);
+  padding: 0.5rem;
+  border-radius: 14px;
+  margin-bottom: 2rem;
+  color: var(--color);
+  font-size: 95%;
+  text-align: center;
+}
 
 /* 
 ==============================
@@ -180,6 +190,7 @@ figure.book-catalogue-card .readmore {
 figure.book-catalogue-card .readmore a {
   margin: auto;
   display: none;
+  padding: 0.6rem;
 }
 
 /* 
