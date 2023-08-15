@@ -5,11 +5,11 @@ Digital Library Styles
 Loading Animation
 ==========================*/
 .loading-page {
-  background: #efefea;
+  background: #ecece0;
   height: 100vh;
   width: 100%;
   position: fixed;
-  z-index: 2010;
+  z-index: 4000;
   display: flex;
 }
 .loading-page .fa {
@@ -28,6 +28,9 @@ Loading Animation
 
 .stop-loading {
   display: none;
+}
+.start-loading {
+  display: block;
 }
 
 /* ==================================
@@ -148,17 +151,59 @@ figure.card .card-container .fa-ellipsis {
   height: 100%;
   border-radius: 14px;
 }
-.e-learning-page .btn-group a {
-  display: block;
-  border: 1px solid var(--color);
-  padding: 0.5rem;
-  border-radius: 14px;
-  margin-bottom: 2rem;
-  color: var(--color);
-  font-size: 95%;
+.e-learning-page .btn-group {
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.e-learning-page .btn-group > * {
+  flex-basis: 18%;
   text-align: center;
+  margin-bottom: 1.4rem;
+  padding: 1.2rem;
 }
 
+.e-learning-page .banner-section {
+  /* border: 1px solid red; */
+  background: url("../images/e-learning-banner.svg") 50% 60% / cover no-repeat
+    rgb(0, 0, 0, 0.4);
+  display: flex;
+  flex-flow: column wrap;
+  height: 350px;
+}
+.e-learning-page .banner-section > * {
+  margin: auto;
+}
+.e-learning-page .banner-section .banner-body svg {
+  width: 80px;
+  height: 80px;
+}
+.e-learning-page .banner-section h4 {
+  font-weight: 600;
+  font-size: 1.4rem;
+}
+.e-learning-page .banner-section h4,
+.e-learning-page .banner-section h5,
+.e-learning-page .banner-section p {
+  color: var(--white-color);
+  text-align: center;
+}
+.e-learning-page .video-container .flex-row > * {
+  margin-bottom: 2rem;
+  border-radius: 18px;
+  box-shadow: var(--box-shadow);
+}
+.e-learning-page .video-container .flex-row iframe {
+  width: 100%;
+  height: 380px;
+  border-radius: inherit;
+}
+.e-learning-page .view-more .cta-btn {
+  width: 150px;
+  padding: 0.7rem;
+  font-size: 85%;
+  color: var(--color);
+  border: 1px solid var(--color);
+}
 /* 
 ==============================
 ==============================
@@ -204,6 +249,14 @@ large desktop
   }
   .virtual-library .flex-2 .banner-image {
     margin-top: 0;
+  }
+  .e-learning-page .video-container .flex-row {
+    display: flex;
+    flex-flow: row wrap;
+    gap: 4%;
+  }
+  .e-learning-page .video-container .flex-row > * {
+    flex-basis: 22%;
   }
 }
 @media (min-width: 1460px) {

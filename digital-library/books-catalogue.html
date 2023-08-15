@@ -244,7 +244,11 @@
         const date = new Date();
         updateYear.innerText += date.getFullYear();
   
- 
+   
+
+    /*
+    Code Snippet for E-learning/ book collection
+    */
     const documentLoader = document.querySelector(".loading-page");
 
      async function getBooks(val){
@@ -256,16 +260,16 @@
      return res.docs;
     }
 
-    //   get each section for books display
+    //  get each section for books display
     const ebookShelfs = document.querySelectorAll(".ebook-section");
-    console.log(ebookShelfs)
+   
     for(let bookShelf of ebookShelfs ){
-    console.log(bookShelf)
+    
     const idValue = bookShelf.id.split("-").join("-").replace("-"," ");
-    // console.log(idValue)
+    
+    //store the fetched books 
     let storage = await getBooks(idValue);
     createEBooks(storage,idValue);
-    // console.log(storage)
     }
 
     
@@ -275,7 +279,7 @@
 function createEBooks(booksArr,id){
 let div = document.createElement("DIV");
 const fetchPlaceholder =  document.querySelectorAll(".fetching");
-console.log(fetchPlaceholder)
+
 for(let i=0; i< booksArr.length;i++){
  let {title,isbn,lccn,oclc,ebook_access,number_of_pages_median:pages,author_name,publisher,publish_year:year,language,edition_key,ia_collection} =  booksArr[i];
 
@@ -358,12 +362,9 @@ else{
 imageSrc = `https://w7.pngwing.com/pngs/57/525/png-transparent-book-cover-book-s-brown-rectangle-spiral-thumbnail.png`;
 }
 
-// console.log
-// (title,imageSrc,author_name,isbn,lccn,oclc,pages,publisher,year,language,edition_key,ia_collection
-// )
-
+// create a dowmload link
 downloadUrl = `https://openlibrary.org/books/${edition_key[0]}`;
-// console.log(downloadUrl)
+
 
 // creating a html template
 let figure = `
@@ -401,7 +402,7 @@ let figure = `
 
 }
 if(id ==="circuit theory"){
-console.log(booksArr)
+
 document.getElementById(`circuit-theory`).appendChild(div);
 }
 else if(id === "artificial intelligence"){
