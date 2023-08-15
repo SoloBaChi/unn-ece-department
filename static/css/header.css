@@ -56,6 +56,8 @@ header {
   transform: scale(0, 1);
   visibility: hidden;
   transition: transform 0.5s ease;
+  /* border: 1px solid red; */
+  height: 100vh;
 }
 
 /* ===========================
@@ -117,9 +119,6 @@ toggle button Mobile view styles
   visibility: hidden;
   /* position:absolute; */
   height: 0;
-  /* overflow:hidden; */
-  /* top:40px;
-width:100%; */
   z-index: 1020;
   position: relative;
   background-color: var(--green);
@@ -130,14 +129,7 @@ width:100%; */
   background-color: var(--green);
   height: auto;
 }
-.navbar-container
-  .list-menu
-  .dropdown:hover
-  > .dropdown-menu
-  .dropdown
-  > .dropdown-menu {
-  /* border:0px solid red; */
-}
+
 .list-menu .dropdown .dropdown-menu a {
   padding: 0.4rem 2rem;
 }

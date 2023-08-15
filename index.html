@@ -116,34 +116,26 @@
 <section class="owl-carousel carousel-section " id="sliding-banner-images">
     <!-- cariusel-1 -->
     <div class="carousel-container">
-        <div class="carousel-card">
-            <div class="img-container">
-                <img src="./static/images/lab_carousel1.jpg" alt="banner image">
-            </div>
+        <div class="carousel-card" style="background:url(./static/images/lab_carousel1.jpg) 50% 60%/cover no-repeat;">
+            <!-- Carousel description can go in here -->
         </div>
     </div>
     <!-- carousel 2 -->
     <div class="carousel-container">
-        <div class="carousel-card">
-            <div class="img-container">
-                <img src="./static/images/ai_lab_carousel1.jpg" alt="banner image">
-            </div>
+        <div class="carousel-card" style="background:url(./static/images/ai_lab_carousel1.jpg) 50% 60%/cover no-repeat;">
+            <!-- carousel description can go in here -->
         </div>
     </div>
     <!-- carousel 3 -->
     <div class="carousel-container">
-        <div class="carousel-card">
-            <div class="img-container">
-                <img src="./static/images/lab_carousel2.jpg" alt="banner image">
-            </div>
+        <div class="carousel-card" style="background:url(./static/images/lab_carousel2.jpg) 50% 60%/cover no-repeat;">
+            <!-- carousel description can go in here -->
         </div>
     </div>
     <!-- carousel 4 -->
     <div class="carousel-container">
-        <div class="carousel-card">
-            <div class="img-container">
-                <img src="./static/images/ai_lab_carousel2.jpg" alt="banner image">
-            </div>
+        <div class="carousel-card" style="background:url(./static/images/ai_lab_carousel2.jpg) 50% 60%/cover no-repeat;">
+            <!-- carousel description can go in here -->
         </div>
     </div>
 </section>
@@ -407,7 +399,7 @@
          <div><small>CPGA:4.91</small></div> -->
         <div><h4>Mba Angel Ifechukwu</h4></div>
          <div><p>Best third year student of Electronic Enginering department</p></div>
-         <div><small>CPGA:5.00</small></div>
+         <div><small>CPGA : 5.00</small></div>
         </figcaption>
         </div>
     </figure>
@@ -524,22 +516,19 @@
         "imgSrc":"./static/images/francis-bright.jpeg", 
         "alt":"best second year student"
         }
-        ]
-        console.log(studentAwards)
+        ];
 
         const bestStudents = document.querySelectorAll(`.recent-awards .flex-2 > *:last-child .img-container`);
-        console.log(bestStudents)
         const getBestStudentPlaceholder =  document.querySelector(`.display-best-student.place-left`);
-        console.log(getBestStudentPlaceholder)
         const divEl = document.createElement("div");
-        for(let student = 0; student < bestStudents.length; student++){
-        bestStudents[student].addEventListener("click",(e)=>{
-        // console.log("yes")
+
+        for(let i = 0; i < bestStudents.length; i++){
+        bestStudents[i].addEventListener("click",(e)=>{
         studentAwards.map(details => {
             
-        //check if the object's id matches with a student.
-        if(details.id === student){
-        // console.log(details)
+        //check if the object's id matches with a i.
+        if(details.id === i){
+
         const {name,description,cpga,imgSrc,alt} = details;
         const figureContainer = `
         <figure class="display-card">
@@ -557,7 +546,7 @@
             <figcaption>
             <div><h4>${name}</h4></div>
              <div><p>${description}</p></div>
-             <div><small>${cpga}</small></div>
+             <div><small>CPGA: ${cpga}</small></div>
             </figcaption>
             </div>
         </figure>

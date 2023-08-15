@@ -12,6 +12,7 @@
 @import url("research.css");
 @import url("programs.css");
 @import url("staffs.css");
+@import url("swiper.css");
 
 /* html{
 overflow-x:hidden;
@@ -233,6 +234,11 @@ large Desktop 1460px -----
   }
   .fa-caret-down {
     color: var(--link-text-color);
+  }
+  .btn-group {
+    display: flex;
+    gap: 2%;
+    justify-content: center;
   }
 }
 

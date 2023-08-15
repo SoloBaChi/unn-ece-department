@@ -214,35 +214,28 @@
         const date = new Date();
         updateYear.innerText += date.getFullYear();
   
- 
-        let searchValue = "electronic engineering",
-       documentLoader = document.querySelector(".loading-page"),
-       searchInput =  document.getElementById("search");
-
-       console.log(searchInput)
+    /*
+    code snippet for virtual librabry API fetching
+    */
+    let searchValue = "electronic engineering",
+     documentLoader = document.querySelector(".loading-page"),
+     searchInput =  document.getElementById("search");
   
 
 
-  //pop Modal Section
-  
-
-
- 
-    //addEventl listener  to the search input 
+   //addEventl listener  to the search input 
   searchInput.addEventListener("keyup",function(e){
   if(e.which === 13){
-  console.log("Yes")
   searchValue = e.target.value;
   getBooks(searchValue)
-  // searchInput.value = ""
+  searchInput.value = ""
   }
   })
 
 
    // when the search icon is clicked
    document.querySelector(".search-icon").addEventListener("click",function(e){
-   searchValue = document.querySelector(".search").value;
-  //  console.log(searchValue)
+   searchValue = document.querySelector(`input[type="search"]`).value;
    getBooks(searchValue)
    searchInput.value = ""
    })
@@ -348,9 +341,7 @@ else{
 imageSrc = `https://w7.pngwing.com/pngs/57/525/png-transparent-book-cover-book-s-brown-rectangle-spiral-thumbnail.png`;
 }
 
-// console.log
-// (title,imageSrc,author_name,isbn,lccn,oclc,pages,publisher,year,language,edition_key,ia_collection
-// )
+
 
 downloadUrl = `https://openlibrary.org/books/${edition_key[0]}`;
 
@@ -400,7 +391,7 @@ let figure = `
 document.getElementById("ebooks").replaceChildren(div)
 
 
-/* to be comoleted later*/
+/* to be comoleted later || code backlog */
 // const popUpEls = document.getElementsByClassName("aside-section")
 // console.log(popUpEls)
 // for(let prop of popUpEls){
